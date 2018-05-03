@@ -1,0 +1,54 @@
+﻿@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Light-complete.eot");
+    src: local("☺"), url("../fonts/OpenSans-Light-complete.eot#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Light-complete.woff") format("woff"), url("../fonts/OpenSans-Light-complete.ttf") format("truetype"), url("../fonts/OpenSans-Light-complete.svg#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Regular-complete.eot");
+    src: local("☺"), url("../fonts/OpenSans-Regular-complete.eot#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Regular-complete.woff") format("woff"), url("../fonts/OpenSans-Regular-complete.ttf") format("truetype"), url("../fonts/OpenSans-Regular-complete.svg#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 400
+}
+
+@font-face {
+    font-family: "Open Sans";
+    src: url("../fonts/OpenSans-Bold-complete.eot");
+    src: local("☺"), url("../fonts/OpenSans-Bold-complete.eot#iefix") format("embedded-opentype"), url("../fonts/OpenSans-Bold-complete.woff") format("woff"), url("../fonts/OpenSans-Bold-complete.ttf") format("truetype"), url("../fonts/OpenSans-Bold-complete.svg#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url("../fonts/opensans-condbold-complete.html");
+    src: local("☺"), url("../fonts/opensans-condbold-complete.html#iefix") format("embedded-opentype"), url("../fonts/opensans-condbold-complete.woff") format("woff"), url("../fonts/opensans-condbold-complete-2.html") format("truetype"), url("../fonts/opensans-condbold-complete-3.html#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 700
+}
+
+@font-face {
+    font-family: "Open Sans Condensed";
+    src: url("../fonts/opensans-condlight-complete.html");
+    src: local("☺"), url("../fonts/opensans-condlight-complete.html#iefix") format("embedded-opentype"), url("../fonts/opensans-condlight-complete.woff") format("woff"), url("../fonts/opensans-condlight-complete-2.html") format("truetype"), url("../fonts/opensans-condlight-complete-3.html#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 200
+}
+
+@font-face {
+    font-family: "dusha_plusregular";
+    src: url("../fonts/dusha-regular.eot");
+    src: local("☺"), url("../fonts/dusha-regular.eot#iefix") format("embedded-opentype"), url("../fonts/dusha-regular.woff") format("woff"), url("../fonts/dusha-regular.ttf") format("truetype"), url("../fonts/dusha-regular.svg#svgFontName") format("svg")
+}
+
+@font-face {
+    font-family: "FifaIcons";
+    src: url("../fonts/FifaIcons.eot");
+    src: local("☺"), url("../fonts/FifaIcons.eot#iefix") format("embedded-opentype"), url("../fonts/FifaIcons.woff") format("woff"), url("../fonts/FifaIcons.ttf") format("truetype"), url("../fonts/FifaIcons.svg#svgFifaIcons") format("svg");
+    font-style: normal
+}
+
+/*# sourceMappingURL=fonts.css.map */
