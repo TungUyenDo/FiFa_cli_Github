@@ -180,7 +180,7 @@ define('fi_carousel', ['jquery', 'owlcarousel'], function ($) {
           480: {
             items: 1,
             stagePadding: 20,
-            margin: -150,
+            margin: -100,
           },
           768: {
             items: 1,

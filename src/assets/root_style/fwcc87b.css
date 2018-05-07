@@ -2558,7 +2558,10 @@
     padding-left: 28px;
     padding-right: 6px;
     margin-right: 20px;
-    position: relative
+    position: relative;
+    height: 41px;
+    line-height: 41px;
+    padding-top: 0;
 }
 
 .btn-fwc .btn:after,

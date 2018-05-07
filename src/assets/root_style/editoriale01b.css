@@ -190,15 +190,13 @@
     vertical-align: top
 }
 
-.no-sidebar .article-body {
-    width: 652px
-}
-
-.article-body-frwp .col-xs-12,
-teaser-body-frwp .col-xs-12 {
-    width: 542px;
+.article-wrap .article-body {
+    font-size: 13px;
+    line-height: 20px;
+    width: calc(100% - 110px);
+    float: left;
+    list-style: none;
     margin: 0;
-    clear: none
 }
 
 .article-body-frwp .d3-o-article__related-items_stories.fi-article__related-items_stories,
@@ -351,7 +349,6 @@ teaser-body-frwp .fi-video-container iframe {
     padding-top: 0;
     padding-bottom: 0;
     padding-left: 10px;
-    padding-right: 336px;
     margin-bottom: 20px
 }
 
@@ -410,14 +407,6 @@ teaser-body-frwp .fi-video-container iframe {
     width: auto
 }
 
-.article-wrap .article-body {
-    font-size: 13px;
-    line-height: 20px;
-    width: 542px;
-    float: left;
-    list-style: none;
-    margin: 0
-}
 
 .article-wrap .article-body.body-8col {
     width: 672px
@@ -590,7 +579,7 @@ teaser-body-frwp .fi-video-container iframe {
 .article-wrap .article-relateditem .ritem-list .ritem>h4 a:after,
 .article-wrap .article-relateditem .ritem-list .ritem>a>.after,
 .article-wrap .article-relateditem .ritem-list .ritem>h4 a>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -855,7 +844,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .article-wrap .article-sidebar .dcm-icons .icon-comments:before,
 .article-wrap .article-sidebar .dcm-icons .icon-comments>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -876,7 +865,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .article-wrap .article-sidebar .dcm-icons .icon-share:before,
 .article-wrap .article-sidebar .dcm-icons .icon-share>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -897,7 +886,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .article-wrap .article-sidebar .dcm-icons .icon-print:before,
 .article-wrap .article-sidebar .dcm-icons .icon-print>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -1052,7 +1041,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .dcm-ico-videos .dcm-ico:before,
 .dcm-ico-videos .dcm-ico>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -1073,7 +1062,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .dcm-ico-photogalleries .dcm-ico:before,
 .dcm-ico-photogalleries .dcm-ico>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -1106,7 +1095,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .dcm-photos-count:after,
 .dcm-photos-count>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -2668,7 +2657,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .list-document .doc .dcm-thumblist-item h4:before,
 .list-document .doc .dcm-thumblist-item h4>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -2706,7 +2695,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .list-document .doc.icon48 .dcm-thumblist-item h4:before,
 .list-document .doc.icon48 .dcm-thumblist-item h4>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -2736,7 +2725,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .list-document .doc.icon84 .dcm-thumblist-item h4:before,
 .list-document .doc.icon84 .dcm-thumblist-item h4>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -2811,7 +2800,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .list-link .doc .dcm-thumblist-item h4:before,
 .list-link .doc .dcm-thumblist-item h4>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3082,7 +3071,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .nl-topstory-wrap .dcm-newslist .dcm-newsitem.even .dcm-newsitemlink:after,
 .nl-topstory-wrap .dcm-newslist .dcm-newsitem.even .dcm-newsitemlink>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3377,7 +3366,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-expand:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-expand>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3402,7 +3391,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-collapse:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-collapse>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3423,7 +3412,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-close:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-close>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3444,7 +3433,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-full:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-full>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3465,7 +3454,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-grid:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-grid>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3486,7 +3475,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-play:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-play>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3507,7 +3496,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-pause:after,
 .full-gallery-wrap .header-wrap .cmd-wrap .btn-pause>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3606,7 +3595,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .content-wrap .full-wrap .adv-wrap .adv-placeholder .adv-close:before,
 .full-gallery-wrap .content-wrap .full-wrap .adv-wrap .adv-placeholder .adv-close>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3842,7 +3831,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .fullbtn-wrap>a span:before,
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .fullbtn-wrap>a span>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3917,7 +3906,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .ph-str-selected-expand .btn-expand:before,
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .ph-str-selected-expand .btn-expand>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -3942,7 +3931,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .ph-str-selected-expand .btn-collapse:before,
 .full-gallery-wrap .content-wrap .full-wrap .ph-str-selected-wrapper .ph-str-selected-under .ph-str-selected-expand .btn-collapse>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -4103,7 +4092,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .ph-str-wrapper .adv-wrap .adv-placeholder .adv-close:before,
 .ph-str-wrapper .adv-wrap .adv-placeholder .adv-close>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -4346,7 +4335,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .ph-str-wrapper .ph-str-selected-wrapper .ph-str-selected-under .fullbtn-wrap>a span:before,
 .ph-str-wrapper .ph-str-selected-wrapper .ph-str-selected-under .fullbtn-wrap>a span>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
@@ -4519,7 +4508,7 @@ teaser-body-frwp .fi-video-container iframe {
 
 .slider .slider-nav .qlink-wrap li.qlink-link.first .qlink-link-wrap a:before,
 .slider .slider-nav .qlink-wrap li.qlink-link.first .qlink-link-wrap a>.before {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;

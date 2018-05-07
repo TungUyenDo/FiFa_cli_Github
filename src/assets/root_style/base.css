@@ -12767,3 +12767,34 @@ body.fi-gallery-full-screen .fi-boxed-page section>.fi-videolist__quicklink {
 }
 
 /*# sourceMappingURL=base.css.map */
+
+.qlink-link-single {
+    text-align: right;
+    padding: 5px 0
+}
+
+.qlink-link-single a {
+    position: relative;
+    padding-right: 12px
+}
+
+.qlink-link-single a:after,
+.qlink-link-single a>.after {
+    font-family: "fifa-icons";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    line-height: 12px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    right: 0;
+    content: "\3E";
+    *zoom: expression(runtimeStyle.zoom=1, innerHTML=@util.getIE7Content(\3E));
+    color: inherit
+}
