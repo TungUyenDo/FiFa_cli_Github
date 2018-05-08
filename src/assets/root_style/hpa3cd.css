@@ -3513,37 +3513,37 @@
 }
 
 .fi-sponsor__image--adidas {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_adidas") no-repeat;
+    background: transparent url("../images/p_adidas") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--hyundaikia {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_hyundai_kia") no-repeat;
+    background: transparent url("../images/p_hyundai_kia") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--gazprom {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_gazprom") no-repeat;
+    background: transparent url("../images/p_gazprom") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--cocacola {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_cocacola") no-repeat;
+    background: transparent url("../images/p_cocacola") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--visa {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_visa") no-repeat;
+    background: transparent url("../images/p_visa") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--wandagroup {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_wanda") no-repeat;
+    background: transparent url("../images/p_wanda") no-repeat;
     background-size: contain
 }
 
 .fi-sponsor__image--qatarairways {
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/p_qatar") no-repeat;
+    background: transparent url("../images/p_qatar") no-repeat;
     background-size: contain
 }
 

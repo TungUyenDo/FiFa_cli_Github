@@ -351,7 +351,7 @@
     display: inline-block;
     width: 100px;
     height: 80%;
-    background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/2018fwc_hublot2_c_png") no-repeat;
+    /* background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/2018fwc_hublot2_c_png") no-repeat; */
     background-size: contain;
     background-position: center
 }
@@ -432,7 +432,7 @@
     .fi-countdown__logo:before {
         width: 185px;
         height: 25px;
-        background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/2018fwc_hublot_c_png") no-repeat;
+        /* background: transparent url("https://api.fifa.com/api/v1/picture/sponsors/2018fwc_hublot_c_png") no-repeat; */
         background-size: contain;
         margin-top: 0
     }
