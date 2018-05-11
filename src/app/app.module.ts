@@ -1,6 +1,8 @@
 
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AppRouters } from "./app.routers";
 
 
@@ -25,6 +27,8 @@ import { GroupsComponent } from './groups/groups.component';
 
 
 import { SharedModule} from "./share/share.module";
+
+import { ApiServices } from "./services/api.services";
 @NgModule({
   //import component child
   declarations: [
@@ -48,8 +52,12 @@ import { SharedModule} from "./share/share.module";
     SharedModule,
     BrowserModule,
     AppRouters,
+    HttpModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ApiServices
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

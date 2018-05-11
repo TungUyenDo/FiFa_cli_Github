@@ -5,5 +5,5 @@
 
 export const environment = {
   production: false,
-  pathUrlApi: "https://3pg48gbi35.execute-api.ap-southeast-1.amazonaws.com/cmslive",
+  pathUrlApi: "http://worldcup2018.acc-svrs.com/api/v1/worldcup/",
 };
