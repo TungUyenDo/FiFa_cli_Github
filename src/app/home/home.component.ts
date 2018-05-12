@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 
+import {OwlCarousel} from 'ngx-owl-carousel';
 import { ApiServices } from "../services/api.services";
 
 @Component({
@@ -17,7 +18,6 @@ export class HomeComponent implements OnInit {
     limit: 10,
     page: 1
   }
-
 
   constructor(private apiServices: ApiServices) { 
       
@@ -39,6 +39,9 @@ export class HomeComponent implements OnInit {
         });
 
       })
+   
+
+     
   } 
 
 }

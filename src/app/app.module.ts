@@ -1,6 +1,6 @@
 
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule } from '@angular/core
 import { HttpModule } from '@angular/http';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRouters } from "./app.routers";
@@ -29,6 +29,11 @@ import { GroupsComponent } from './groups/groups.component';
 import { SharedModule} from "./share/share.module";
 
 import { ApiServices } from "./services/api.services";
+
+import { OwlModule } from 'ngx-owl-carousel';
+
+
+
 @NgModule({
   //import component child
   declarations: [
@@ -53,7 +58,8 @@ import { ApiServices } from "./services/api.services";
     BrowserModule,
     AppRouters,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    OwlModule
   ],
   providers: [
     ApiServices
