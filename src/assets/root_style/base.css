@@ -12767,3 +12767,149 @@ body.fi-gallery-full-screen .fi-boxed-page section>.fi-videolist__quicklink {
 }
 
 /*# sourceMappingURL=base.css.map */
+
+.qualifiers-zone-list .qlinkbanner-list .qlink-link {
+    width: 148px;
+    float: left;
+    margin-right: 20px;
+    font-size: 21px;
+    line-height: 26px
+}
+
+.qualifiers-zone-list .qlinkbanner-list .qlink-link.last {
+    margin-right: 0
+}
+
+#qualifiedteamscontainer .team-qualifiedteams ul li {
+    height: 36px;
+    margin-left: -10px;
+    position: relative
+}
+
+#qualifiedteamscontainer .team-qualifiedteams ul li .team .flag {
+    position: absolute;
+    width: 32px;
+    left: 0;
+    top: 0;
+    margin: 7px 10px
+}
+
+#qualifiedteamscontainer .team-qualifiedteams ul li .team .c-i {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 10px;
+    margin-top: 2px
+}
+
+#qualifiedteamscontainer .team-qualifiedteams ul li .team .team-name {
+    font-size: 14px;
+    line-height: 14px;
+    *line-height: normal;
+    vertical-align: middle;
+    display: table-cell;
+    padding-left: 50px;
+    height: 36px
+}
+
+#qualifiedteamscontainer .team-qualifiedteams ul li .team .c-i+.team-name {
+    padding-left: 44px
+}
+
+.qlink-link-single {
+    text-align: right;
+    padding: 5px 0
+}
+
+.qlink-link-single a {
+    position: relative;
+    padding-right: 12px
+}
+
+.qlink-link-single a:after,
+.qlink-link-single a>.after {
+    font-family: "fifa-icons";
+    font-style: normal;
+    font-weight: normal;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 12px;
+    line-height: 12px;
+    width: 10px;
+    height: 10px;
+    margin-top: -5px;
+    right: 0;
+    content: "\3E";
+    *zoom: expression(runtimeStyle.zoom=1, innerHTML=@util.getIE7Content(\3E));
+    color: inherit
+}
+
+.team-hostcountry .hostcountry-logo {
+    float: left;
+    margin-right: 76px
+}
+
+.team-hostcountry .hostcountry-caption {
+    border-bottom: 1px solid #999;
+    border-color: #666;
+    padding-bottom: 15px;
+    float: right;
+    width: 820px
+}
+
+.team-hostcountry .t {
+    margin-left: 166px;
+    padding-top: 46px;
+    position: static
+}
+
+.team-hostcountry .t .t-i.i-3 {
+    float: left;
+    margin-right: 5px
+}
+
+.team-hostcountry .t .t-n .t-nText {
+    text-transform: none;
+    font-size: 27px;
+    line-height: 1;
+    height: auto;
+    margin-left: -10px;
+    color: #0087e6;
+    text-transform: uppercase
+}
+
+.team-hostcountry .t .c-i.i-2+.t-n {
+    margin-left: 32px
+}
+
+.team-hostcountry .t a:hover .t-nText {
+    text-decoration: underline
+}
+
+.roadtohostcountry {
+    height: 200px
+}
+
+.roadtohostcountry .dcm-roofline {
+    font-size: 14px;
+    line-height: 1.54;
+    height: 70px;
+    text-transform: uppercase;
+    display: block
+}
+
+.roadtohostcountry h4 {
+    text-transform: uppercase;
+    color: #0087e6;
+    font-size: 18px;
+    line-height: 14px;
+    line-height: normal
+}
+
+.roadtohostcountry .ph-sqr-2,
+.roadtohostcountry .ph-lnd-4 {
+    display: none
+}

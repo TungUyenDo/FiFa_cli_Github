@@ -1,4 +1,3 @@
-require(['jquery'], function ($) {
 
   var countdown = (function ($) {
     var result = {},
@@ -57,4 +56,3 @@ require(['jquery'], function ($) {
   $(function () {
     countdown.init('[data-type="deltatre-countdown"]');
   });
-});

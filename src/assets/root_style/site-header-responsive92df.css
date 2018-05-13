@@ -970,7 +970,7 @@ fieldset[disabled] .fi-site-header__dropdown__login .btn-primary-inverse.focus {
 
 .sectionh-wrap .container .navbar-header .navbar-toggle:after,
 .sectionh-wrap .container .navbar-header .navbar-toggle>.after {
-    font-family: "fifa-icons";
+    font-family: "FifaIcons";
     font-style: normal;
     font-weight: normal;
     text-align: center;
