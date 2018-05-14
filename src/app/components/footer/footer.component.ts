@@ -5,7 +5,7 @@ declare var $: any;
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
-  styleUrls: ['./footer.component.css']
+  styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
 
@@ -13,11 +13,13 @@ export class FooterComponent implements OnInit {
 
   ngOnInit() {
       $('.fi-select__languages').click(function(e){
-            e.preventDefault();
-            $('.dropdown-menu').toggleClass('active')
+          e.preventDefault();
+          $('.dropdown-menu').toggleClass('active')
       })
 
-
+      // $('body').click(function(){
+      //     $('.dropdown-menu').removeClass('active')
+      // })
   }
 
 }

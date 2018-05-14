@@ -3331,7 +3331,7 @@
 }
 
 .fi-section-header:before {
-    background: #0f4583 url("/assets/img/tournaments/17/2018/common/fwc_darkbluebg.png") repeat
+    background: #0f4583 url("./images/fwc_darkbluebg.png") repeat
 }
 
 .fi-section-header__emblem img {
@@ -3483,7 +3483,7 @@
 }
 
 .fi-pre-footer {
-    background: #0f4583 url("/assets/img/tournaments/17/2018/common/fwc_darkbluebg.png") repeat
+    background: #0f4583 url("./images/fwc_darkbluebg.png") repeat
 }
 
 .fi-pre-footer {
@@ -3619,7 +3619,7 @@
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        background-image: url("/assets/img/tournaments/17/2018/common/footer_left.png");
+        background-image: url("./images/footer_left.png");
         height: 184px;
         width: 379px;
         left: -180px
@@ -3633,7 +3633,7 @@
         -moz-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
-        background-image: url("/assets/img/tournaments/17/2018/common/footer_right.png");
+        background-image: url("./images/footer_right.png");
         height: 211px;
         width: 372px;
         right: -180px
@@ -4144,7 +4144,7 @@ html[lang="ru-RU"] #fwc2018 .fi-sponsor__image--russianrailways {
 }
 
 .top-content-carousel--preview .fi-o-media-object__top-content {
-    background: #f1ebe3 url("/assets/img/tournaments/17/2018/common/fwc_pearlbg.png") repeat
+    background: #f1ebe3 url("./images/fwc_pearlbg.png") repeat
 }
 
 .top-content-carousel--preview__dots {
@@ -4978,7 +4978,7 @@ html[lang="ru-RU"] #fwc2018 .fi-sponsor__image--russianrailways {
         display: block;
         position: absolute;
         bottom: 0;
-        background-image: url("/assets/img/tournaments/17/2018/common/header_left.png");
+        background-image: url("./images/header_left.png");
         height: 130px;
         width: 260px;
         left: -260px
@@ -4988,7 +4988,7 @@ html[lang="ru-RU"] #fwc2018 .fi-sponsor__image--russianrailways {
         display: block;
         position: absolute;
         bottom: 0;
-        background-image: url("/assets/img/tournaments/17/2018/common/header_right.png");
+        background-image: url("./images/header_right.png");
         height: 130px;
         width: 130px;
         right: -210px
