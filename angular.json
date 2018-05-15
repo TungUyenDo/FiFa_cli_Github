@@ -32,8 +32,7 @@
               "./node_modules/jquery/dist/jquery.min.js",
               "./src/assets/libs/slick-1.8.0/slick/slick.min.js",
               "./src/assets/root_scripts/vendor/requirejs/require-2.2.0.min2b53.js",
-              "./src/assets/root_scripts/modules/countdown5f65.js"
-              
+              "./src/assets/root_scripts/modules/countdown5f65.js"              
             ]
           },
           "configurations": {

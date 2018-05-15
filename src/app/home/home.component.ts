@@ -100,41 +100,45 @@ export class HomeComponent implements OnInit {
 
 
       // //slider groups
-      // let slider_groups = (<any>$)(".owl-carousel-groups").slick({
-      //   slidesToShow: 8,
-      //   infinite: false,
-      //   arrows:true,
-      //   rows: 2,
-      //   // draggable: true,
-      //   // variableWidth: true,
-      //   responsive: [
-      //     {
-      //       breakpoint: 1024,
-      //       settings: {
-      //         slidesToShow: 8,
-      //         dots:false,
-              
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 768,
-      //       settings: {
-      //         slidesToShow: 2,
-      //       }
-      //     },
-      //     {
-      //       breakpoint: 0,
-      //       settings: {
-      //         slidesToShow: 1,
-      //       }
-      //     }
-      //     // You can unslick at a given breakpoint now by adding:
-      //     // settings: "unslick"
-      //     // instead of a settings object
-      //   ],
-      //   prevArrow:$('.owl-carousel-groups_prev'),
-      //   nextArrow:$('.owl-carousel-groups_next'),
-      // });
+      let slider_groups = (<any>$)(".slider-groups").slick({
+        slidesToShow: 4,
+        infinite: false,
+        arrows:true,
+        dots:false,
+        rows:2,
+        margin:'10px',
+        slidesPerRow: 1,
+        draggable: true,
+        swipeToSlide: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 8,
+              rows: 2,
+            }
+          },
+          {
+            breakpoint: 768,
+            settings: {
+              slidesToShow: 2,
+              rows:1
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              rows:1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ],
+        prevArrow:$('.slider-groups_prev'),
+        nextArrow:$('.slider-groups_next'),
+      });
 
       
   }

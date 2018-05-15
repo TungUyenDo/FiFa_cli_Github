@@ -119,3 +119,14 @@
 .slick-dotted.slick-slider {
     margin-bottom: 0 !important; 
 }
+
+.slider-groups{
+    /* the slides */
+    .slick-slide {
+        margin: 10px;
+    }
+    /* the parent */
+    .slick-list {
+        margin: -10px;
+    }
+}

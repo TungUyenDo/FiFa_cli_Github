@@ -883,8 +883,8 @@
     .fi-groups--hp .fi-t__n {
         padding-left: 10px
     }
-    .fi-groups--hp .fi-groups .col-xs-12,
-    .fi-groups--hp .fi-groups .col-xs-12>a,
+    .fi-groups--hp .fi-groups .item,
+    .fi-groups--hp .fi-groups .item>a,
     .fi-groups--hp .fi-groups__group {
         height: 330px
     }
