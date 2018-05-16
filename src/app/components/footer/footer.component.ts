@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import * as $ from 'jquery';
 
-declare var $: any;
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -12,14 +10,6 @@ export class FooterComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-      $('.fi-select__languages').click(function(e){
-          e.preventDefault();
-          $('.dropdown-menu').toggleClass('active')
-      })
-
-      // $('body').click(function(){
-      //     $('.dropdown-menu').removeClass('active')
-      // })
   }
 
 }

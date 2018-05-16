@@ -130,3 +130,51 @@
         margin: -10px;
     }
 }
+
+
+
+.owl__custom{
+    .item{
+        background-color: #f1ebe3;
+    }
+    .item__thumb{
+        display: block;
+        position: relative;
+        overflow: hidden;
+        .item__image{
+            display: block;
+            max-width: 100%;
+            height: auto;
+            transition: transform .3s ease;
+            transform: scale(1.01) translate3d(0, 0, 0);
+            &:focus, &:hover{
+                transform: scale(1.03) translate3d(0, 0, 0);
+            }
+           
+        }
+    }   
+    
+    .item__body{
+        min-height: 290px;
+        .item__roofline{
+            background-color: #0f4583;
+            display: inline-block;
+            text-transform: uppercase;
+            color: #fff;
+            font-size: 12px;
+            padding: 4px 8px;
+            margin: 6%;
+            font-style: normal;
+            font-weight: 700;
+        }
+        .item__title{
+            margin: 0 6%;
+            font-size: 21px;
+            line-height: 1.1;
+        }
+        .item__more{
+            margin: 6%;
+            font-size: 14px;
+        }
+    }
+}
