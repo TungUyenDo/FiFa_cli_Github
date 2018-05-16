@@ -9,6 +9,31 @@
             <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
                 <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
             </symbol>
+
+        </defs>
+    </svg>
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
+            </symbol>
+
+            <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
+            </symbol>
+        </defs>
+    </svg>
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
+            </symbol>
+
+            <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
+            </symbol>
         </defs>
     </svg>
     <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1">
@@ -105,48 +130,127 @@
             ;
         </defs>
     </svg>
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+        <defs>
+            <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
+            </symbol>
 
+            <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
+                <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
+            </symbol>
+
+
+
+        </defs>
+    </svg>
 
 </section>
+
+<!-- font awesome -->
+
 <app-header></app-header>
 <div class="content-wrap fi-basic-template">
     <div class="fi-boxed-page">
        
-        <div class="fi-top-content">
-            <div class="owl__custom owl-top-page">
-                <owl-carousel 
-                    [options]="carouselTopOptions"
-                    [items]="data_news_link_string"
-                    [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                    <div class="item" *ngFor="let item of data_news_link_string">
-                            <img class="item__image" [src]="item.img_url" alt="">
-                    </div>
-                </owl-carousel>
-            </div>
-            
-
-            <!-- <div class="top-content-carousel-wrap">
-                
-                <div class="fi-o-media-object__top-content ">
-                    <a data-src="" class="fi-o-media-object__link">
-                        <div class="container-fluid">
-                            <div class="fi-o-media-object__body">
-                                <p class="d3-o-media-object__roofline fi-o-media-object__roofline">FIFA World Cup Bracket Challenge by Wanda</p>
-
-                                <h1 class="d3-o-media-object__title fi-o-media-object__title">
-                                    Take the FIFA World Cup Bracket Challenge
-                                </h1>
+        <div class="fi-top-content" data-asset="top-carousel">
+            <div class="top-content-carousel-wrap">
+                <div class="owl-carousel owl-theme top-content-carousel--nobrand">
+        
+                    <div class="fi-o-media-object__top-content ">
+                        <a data-src="" class="fi-o-media-object__link">
+                            <figure class="fi-o-media-object__figure fi-o-media-object__top-content__mask">
+                                <div class="fi-top-content__mask--nobrand">
+                                    <!-- <script src="./CompiledAssets/js/vendor/lazysizes/lazysizes.min2a2a.js" type="text/javascript"></script> -->
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source data-srcset="../../../assets/images/slider.jpg" media="(min-width: 1200px)" />
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img data-src="../../../assets/images/slider.jpg" onerror="setDefaultPicture(this,'t_tc1', 't_tc1', 't_l2', 't_s2');" class="img-responsive lazyload"
+                                        />
+                                    </picture>
+        
+                                </div>
+                                <picture class="fi-top-content__mask--ie--nobrand">
+                                    <img src="../../../assets/images/slider.jpg" class="image-r image-responsive" />
+                                </picture>
+                            </figure>
+                            <div class="container-fluid">
+                                <div class="fi-o-media-object__body">
+                                    <p class="d3-o-media-object__roofline fi-o-media-object__roofline">FIFA World Cup Bracket Challenge by Wanda</p>
+        
+                                    <h1 class="d3-o-media-object__title fi-o-media-object__title">
+                                        Take the FIFA World Cup Bracket Challenge
+                                    </h1>
+                                </div>
                             </div>
-                        </div>
-                    </a>
-
+                        </a>
+                    </div>
+                    <div class="fi-o-media-object__top-content ">
+                        <a href="news/y%3d2018/m%3d4/news%3dvoting-now-open-you-decide-the-team-bus-slogans.html" data-src="" class="fi-o-media-object__link">
+                            <figure class="fi-o-media-object__figure fi-o-media-object__top-content__mask">
+                                <div class="fi-top-content__mask--nobrand">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source data-srcset="../../../assets/images/slider.jpg" media="(min-width: 1200px)" />
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img data-src="../../../assets/images/j8wcb7kfq94utqfes09p.jpg" onerror="setDefaultPicture(this,'t_tc1', 't_tc1', 't_l2', 't_s2');"
+                                            class="img-responsive lazyload" />
+                                    </picture>
+        
+                                </div>
+                                <picture class="fi-top-content__mask--ie--nobrand">
+                                    <img src="../../../assets/images/slider.jpg" class="image-r image-responsive" />
+                                </picture>
+                            </figure>
+                            <div class="container-fluid">
+                                <div class="fi-o-media-object__body">
+                                    <p class="d3-o-media-object__roofline fi-o-media-object__roofline">Be There With Hyundai Contest</p>
+        
+                                    <h1 class="d3-o-media-object__title fi-o-media-object__title">
+                                        Voting now open! You decide the Team Bus slogans&#160;
+                                    </h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="fi-o-media-object__top-content ">
+                        <a href="news/y%3d2018/m%3d4/news%3dtorres-i-enjoy-the-big-moments-a-lot.html" data-src="" class="fi-o-media-object__link">
+                            <figure class="fi-o-media-object__figure fi-o-media-object__top-content__mask">
+                                <div class="fi-top-content__mask--nobrand">
+                                    <picture>
+                                        <!--[if IE 9]><video style="display: none;"><![endif]-->
+                                        <source data-srcset="../../../assets/images/slider.jpg" media="(min-width: 1200px)" />
+                                        <!--[if IE 9]></video><![endif]-->
+                                        <img data-src="../../../assets/images/q7hdhh5m98ppni2mgrfc.jpg" onerror="setDefaultPicture(this,'t_tc1', 't_tc1', 't_l2', 't_s2');"
+                                            class="img-responsive lazyload" />
+                                    </picture>
+        
+                                </div>
+                                <picture class="fi-top-content__mask--ie--nobrand">
+                                    <img src="../../../assets/images/slider.jpg" class="image-r image-responsive" />
+                                </picture>
+                            </figure>
+                            <div class="container-fluid">
+                                <div class="fi-o-media-object__body">
+                                    <p class="d3-o-media-object__roofline fi-o-media-object__roofline">Russia 2018</p>
+        
+                                    <h1 class="d3-o-media-object__title fi-o-media-object__title">
+                                        Torres: I enjoy the big moments a lot
+                                    </h1>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+        
                 </div>
                 <div class="top-content-carousel__nav__prev top-content-carousel--nobrand__nav__prev ">
                     <span>
                         <svg class="fi-svg-icon ">
                             <use xlink:href="#icon-carousel-left"></use>
                         </svg>
-
+        
                     </span>
                 </div>
                 <div class="top-content-carousel__nav__next top-content-carousel--nobrand__nav__next">
@@ -154,11 +258,11 @@
                         <svg class="fi-svg-icon ">
                             <use xlink:href="#icon-carousel-right"></use>
                         </svg>
-
+        
                     </span>
                 </div>
-
-            </div> -->
+        
+            </div>
         </div>
 
         <div data-type="deltatre-countdown" class="fi-countdown">
@@ -196,29 +300,29 @@
             </div>
         </div>
 
-        
+        <!-- group  -->
         <section class="section fi-groups--hp">
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
                         Groups
                     </h1>
-
+        
                 </header>
             </div>
-
+        
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
-
+        
                         <div class="box-content clearfix">
-
+        
                             <div class="row fi-groups fi-groups__carousel" data-container="groups-container">
                                 <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-groups" data-mobile="1" data-tablet="2" data-desktop="8">
                                     <div class="col-xs-12 col-md-3" data-group-id="275075">
                                         <a href="groups/group/275075/index.html" title="Group A">
                                             <div class="fi-groups__group">
-
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -229,18 +333,18 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group A</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43965">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/rus" alt="RUS" title="RUS" class="fi-RUS fi-flag--3"
                                                                 />
                                                             </div>
@@ -249,16 +353,16 @@
                                                                 <span class="fi-t__nTri">RUS</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43835">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/ksa" alt="KSA" title="KSA" class="fi-KSA fi-flag--3"
                                                                 />
                                                             </div>
@@ -267,13 +371,13 @@
                                                                 <span class="fi-t__nTri">KSA</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
                                                         <div class="fi-t fi-i--3 " data-team-id="43855">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/egy" alt="EGY" title="EGY" class="fi-EGY fi-flag--3"
                                                                 />
                                                             </div>
@@ -286,7 +390,7 @@
                                                     <div class="fi-groups__group__team">
                                                         <div class="fi-t fi-i--3 " data-team-id="43930">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/uru" alt="URU" title="URU" class="fi-URU fi-flag--3"
                                                                 />
                                                             </div>
@@ -303,8 +407,8 @@
                                     <div class="col-xs-12 col-md-3" data-group-id="275077">
                                         <a href="groups/group/275077/index.html" title="Group B">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -315,7 +419,7 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group B</h4>
                                                 </div>
@@ -323,7 +427,7 @@
                                                     <div class="fi-groups__group__team">
                                                         <div class="fi-t fi-i--3 " data-team-id="43963">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/por" alt="POR" title="POR" class="fi-POR fi-flag--3"
                                                                 />
                                                             </div>
@@ -336,7 +440,7 @@
                                                     <div class="fi-groups__group__team">
                                                         <div class="fi-t fi-i--3 " data-team-id="43969">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/esp" alt="ESP" title="ESP" class="fi-ESP fi-flag--3"
                                                                 />
                                                             </div>
@@ -347,10 +451,10 @@
                                                         </div>
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43872">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/mar" alt="MAR" title="MAR" class="fi-MAR fi-flag--3"
                                                                 />
                                                             </div>
@@ -359,13 +463,13 @@
                                                                 <span class="fi-t__nTri">MAR</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
                                                         <div class="fi-t fi-i--3 " data-team-id="43817">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/irn" alt="IRN" title="IRN" class="fi-IRN fi-flag--3"
                                                                 />
                                                             </div>
@@ -376,14 +480,14 @@
                                                         </div>
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275079">
                                         <a href="groups/group/275079/index.html" title="Group C">
                                             <div class="fi-groups__group">
-
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -394,19 +498,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group C</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43946">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/fra" alt="FRA" title="FRA" class="fi-FRA fi-flag--3"
                                                                 />
                                                             </div>
@@ -415,16 +519,16 @@
                                                                 <span class="fi-t__nTri">FRA</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43976">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/aus" alt="AUS" title="AUS" class="fi-AUS fi-flag--3"
                                                                 />
                                                             </div>
@@ -433,16 +537,16 @@
                                                                 <span class="fi-t__nTri">AUS</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43929">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/per" alt="PER" title="PER" class="fi-PER fi-flag--3"
                                                                 />
                                                             </div>
@@ -451,16 +555,16 @@
                                                                 <span class="fi-t__nTri">PER</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43941">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/den" alt="DEN" title="DEN" class="fi-DEN fi-flag--3"
                                                                 />
                                                             </div>
@@ -469,19 +573,19 @@
                                                                 <span class="fi-t__nTri">DEN</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275081">
                                         <a href="groups/group/275081/index.html" title="Group D">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -492,19 +596,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group D</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43922">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/arg" alt="ARG" title="ARG" class="fi-ARG fi-flag--3"
                                                                 />
                                                             </div>
@@ -513,16 +617,16 @@
                                                                 <span class="fi-t__nTri">ARG</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43951">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/isl" alt="ISL" title="ISL" class="fi-ISL fi-flag--3"
                                                                 />
                                                             </div>
@@ -531,16 +635,16 @@
                                                                 <span class="fi-t__nTri">ISL</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43938">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/cro" alt="CRO" title="CRO" class="fi-CRO fi-flag--3"
                                                                 />
                                                             </div>
@@ -549,16 +653,16 @@
                                                                 <span class="fi-t__nTri">CRO</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43876">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/nga" alt="NGA" title="NGA" class="fi-NGA fi-flag--3"
                                                                 />
                                                             </div>
@@ -567,19 +671,19 @@
                                                                 <span class="fi-t__nTri">NGA</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275083">
                                         <a href="groups/group/275083/index.html" title="Group E">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -590,19 +694,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group E</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43924">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/bra" alt="BRA" title="BRA" class="fi-BRA fi-flag--3"
                                                                 />
                                                             </div>
@@ -611,17 +715,17 @@
                                                                 <span class="fi-t__nTri">BRA</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43971">
                                                             <div class="fi-t__i ">
-
-                                                                <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3//sui" alt="SUI" title="SUI" class="fi-SUI fi-flag--3"
+        
+                                                                <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/sui" alt="SUI" title="SUI" class="fi-SUI fi-flag--3"
                                                                 />
                                                             </div>
                                                             <div class="fi-t__n">
@@ -629,16 +733,16 @@
                                                                 <span class="fi-t__nTri">SUI</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43901">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/crc" alt="CRC" title="CRC" class="fi-CRC fi-flag--3"
                                                                 />
                                                             </div>
@@ -647,16 +751,16 @@
                                                                 <span class="fi-t__nTri">CRC</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="1902465">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/srb" alt="SRB" title="SRB" class="fi-SRB fi-flag--3"
                                                                 />
                                                             </div>
@@ -665,19 +769,19 @@
                                                                 <span class="fi-t__nTri">SRB</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275085">
                                         <a href="groups/group/275085/index.html" title="Group F">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -688,19 +792,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group F</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43948">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/ger" alt="GER" title="GER" class="fi-GER fi-flag--3"
                                                                 />
                                                             </div>
@@ -709,16 +813,16 @@
                                                                 <span class="fi-t__nTri">GER</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43911">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/mex" alt="MEX" title="MEX" class="fi-MEX fi-flag--3"
                                                                 />
                                                             </div>
@@ -727,16 +831,16 @@
                                                                 <span class="fi-t__nTri">MEX</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43970">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/swe" alt="SWE" title="SWE" class="fi-SWE fi-flag--3"
                                                                 />
                                                             </div>
@@ -745,16 +849,16 @@
                                                                 <span class="fi-t__nTri">SWE</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43822">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/kor" alt="KOR" title="KOR" class="fi-KOR fi-flag--3"
                                                                 />
                                                             </div>
@@ -763,19 +867,19 @@
                                                                 <span class="fi-t__nTri">KOR</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275087">
                                         <a href="groups/group/275087/index.html" title="Group G">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -786,19 +890,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group G</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43935">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/bel" alt="BEL" title="BEL" class="fi-BEL fi-flag--3"
                                                                 />
                                                             </div>
@@ -807,16 +911,16 @@
                                                                 <span class="fi-t__nTri">BEL</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43914">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/pan" alt="PAN" title="PAN" class="fi-PAN fi-flag--3"
                                                                 />
                                                             </div>
@@ -825,16 +929,16 @@
                                                                 <span class="fi-t__nTri">PAN</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43888">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/tun" alt="TUN" title="TUN" class="fi-TUN fi-flag--3"
                                                                 />
                                                             </div>
@@ -843,16 +947,16 @@
                                                                 <span class="fi-t__nTri">TUN</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43942">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/eng" alt="ENG" title="ENG" class="fi-ENG fi-flag--3"
                                                                 />
                                                             </div>
@@ -861,19 +965,19 @@
                                                                 <span class="fi-t__nTri">ENG</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275089">
                                         <a href="groups/group/275089/index.html" title="Group H">
                                             <div class="fi-groups__group">
-
-
+        
+        
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
                                                     <defs>
                                                         <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -884,19 +988,19 @@
                                                     <path d="M306.762 11.818H305.075C75.47 11.818-22.661 320.351 36.85 435.575c46.85 90.745 180.012 81.882 268.436 171.36.422.422.422.633.422.633s0-.211.422-.633c88.634-89.479 221.796-80.615 268.435-171.36 59.934-115.224-38.198-423.757-267.803-423.757m20.259 539.827c-11.185 2.321-19.626 10.974-20.26 21.314 0 .422-.421.844-.843.844s-.844-.422-.844-.844c-.844-10.341-9.074-18.993-20.259-21.314-.422 0-.633-.423-.633-.845s.211-.844.633-.844c11.185-2.321 19.626-10.974 20.259-21.314 0-.422.422-.845.844-.845s.843.423.843.845c.845 10.13 9.075 18.993 20.26 21.314.422 0 .633.422.633.844s-.211.845-.633.845"
                                                         fill="url(#gradient)" width="612" height="792"></path>
                                                 </svg>
-
-
+        
+        
                                                 <div class="fi-groups__group__header">
                                                     <h4 class="fi-groups__group__header__title">Group H</h4>
                                                 </div>
                                                 <div class="fi-groups__group__teams">
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43962">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/pol" alt="POL" title="POL" class="fi-POL fi-flag--3"
                                                                 />
                                                             </div>
@@ -905,16 +1009,16 @@
                                                                 <span class="fi-t__nTri">POL</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43879">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/sen" alt="SEN" title="SEN" class="fi-SEN fi-flag--3"
                                                                 />
                                                             </div>
@@ -923,16 +1027,16 @@
                                                                 <span class="fi-t__nTri">SEN</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43926">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/col" alt="COL" title="COL" class="fi-COL fi-flag--3"
                                                                 />
                                                             </div>
@@ -941,16 +1045,16 @@
                                                                 <span class="fi-t__nTri">COL</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                     <div class="fi-groups__group__team">
-
-
-
+        
+        
+        
                                                         <div class="fi-t fi-i--3 " data-team-id="43819">
                                                             <div class="fi-t__i ">
-
+        
                                                                 <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-3/jpn" alt="JPN" title="JPN" class="fi-JPN fi-flag--3"
                                                                 />
                                                             </div>
@@ -959,23 +1063,23 @@
                                                                 <span class="fi-t__nTri">JPN</span>
                                                             </div>
                                                         </div>
-
-
+        
+        
                                                     </div>
                                                 </div>
-
+        
                                             </div>
                                         </a>
                                     </div>
                                 </div>
                                 <div class="fi-groups__arrow fi-groups__arrow--left fi-groups__arrow--disabled ">
-
+        
                                     <span aria-label="Previous">
                                         Previous
                                     </span>
                                 </div>
                                 <div class="fi-groups__arrow fi-groups__arrow--right">
-
+        
                                     <span aria-label="Next">
                                         Next
                                     </span>
@@ -1005,17 +1109,17 @@
                                         </span>
                                     </a>
                                 </div>
-
+        
                             </div>
                         </div>
                     </div>
-
+        
                 </div>
             </div>
-
+        
         </section>
 
-
+        <!-- news -->
         <section class="section">
             <div class="container-fluid">
                 <header class="section__header">
@@ -1053,151 +1157,82 @@
                                     <div class="item__more">
                                         <a class="item__link" href="#/" target="_self">
                                         <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
-                                        <span class="item__more__label">Start playing</span></a>
+                                        <span class="item__more__label">Read More</span></a>
                                     </div>
                                 </div>
                                 
                             </div>
                         </owl-carousel>
+                        <div class="fi__nav--news-next ">
+                            <svg class="fi-svg-icon ">
+                                <use xlink:href="#icon-carousel-left"></use>
+                            </svg>
+                        </div>
+                        <div class="fi__nav--news-prev">
+                            <svg class="fi-svg-icon ">
+                                <use xlink:href="#icon-carousel-right"></use>
+                            </svg>
+                        </div>
                     </div>
                     
                 </div>
             </div>
         
-            <!-- <div class="container-fluid">
-                <div class="fi-module-latest-news__carousel">
-                        <owl-carousel
-                            [options]="{items: 3, dots: false, navigation: false}"
-                            [items]="data_news_link_string"
-                            [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of data_news_link_string">
-                                <div class="d3-o-media-object--vertical fi-o-media-object__teaser">
-                                    <figure class="d3-o-media-object__figure fi-o-media-object__figure">
-                                        <a href="#" class="fi-o-media-object__link">
-                                            <picture>
-                                            
-                                            <img [src]="item.img_url" class="img-responsive " />
-                                            </picture>
-                        
-                                        </a>
-                                    </figure>
-                                    <div class="d3-o-media-object__body fi-o-media-object__body">                                    
-                                        <p class="d3-o-media-object__roofline fi-o-media-object__roofline">FIFA World Cup</p>   
-                                        <a href="#" target="_self" class="fi-o-media-object__link">
-                                            <h3 class="d3-o-media-object__title fi-o-media-object__title">{{item.title}}y</h3>
-                                        </a>
-                                        <div class="fi-o-media-object__more">
-                                            <a href="#" target="_self" class="fi-o-media-object__link">
-                                                <svg class="fi-svg-icon icon-triangle">
-                                                    <use xlink:href="#icon-triangle"></use>
-                                                </svg>
-                                                <span class="fi-o-media-object__more__label">Read more</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            </owl-carousel>
-                        
-                    <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--left fi-module-latest-news__arrow--disabled ">
-                        <svg class="fi-svg-icon ">
-                            <use xlink:href="#icon-carousel-left"></use>
-                        </svg>
-        
-                    </span>
-                    <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--right">
-                        <svg class="fi-svg-icon ">
-                            <use xlink:href="#icon-carousel-right"></use>
-                        </svg>
-        
-                    </span>
-                </div>
-            </div> -->
-            
-            
-        
         </section>
+
+        <!-- Focus -->
         <section class="section">
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
                         Focus on
                     </h1>
-        
                 </header>
             </div>
         
             <div class="container-fluid">
         
         
-        
-        
-                <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
-                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                    <defs>
-                        <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
-                            <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
-                        </symbol>
-        
-                        <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
-                            <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
-                        </symbol>
-        
-        
-        
-                    </defs>
-                </svg>
-        
-        
                 <div class="container-fluid no-padding">
-        
-        
-                    <div class="fi-module-latest-news__carousel">
-                        <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-news" data-mobile="1" data-tablet="3" data-desktop="4">
-                            <div class="d3-o-media-object--vertical fi-o-media-object__teaser" data-asset=news-post>
-                                <figure class="d3-o-media-object__figure fi-o-media-object__figure">
-                                    <a href="https://bracketchallenge.fifa.com/" class="fi-o-media-object__link">
-        
-                                        <picture>
-                                            <img src="../../assets/images/news_Demo.jpg" onerror="setDefaultPicture(this,'t_s4', 't_s4', 't_s3', 't_s3');"
-                                                class="img-responsive " />
-                                        </picture>
-        
+                    <div class="row">
+                        <div class="owl__custom owl_focus">
+                            <owl-carousel [options]="carouselForCusOptions" [items]="data_news_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                                <div class="item" *ngFor="let item of data_news_link_string">
+                                    <a href="#" class="item__thumb">
+                                        <img class="item__image" [src]="item.img_url" alt="">
                                     </a>
-                                </figure>
-                                <div class="d3-o-media-object__body fi-o-media-object__body">
-                                    <span data-sponsor=""></span>
-                                    <p class="d3-o-media-object__roofline fi-o-media-object__roofline">FIFA World Cup Bracket Challenge By Wanda</p>
-        
-                                    <a href="https://bracketchallenge.fifa.com/" target="_self" class="fi-o-media-object__link">
-                                        <h3 class="d3-o-media-object__title fi-o-media-object__title">Play FIFA World Cup™ Bracket Challenge</h3>
-        
-                                    </a>
-                                    <div class="fi-o-media-object__more">
-                                        <a href="https://bracketchallenge.fifa.com/" target="_self" class="fi-o-media-object__link">
-                                            <svg class="fi-svg-icon icon-triangle">
-                                                <use xlink:href="#icon-triangle"></use>
-                                            </svg>
-        
-                                            <span class="fi-o-media-object__more__label">Start playing</span>
-                                        </a>
+                        
+                                    <div class="item__body">
+                                        <div class="item__roofline">RUSSIA</div>
+                                        <h3 class="item__title">{{item.title}}</h3>
+                                        <div class="item__more">
+                                            <a class="item__link" href="#/" target="_self">
+                                                <svg class="fi-svg-icon icon-triangle">
+                                                    <use xlink:href="#icon-triangle"></use>
+                                                </svg>
+                                                <span class="item__more__label">Read More</span>
+                                            </a>
+                                        </div>
                                     </div>
+                        
                                 </div>
-                            </div>
+                            </owl-carousel>
                             
+                            <div  class="fi__nav--forcus-next">
+                                <span>
+                                    <svg class="fi-svg-icon ">
+                                        <use xlink:href="#icon-carousel-left"></use>
+                                    </svg>
+                                </span>
+                            </div>
+                            <div class="fi__nav--forcus-prev">
+                                <span>
+                                    <svg class="fi-svg-icon ">
+                                        <use xlink:href="#icon-carousel-right"></use>
+                                    </svg>
+                                </span>
+                            </div>
                         </div>
-                        <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--left fi-module-latest-news__arrow--disabled ">
-                            <svg class="fi-svg-icon ">
-                                <use xlink:href="#icon-carousel-left"></use>
-                            </svg>
-        
-                        </span>
-                        <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--right">
-                            <svg class="fi-svg-icon ">
-                                <use xlink:href="#icon-carousel-right"></use>
-                            </svg>
-        
-                        </span>
                     </div>
                 </div>
         
@@ -1205,6 +1240,7 @@
         
         </section>
 
+        <!-- photo and videos -->
         <section class="section fi-module-latest-photos">
             <div class="container-fluid">
                 <header class="section__header">
@@ -1233,25 +1269,6 @@
             </div>
 
 
-
-
-
-            <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                    <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
-                        <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
-                    </symbol>
-
-                    <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
-                        <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
-                    </symbol>
-
-
-
-                </defs>
-            </svg>
-
             <div class="fi-fixed-media">
                 <span class="fi-fixed-media__btn fi-fixed-media__btn--prev">
                     <svg viewBox="0 0 29 81" width="100%" height="100%">
@@ -1276,13 +1293,7 @@
                                     <span class="fmi__image">
                                         <!-- <script src="./CompiledAssets/js/vendor/lazysizes/lazysizes.min2a2a.js" type="text/javascript"></script> -->
                                         <picture>
-                                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                            <source data-srcset="../../assets/images/pavqjqmqufrblbmagjf7.jpg" media="(min-width: 1200px)" />
-                                            <source data-srcset="../../assets/images/pavqjqmqufrblbmagjf7.jpg" media="(min-width: 1024px)" />
-                                            <source data-srcset="../../assets/images/pavqjqmqufrblbmagjf7.jpg" media="(min-width: 768px)" />
-                                            <source data-srcset="../../assets/images/pavqjqmqufrblbmagjf7.jpg" media="(min-width: 320px)" />
-                                            <!--[if IE 9]></video><![endif]-->
-                                            <img data-src="../../assets/images/pavqjqmqufrblbmagjf7.jpg" onerror="setDefaultPicture(this,'t_s2', 't_s3', 't_s3', 't_s3');"
+                                            <img data-src="../../assets/images/pavqjqmqufrblbmagjf7.jpg"
                                                 class="img-responsive lazyload" />
                                         </picture>
 
@@ -1840,87 +1851,45 @@
                 </header>
             </div>
 
-            <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1" class="fi-module-ranking__ranking__item__arrow"
-                xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                <defs>
-                    <symbol id="icon-carousel-right" viewbox="0 0 29 81" width="100%" height="100%">
-                        <polyline points="2 2 27.4964571 41.084824 2 79.0694571"></polyline>
-                    </symbol>
+            
 
-                    <symbol id="icon-carousel-left" viewbox="0 0 29 81" width="100%" height="100%">
-                        <polyline points="27 79.0694571 1.5035429 41.084824 27 2 27 2"></polyline>
-                    </symbol>
-
-                </defs>
-            </svg>
-
-            <div class="container-fluid no-padding" data-asset="timeline-carousel">
-
-
-                <div class="fi-module-timeline__carousel" data-startingpos="22">
-                    <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-news" data-mobile="1" data-tablet="3" data-desktop="4">
-                       
-                        <div class="d3-o-media-object--vertical fi-o-media-object__teaser">
-                            <div class="fi-module-timeline__comp">
-
-                                <figure class="d3-o-media-object__figure fi-o-media-object__figure">
-                                    <a href="archive/italy1934/index.html" class="fi-o-media-object__link">
-
-                                        <picture>
-                                            <!--[if IE 9]><video style="display: none;"><![endif]-->
-                                            <!-- <source data-srcset="../../assets/images/cftnjkkngglz7dqmahhd.jpg" media="(min-width: 1200px)" />
-                                            <source data-srcset="../../assets/images/cftnjkkngglz7dqmahhd.jpg" media="(min-width: 1024px)" />
-                                            <source data-srcset="../../assets/images/cftnjkkngglz7dqmahhd.jpg" media="(min-width: 768px)" />
-                                            <source data-srcset="../../assets/images/cftnjkkngglz7dqmahhd.jpg" media="(min-width: 320px)" /> -->
-                                            <!--[if IE 9]></video><![endif]-->
-                                            <img data-src="../../assets/images/cftnjkkngglz7dqmahhd.jpg" onerror="setDefaultPicture(this,'t_s4', 't_s4', 't_s3', 't_s3');"
-                                                class="img-responsive lazyload" />
-                                        </picture>
-
-                                    </a>
-                                </figure>
-
-                                <div class="fi-module-timeline__comp__emblem">
-                                    <span class="fi-module-timeline__comp__emblem__logo">
-                                        <img src="../../assets/images/2018fwc_p_adidas_box_png" />
-                                    </span>
-                                </div>
-
-                            </div>
-                            <div class="d3-o-media-object__body fi-o-media-object__body">
-
-                                <p class="d3-o-media-object__roofline fi-o-media-object__roofline">Italy 1934</p>
-
-                                <a href="archive/italy1934/index.html" class="fi-o-media-object__link">
-                                    <h3 class="d3-o-media-object__title fi-o-media-object__title">Delight for the Azzurri as home advantage tells</h3>
-
+            <div class="container-fluid">
+                <div class="row">
+                    <!-- You can use owl-carousel selector to include its component -->
+                    <div class="owl__custom owl_news">
+                        <owl-carousel [options]="carouselTimelineOptions" [items]="data_news_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                            <div class="item" *ngFor="let item of data_news_link_string">
+                                <a href="#" class="item__thumb">
+                                    <img class="item__image" [src]="item.img_url" alt="">
                                 </a>
-
-                                <div class="fi-o-media-object__more">
-                                    <a href="archive/italy1934/index.html" target="_self" class="fi-o-media-object__link">
-                                        <svg class="fi-svg-icon icon-triangle">
-                                            <use xlink:href="#icon-triangle"></use>
-                                        </svg>
-
-                                        <span class="fi-o-media-object__more__label">Italy 1934</span>
-                                    </a>
+            
+                                <div class="item__body">
+                                    <div class="item__roofline">RUSSIA</div>
+                                    <h3 class="item__title">{{item.title}}</h3>
+                                    <div class="item__more">
+                                        <a class="item__link" href="#/" target="_self">
+                                            <svg class="fi-svg-icon icon-triangle">
+                                                <use xlink:href="#icon-triangle"></use>
+                                            </svg>
+                                            <span class="item__more__label">Read More</span>
+                                        </a>
+                                    </div>
                                 </div>
-
-
+            
                             </div>
+                        </owl-carousel>
+                        <div class="fi__nav--timeline-next ">
+                            <svg class="fi-svg-icon ">
+                                <use xlink:href="#icon-carousel-left"></use>
+                            </svg>
+                        </div>
+                        <div class="fi__nav--timeline-prev">
+                            <svg class="fi-svg-icon ">
+                                <use xlink:href="#icon-carousel-right"></use>
+                            </svg>
                         </div>
                     </div>
-                    <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--left">
-                        <svg class="fi-svg-icon ">
-                            <use xlink:href="#icon-carousel-left"></use>
-                        </svg>
-
-                    </span>
-                    <span class="fi-module-latest-news__arrow fi-module-latest-news__arrow--right fi-module-latest-news__arrow--disabled">
-                        <svg class="fi-svg-icon ">
-                            <use xlink:href="#icon-carousel-right"></use>
-                        </svg>
-                    </span>
+            
                 </div>
             </div>
         </section>

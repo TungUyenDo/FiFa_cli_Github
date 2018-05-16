@@ -1,7 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-/* You can add global styles to this file, and also import other style files */
-
+// @import "~owl.carousel/dist/assets/owl.carousel.css";
+// @import "~owl.carousel/dist/assets/owl.theme.default.css";
 @font-face {
     font-family: "Open Sans";
     src: url("./assets/fonts/OpenSans-Light-complete.eot");
@@ -87,40 +87,11 @@
     }
 }
 
-.slider-custom {
-    .slick-dots {
-        bottom: 8px !important;
-        li {
-            button {
-                border: 0 !important;
-                border-radius: 0;
-                height: 14px;
-                width: 14px;
-                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2226px%22%20height%3D%2226px%22%3E%23%3Cpath%20fill%3D%22transparent%22%20stroke%3D%22%23fff%22%20stroke-width%3D%222%22%20style%3D%22%22%20d%3D%22M13.487 25.566c1.305-6.654 6.251-11.615 12.039-12.074a.498.498 0 0 0 .479-.495.537.537 0 0 0-.469-.515c-5.803-.443-10.764-5.41-12.049-12.09A.501.501 0 0 0 13.008 0a.501.501 0 0 0-.495.398C11.208 7.063 6.262 12.034.464 12.487a.516.516 0 0 0-.464.495.531.531 0 0 0 .474.515c5.783.434 10.734 5.415 12.029 12.075.051.254.25.408.489.428.235-.015.459-.179.495-.434%22%20%2F%3E%3C%2Fsvg%3E");
-                background-size: cover;
-                margin: 5px;
-                display: block;
-                -webkit-backface-visibility: visible;
-                transition: opacity 200ms ease;
-                &:before {
-                    content: ''
-                }
-            }
-            &.slick-active,
-            &:hover {
-                button {
-                    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2226px%22%20height%3D%2226px%22%3E%23%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22transparent%22%20stroke-width%3D%220%22%20style%3D%22%22%20d%3D%22M13.487 25.566c1.305-6.654 6.251-11.615 12.039-12.074a.498.498 0 0 0 .479-.495.537.537 0 0 0-.469-.515c-5.803-.443-10.764-5.41-12.049-12.09A.501.501 0 0 0 13.008 0a.501.501 0 0 0-.495.398C11.208 7.063 6.262 12.034.464 12.487a.516.516 0 0 0-.464.495.531.531 0 0 0 .474.515c5.783.434 10.734 5.415 12.029 12.075.051.254.25.408.489.428.235-.015.459-.179.495-.434%22%20%2F%3E%3C%2Fsvg%3E") !important;
-                }
-            }
-        }
-    }
-}
-
 .slick-dotted.slick-slider {
-    margin-bottom: 0 !important; 
+    margin-bottom: 0 !important;
 }
 
-.slider-groups{
+.slider-groups {
     /* the slides */
     .slick-slide {
         margin: 10px;
@@ -131,32 +102,36 @@
     }
 }
 
-
-
-.owl__custom{
-    .item{
+.owl__custom {
+    &:hover {
+        .owl-nav {
+            button {
+                opacity: 1;
+            }
+        }
+    }
+    .item {
         background-color: #f1ebe3;
     }
-    .item__thumb{
+    .item__thumb {
         display: block;
         position: relative;
         overflow: hidden;
-        .item__image{
+        .item__image {
             display: block;
             max-width: 100%;
             height: auto;
             transition: transform .3s ease;
             transform: scale(1.01) translate3d(0, 0, 0);
-            &:focus, &:hover{
+            &:focus,
+            &:hover {
                 transform: scale(1.03) translate3d(0, 0, 0);
             }
-           
         }
-    }   
-    
-    .item__body{
+    }
+    .item__body {
         min-height: 290px;
-        .item__roofline{
+        .item__roofline {
             background-color: #0f4583;
             display: inline-block;
             text-transform: uppercase;
@@ -167,14 +142,87 @@
             font-style: normal;
             font-weight: 700;
         }
-        .item__title{
+        .item__title {
             margin: 0 6%;
             font-size: 21px;
             line-height: 1.1;
         }
-        .item__more{
+        .item__more {
             margin: 6%;
             font-size: 14px;
         }
+    } //owl-nav
+    .owl-nav {
+        margin-top: -10px !important;
+        .owl-nav .disabled {
+            opacity: 0 !important;
+        }
+        button {
+            border: none;
+            position: absolute !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 96% !important;
+            top: 0 !important;
+            background-color: rgba(255, 255, 255, 0.4) !important;
+            width: 100px !important;
+            transition: background .3s ease;
+            opacity: 0;
+            outline: none;
+            &.disabled {
+                opacity: 0;
+            }
+            svg {
+                position: absolute;
+                top: 50%;
+                margin-top: -50px;
+                stroke: #fff;
+                stroke-width: 3;
+                fill: none;
+                height: 100px;
+                left: 50%;
+                width: 30px;
+                margin-left: -15px;
+                transform: translateX(10px);
+                transition: all .3s ease .1s;
+            }
+            &.owl-next {
+                right: 0;
+            }
+            &.owl-prev {
+                left: 0;
+            }
+        }
+    } //owl-dots
+    .owl-dots {
+        bottom: 8px !important;
+        button {
+            border: 0 !important;
+            border-radius: 0;
+            height: 14px;
+            width: 14px;
+            background-color: transparent;
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2226px%22%20height%3D%2226px%22%3E%23%3Cpath%20fill%3D%22%23fff%22%20stroke%3D%22%230f4583%22%20stroke-width%3D%222%22%20style%3D%22%22%20d%3D%22M13.487 25.566c1.305-6.654 6.251-11.615 12.039-12.074a.498.498 0 0 0 .479-.495.537.537 0 0 0-.469-.515c-5.803-.443-10.764-5.41-12.049-12.09A.501.501 0 0 0 13.008 0a.501.501 0 0 0-.495.398C11.208 7.063 6.262 12.034.464 12.487a.516.516 0 0 0-.464.495.531.531 0 0 0 .474.515c5.783.434 10.734 5.415 12.029 12.075.051.254.25.408.489.428.235-.015.459-.179.495-.434%22%20%2F%3E%3C%2Fsvg%3E");
+            background-size: cover;
+            margin: 5px;
+            outline: none;
+            display: block;
+            -webkit-backface-visibility: visible;
+            transition: opacity 200ms ease;
+            span {
+                background: transparent !important
+            }
+            &:before {
+                content: ''
+            }
+            &.owl-dot.active,
+            &:hover {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20width%3D%2226px%22%20height%3D%2226px%22%3E%23%3Cpath%20fill%3D%22%230f4583%22%20stroke%3D%22transparent%22%20stroke-width%3D%220%22%20style%3D%22%22%20d%3D%22M13.487 25.566c1.305-6.654 6.251-11.615 12.039-12.074a.498.498 0 0 0 .479-.495.537.537 0 0 0-.469-.515c-5.803-.443-10.764-5.41-12.049-12.09A.501.501 0 0 0 13.008 0a.501.501 0 0 0-.495.398C11.208 7.063 6.262 12.034.464 12.487a.516.516 0 0 0-.464.495.531.531 0 0 0 .474.515c5.783.434 10.734 5.415 12.029 12.075.051.254.25.408.489.428.235-.015.459-.179.495-.434%22%20%2F%3E%3C%2Fsvg%3E");
+            }
+        }
     }
+}
+
+.fi-section-header__wrap{
+    max-width: 1200px !important;
 }

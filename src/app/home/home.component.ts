@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 // import {OwlCarousel} from 'ngx-owl-carousel';
 import { ApiServices } from "../app.services";
 
+import $ from 'jquery'
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -20,7 +22,8 @@ export class HomeComponent implements OnInit {
   }
 
   carouselNewsOptions:any;
-  carouselTopOptions:any;
+  carouselForCusOptions:any;
+  carouselTimelineOptions:any;
 
   constructor(private apiServices: ApiServices) { 
       
@@ -45,7 +48,7 @@ export class HomeComponent implements OnInit {
    
       this.carouselNewsOptions = {
         nav : true, 
-        dots: false, 
+        dots: true, 
         loop:false, 
         items:5, 
         margin:10,
@@ -55,17 +58,40 @@ export class HomeComponent implements OnInit {
 			    768: { items: 3, margin: 5, centerMode:true },
 			    1024: { items: 4, margin: 5 }
         },  
-        navText:["<i class='fa fa-chevron-circle-left' aria-hidden='true'>Next</i>","<i class='fa fa-chevron-circle-right' aria-hidden='true'>Prev</i>"],
+        navText: [$('.fi__nav--news-next'), $('.fi__nav--news-prev')]
       }
 
-      this.carouselTopOptions = {
+      this.carouselTimelineOptions = {
         nav : true, 
         dots: true, 
         loop:false, 
-        items:1,         
-        navText:["<i class='fa fa-chevron-circle-left' aria-hidden='true'>Next</i>","<i class='fa fa-chevron-circle-right' aria-hidden='true'>Prev</i>"],
+        items:5, 
+        margin:10,
+        responsive: {       
+          0: {  items: 1, margin: 5 },
+          480: {  items: 2, margin: 5 },
+			    768: { items: 3, margin: 5, centerMode:true },
+			    1024: { items: 4, margin: 5 }
+        },  
+        navText: [$('.fi__nav--timeline-next'), $('.fi__nav--timeline-prev')]
       }
-     
+
+      this.carouselForCusOptions = {
+        nav : true, 
+        dots: true, 
+        loop:false, 
+        items:5, 
+        margin:10,
+        responsive: {       
+          0: {  items: 1, margin: 5 },
+          480: {  items: 2, margin: 5 },
+			    768: { items: 3, margin: 5, centerMode:true },
+			    1024: { items: 4, margin: 5 }
+        },  
+        navText: [$('.fi__nav--forcus-next'), $('.fi__nav--forcus-prev')]
+      }
+
+  
   } 
 
 }

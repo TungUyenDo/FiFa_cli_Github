@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ApiServices } from "../app.services";
+
 
 @Component({
   selector: 'app-photos',
@@ -7,9 +9,30 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PhotosComponent implements OnInit {
 
-  constructor() { }
+
+  //data get news
+  get_photos: any = {
+    limit: 10,
+    page: 1
+  }
+  list_data_photo: any;
+  data_photo: any;
+
+  constructor(private apiServices: ApiServices) { }
 
   ngOnInit() {
+    this.GetPhotos();
+
   }
+
+  GetPhotos() {
+    console.log('news main page')
+    this.apiServices.getPhotos(this.get_photos).subscribe(res => {
+      this.list_data_photo = res;
+      console.log(this.list_data_photo)
+
+    })
+  }
+
 
 }

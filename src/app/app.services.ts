@@ -48,12 +48,13 @@ export class ApiServices {
 
     //get video
     public getVideos(data) {
+        console.log(data)
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
             'FB-API-KEY': 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
         });
-        return this.http.get(environment.pathUrlApi + "news/get-news?limit=" + data.limit + "&page=" + data.page, 
+        return this.http.get(environment.pathUrlApi + "news/get-videos?limit=" + data.limit + "&page=" + data.page, 
                 { headers: headers}
             )
             .pipe(
@@ -63,14 +64,15 @@ export class ApiServices {
                 catchError(this.handleError)
             );
     }
-    //get news
-    public get(data) {
+    //get photos
+    public getPhotos(data) {
+        console.log(data)
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
             'FB-API-KEY': 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
         });
-        return this.http.get(environment.pathUrlApi + "news/get-news?limit=" + data.limit + "&page=" + data.page, 
+        return this.http.get(environment.pathUrlApi + "news/get-photos?limit=" + data.limit + "&page=" + data.page, 
                 { headers: headers}
             )
             .pipe(
@@ -81,6 +83,7 @@ export class ApiServices {
             );
     }
 
+   
     //-------------------------error handle
     private handleError(error: Response | any) {
         console.error('ApiServices::handleError', error);

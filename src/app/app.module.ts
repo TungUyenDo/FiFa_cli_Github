@@ -11,8 +11,8 @@ import { HomeComponent } from './home/home.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { Footer1Component } from './components/footer-1/footer-1.component';
-import { Footer2Component } from './components/footer-2/footer-2.component';
+import { Footer1Component } from './components/footer1/footer1.component';
+import { Footer2Component } from './components/footer2/footer2.component';
 
 import { NewsComponent } from './news/news.component';
 import { NewsDetailComponent } from './news/news-detail/news-detail.component';
@@ -26,8 +26,6 @@ import { MatchesComponent } from './matches/matches.component';
 import { GroupsComponent } from './groups/groups.component';
 
 
-import { SharedModule} from "./share/share.module";
-
 import { ApiServices } from "./app.services";
 import { OwlModule } from 'ngx-owl-carousel'
 
@@ -38,22 +36,22 @@ import { OwlModule } from 'ngx-owl-carousel'
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
     FooterComponent,
+    Footer2Component,
+    Footer1Component,
     PhotosComponent,
     VideosComponent,
     TeamsComponent,
     DestinationComponent,
     MatchesComponent,
     GroupsComponent,
-    Footer2Component,
-    Footer1Component,
     NewsDetailComponent,
     NewsMainComponent,
     NewsComponent
   ],
   //import module parent 
   imports: [
-    SharedModule,
     BrowserModule,
     AppRouters,
     HttpModule,
