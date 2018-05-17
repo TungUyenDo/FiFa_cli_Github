@@ -1937,6 +1937,102 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="fi-geo-includer" data-geo-detect="/esicontent/js/geo_detection.js" data-geo-lib="/worldcup/_geolib/{country}/_sponsors" data-geo-fallback="nocountry" data-esi-country="
+                        VIE
+                        ">
+                        <div class="fi-sponsor-list--home" data-country="vie">
+                            <div class="fi-sponsor-list--fifa-tournament-sponsors">
+                                <h4 class="fi-sponsor-list__title">FIFA World Cup™ Sponsors</h4>
+                                <ul class="fi-sponsor-list">
+                                    <li data-sponsor="budweiser" class="fi-sponsor fi-sponsor__budweiser">
+                                        <a href="/worldcup/organisation/partners/" title="Budweiser" class="fi-sponsor__link">
+                                            <span class="fi-sponsor__image--budweiser"></span>
+                                        </a>
+                                    </li>
+                                    <li data-sponsor="hisense" class="fi-sponsor fi-sponsor__hisense">
+                                        <a href="/worldcup/organisation/partners/" title="Hisense" class="fi-sponsor__link">
+                                            <span class="fi-sponsor__image--hisense"></span>
+                                        </a>
+                                    </li>
+                                    <li data-sponsor="mcdonalds" class="fi-sponsor fi-sponsor__mcdonalds">
+                                        <a href="/worldcup/organisation/partners/" title="McDonald's" class="fi-sponsor__link">
+                                            <span class="fi-sponsor__image--mcdonalds"></span>
+                                        </a>
+                                    </li>
+                                    <li data-sponsor="mengniu" class="fi-sponsor fi-sponsor__mengniu">
+                                        <a href="/worldcup/organisation/partners/" title="Mengniu" class="fi-sponsor__link">
+                                            <span class="fi-sponsor__image--mengniu"></span>
+                                        </a>
+                                    </li>
+                                    <li data-sponsor="vivo" class="fi-sponsor fi-sponsor__vivo">
+                                        <a href="/worldcup/organisation/partners/" title="Vivo" class="fi-sponsor__link">
+                                            <span class="fi-sponsor__image--vivo"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script>
+                                (function () {
+                                var sponsors = document.querySelectorAll('.fi-sponsor-list li[data-sponsor]'), i = 0, l = sponsors.length, brands = [];
+                                for (i; i < l; i++) {
+                                    brands.push(sponsors[i].getAttribute('data-sponsor'));
+                                }
+                                digitalData.page.attributes.brand = [(digitalData.page.attributes.brand || ''), brands.join(',')].join(',');
+                                if (digitalData.page.attributes.brand.indexOf(',') === 0) {
+                                    digitalData.page.attributes.brand = digitalData.page.attributes.brand.substr(1);
+                                }
+                                }());
+                            </script>
+                        </div>
+                        <div class="fi-sponsor-list--home" data-country="vie">
+                            <div class="fi-sponsor-list--fifa-national-supporters">
+                                <h4 class="fi-sponsor-list__title">National Supporters</h4>
+                                <ul class="fi-sponsor-list">
+                                    <li data-sponsor="fifagfp" class="fi-sponsor fi-sponsor__fifagfp">
+                                    <a href="/worldcup/organisation/partners/" title="Fair Play" class="fi-sponsor__link">
+                                    <span class="fi-sponsor__image--fifagfp"></span>
+                                    </a>
+                                    </li>
+                                    <li data-sponsor="yadea" class="fi-sponsor fi-sponsor__yadea">
+                                    <a href="/worldcup/organisation/partners/" title="Yadea" class="fi-sponsor__link">
+                                    <span class="fi-sponsor__image--yadea"></span>
+                                    </a>
+                                    </li>
+                                    <li data-sponsor="fifa" class="fi-sponsor fi-sponsor__fifa">
+                                    <a href="/worldcup/organisation/partners/" title="FIFA.com" class="fi-sponsor__link">
+                                    <span class="fi-sponsor__image--fifa"></span>
+                                    </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <script>
+                                (function () {
+                                var sponsors = document.querySelectorAll('.fi-sponsor-list li[data-sponsor]'), i = 0, l = sponsors.length, brands = [];
+                                for (i; i < l; i++) {
+                                    brands.push(sponsors[i].getAttribute('data-sponsor'));
+                                }
+                                digitalData.page.attributes.brand = [(digitalData.page.attributes.brand || ''), brands.join(',')].join(',');
+                                if (digitalData.page.attributes.brand.indexOf(',') === 0) {
+                                    digitalData.page.attributes.brand = digitalData.page.attributes.brand.substr(1);
+                                }
+                                }());
+                            </script>
+                        </div>
+                        <div class="fi-sponsor-list--home" data-country="vie">
+                            <script>
+                                (function () {
+                                var sponsors = document.querySelectorAll('.fi-sponsor-list li[data-sponsor]'), i = 0, l = sponsors.length, brands = [];
+                                for (i; i < l; i++) {
+                                    brands.push(sponsors[i].getAttribute('data-sponsor'));
+                                }
+                                digitalData.page.attributes.brand = [(digitalData.page.attributes.brand || ''), brands.join(',')].join(',');
+                                if (digitalData.page.attributes.brand.indexOf(',') === 0) {
+                                    digitalData.page.attributes.brand = digitalData.page.attributes.brand.substr(1);
+                                }
+                                }());
+                            </script>
+                        </div>
+                        </div>
                 </div>
             </div>
         </section>

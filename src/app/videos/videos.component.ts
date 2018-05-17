@@ -16,7 +16,7 @@ export class VideosComponent implements OnInit {
   data_video: any;
 
   video_4Item : any;
-  video_3Item : any;
+  video_6Item : any;
 
   constructor(private apiServices: ApiServices) { }
 
@@ -34,32 +34,10 @@ export class VideosComponent implements OnInit {
 
       this.data_video = this.list_data_video.data.items
 
-      // this.data_video.forEach(function (value, key) {
-      //   // console.log(value, key);
-      //   while(key <= 4){
-      //     console.log(value)
-      //      console.log('key 4'); 
-      //   }
-
-      // });
-      console.log(this.video_4Item.length)
-      for( var i = 0; i<this.data_video.length;i++){
-
-        
-
-        // if(this.video_4Item.length != 4){
-        //   this.video_4Item.push(this.data_video[i])
-        //   console.log(this.video_4Item)
-        // }else{
-        //   this.video_3Item.push(this.data_video[i])
-        //   console.log(this.video_3Item)
-        // }
-       
-        
-      }
-
-
-
+      this.video_4Item = this.data_video.splice(0,4) //4 video first
+      this.video_6Item = this.data_video//6 video next
+      // console.log(this.video_4Item)
+      // console.log(this.video_6Item)
     })
   }
 

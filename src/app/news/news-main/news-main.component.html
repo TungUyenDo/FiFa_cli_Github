@@ -97,8 +97,8 @@
             
           </div>
           <div class="col-xs-12 fi-list__btn fi-navigation">
-            <a role="navigation" class="fi-btn" data-page="2" data-skip="20" onclick="require('paginate').init(event,this, '.fi-newslist');">
-              <span class="fi-btn__label">Next posts</span>
+            <a role="navigation" class="fi-btn" data-page="2" (click)="NextPosts__News(current_page)">
+              <span class="fi-btn__label">Next posts{{current_page}}</span>
             </a>
             <div class="fi-btn__progress">
               <div class="percent"></div>

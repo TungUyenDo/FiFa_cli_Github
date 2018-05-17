@@ -19,6 +19,8 @@ export class NewsMainComponent implements OnInit {
   data_news: any;
   data_news_link_string: any;
 
+  index : any;
+  current_page : any;
 
   constructor(private apiServices: ApiServices) {}
 
@@ -28,13 +30,17 @@ export class NewsMainComponent implements OnInit {
 
   }
 
+  NextPosts__News(index){
+      console.log(index)
+  };
+
   GetVideos(){
-      console.log('news main page')
       this.apiServices.getNews(this.get_news).subscribe(res => {
         this.data_news = res;
-
+        console.log(res);
         this.data_news_link_string = this.data_news.data.items;
-        console.log(this.data_news_link_string);
+        this.current_page = this.data_news.paginator.current_page;
+        
 
         this.data_news_link_string.forEach(element => {
 
