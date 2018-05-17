@@ -21,6 +21,7 @@ export class HomeComponent implements OnInit {
     page: 1
   }
 
+  carouselTopPage:any;
   carouselNewsOptions:any;
   carouselForCusOptions:any;
   carouselTimelineOptions:any;
@@ -77,18 +78,27 @@ export class HomeComponent implements OnInit {
       }
 
       this.carouselForCusOptions = {
-        nav : true, 
-        dots: true, 
-        loop:false, 
-        items:5, 
-        margin:10,
-        responsive: {       
-          0: {  items: 1, margin: 5 },
-          480: {  items: 2, margin: 5 },
-			    768: { items: 3, margin: 5, centerMode:true },
-			    1024: { items: 4, margin: 5 }
-        },  
-        navText: [$('.fi__nav--forcus-next'), $('.fi__nav--forcus-prev')]
+          nav : true, 
+          dots: true, 
+          loop:false, 
+          items:5, 
+          margin:10,
+          responsive: {       
+            0: {  items: 1, margin: 5 },
+            480: {  items: 2, margin: 5 },
+            768: { items: 3, margin: 5, centerMode:true },
+            1024: { items: 4, margin: 5 }
+          },  
+          navText: [$('.fi__nav--forcus-next'), $('.fi__nav--forcus-prev')]
+      }
+
+
+      this.carouselTopPage = {
+          nav : true, 
+          dots: true, 
+          loop:false, 
+          items:1, 
+          navText: [$('.fi__nav--Top-next'), $('.fi__nav--Top-prev')]
       }
 
   

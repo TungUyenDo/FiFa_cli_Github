@@ -36,69 +36,11 @@
                 </div>
               </div>
             </div>
-            <!-- <div class="adv-flex">
-              <div id="gpt-fi-adv-inpage-45776d0c-ce35-4ec3-b1f9-91a9d3d46b5c" class="fi-adv-placeholder fi-adv-leaderboard" data-google-query-id="CObnxrbfidsCFcmfaAodni4NgA">
-                <div id="google_ads_iframe_/8584/fifa.com/worldcup/news_0__container__" style="border: 0pt none;">
-                  <iframe id="google_ads_iframe_/8584/fifa.com/worldcup/news_0" title="3rd party ad content" name="google_ads_iframe_/8584/fifa.com/worldcup/news_0"
-                    width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" srcdoc="" style="border: 0px; vertical-align: bottom;"></iframe>
-                </div>
-              </div>
-              <script>
-                (function () {
-                  if (window.gTag) { return; }
-                  window.googletag = window.googletag || {};
-                  googletag.cmd = window.googletag.cmd || [];
-
-                  googletag.cmd.push(function () {
-                    googletag.pubads().setTargeting('site', ['en']);
-                  });
-                  var DBClickKeyValues = document.location.pathname.match(/[^/]*=[^/|^\.]*/gi);
-                  if (DBClickKeyValues != null) {
-                    DBClickKeyValues = DBClickKeyValues.toString();
-                    DBClickKeyValues = DBClickKeyValues.split(',');
-                    for (var i = 0; i != DBClickKeyValues.length; i++) {
-                      var key = DBClickKeyValues[i].split('=')[0];
-                      var value = DBClickKeyValues[i].split('=')[1];
-                      if (typeof value != 'undefined') {
-                        if (value.indexOf('-') !== -1) {
-                          value = value.split('-');
-                          value = value[value.length - 1];
-                        }
-                      } googletag.cmd.push(function () {
-                        googletag.pubads().setTargeting(key, [value]);
-                      });
-                    }
-                  }
-                  window.DBClickRefresh = function () {
-                    googletag.cmd.push(function () {
-                      googletag.pubads().refresh();
-                    });
-                  };
-                  (function () {
-                    function getCookie(n) { var c = document.cookie.match(new RegExp('(^|;)\\s*' + escape(n) + '=([^;\\s]*)')); return (c ? unescape(c[2]) : null); }
-                    googletag.cmd.push(function () {
-                      googletag.pubads().setTargeting('user', [((getCookie('FIFACom')) ? 'loggedin' : 'notloggedin')]);
-                      var adUnit = '';
-                      if (!adUnit) {
-                        adUnit = window.location.pathname.split('/').slice(0, -1).join('/');
-                      }
-                      window.advList = window.advList || {};
-                      window.advList['gpt-fi-adv-inpage-45776d0c-ce35-4ec3-b1f9-91a9d3d46b5c'] = {
-                        adUnit: '/8584/fifa.com' + adUnit,
-                        adSize: 'leaderboard'
-                      };
-                      window.gTag = true;
-                    });
-                  })();
-                })();
-
-              </script>
-            </div> -->
-            
+          
           </div>
           <div class="col-xs-12 fi-list__btn fi-navigation">
-            <a role="navigation" class="fi-btn" data-page="2" (click)="NextPosts__News(current_page)">
-              <span class="fi-btn__label">Next posts{{current_page}}</span>
+            <a role="navigation" class="fi-btn" [attr.data-page]="index" (click)="clickNextNewsPage()" [hidden]="end_page == index">
+              <span class="fi-btn__label">Next posts</span>
             </a>
             <div class="fi-btn__progress">
               <div class="percent"></div>

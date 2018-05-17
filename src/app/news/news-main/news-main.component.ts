@@ -18,36 +18,52 @@ export class NewsMainComponent implements OnInit {
   }
   data_news: any;
   data_news_link_string: any;
+  page_index: any;
 
-  index : any;
-  current_page : any;
+  index  = 1
+  array_news:any;
+
+  end_page :any
 
   constructor(private apiServices: ApiServices) {}
 
   ngOnInit() {
-    this.GetVideos();
+    this.array_news = [];
+    this.GetNews(this.array_news);
 
 
   }
 
-  NextPosts__News(index){
-      console.log(index)
-  };
+  clickNextNewsPage(){
+      //number page ++
+      this.index ++;
 
-  GetVideos(){
+      this.get_news.page  = this.index;
+
+      this.GetNews(this.array_news);
+
+  }
+
+
+  GetNews(arr){
+      this.data_news_link_string = arr;
       this.apiServices.getNews(this.get_news).subscribe(res => {
-        this.data_news = res;
-        console.log(res);
-        this.data_news_link_string = this.data_news.data.items;
-        this.current_page = this.data_news.paginator.current_page;
-        
+          this.data_news = res;
 
-        this.data_news_link_string.forEach(element => {
+          this.end_page = this.data_news.data.paginator.total_pages;
 
-          element.img_url = 'https://' + element.img_url;
-          // console.log(element);
-          return element;
-        });
+          // foreach and push element to array
+          this.data_news.data.items.forEach(ele => {
+                this.data_news_link_string.push(ele);
+
+                // foreach and add https for images
+                ele.img_url = 'https://' + ele.img_url;
+          })
+
+
+          this.array_news = this.data_news_link_string;
+          // console.log(this.data_news_link_string)
+
       })
   }
 

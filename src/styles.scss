@@ -60,7 +60,9 @@
 }
 
 /*# sourceMappingURL=fonts.css.map */
-
+[hidden]{
+    display: none !important
+}
 .ac-footer-2 {
     .fi-site-footer__language .fi-footer__language {
         padding: 0
@@ -130,8 +132,7 @@
         }
     }
     .item__body {
-        min-height: 230px;
-        font-family: "Open Sans";
+        min-height: 290px;
         .item__roofline {
             background-color: #0f4583;
             display: inline-block;
@@ -147,43 +148,10 @@
             margin: 0 6%;
             font-size: 21px;
             line-height: 1.1;
-            color: #2e2e2e;
         }
         .item__more {
             margin: 6%;
             font-size: 14px;
-            .item__links{
-                font-size: 14px;
-                &:hover{
-                    text-decoration: none;
-                    .fi-svg-icon{
-                        transform: translateX(2px);
-                        -webkit-transition-property: opacity transform;
-                        transition-property: opacity transform;
-                        -webkit-transition-duration: .2s;
-                        transition-duration: .2s;
-                        -webkit-transition-timing-function: ease-out;
-                        transition-timing-function: ease-out;
-                        backface-visibility: hidden;
-                    }
-                    .item_more_label{
-                        opacity: .5;
-                    }
-                }
-            }
-        
-            .item__more__label{
-                margin-left: 5px;
-                color: #474747;
-                -webkit-transition-property: opacity transform;
-                transition-property: opacity transform;
-                -webkit-transition-duration: .2s;
-                transition-duration: .2s;
-                -webkit-transition-timing-function: ease-out;
-                transition-timing-function: ease-out;
-                backface-visibility: hidden;
-
-            }
         }
     } //owl-nav
     .owl-nav {

@@ -1,6 +1,8 @@
+import { element } from 'protractor';
 import { Component, OnInit } from '@angular/core';
 import { ApiServices } from "../app.services";
 
+import { SlickComponent} from 'ngx-slick'
 
 @Component({
   selector: 'app-photos',
@@ -23,12 +25,16 @@ export class PhotosComponent implements OnInit {
   ngOnInit() {
     this.GetPhotos();
 
+
   }
 
   GetPhotos() {
     console.log('news main page')
     this.apiServices.getPhotos(this.get_photos).subscribe(res => {
-      this.list_data_photo = res;
+      this.data_photo = res;
+
+      this.list_data_photo = this.data_photo.data.items;
+
       console.log(this.list_data_photo)
 
     })

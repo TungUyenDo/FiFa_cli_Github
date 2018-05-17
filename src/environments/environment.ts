@@ -5,6 +5,8 @@
 export const environment = {
   production: false,
   pathUrlApi: "http://worldcup2018.acc-svrs.com/api/v1/worldcup/",
+  imgForWrongLink : 'https://i.pinimg.com/originals/ae/65/20/ae652081172e9499fda3e4780924e1b1.png'
+
 };
 
 /*
