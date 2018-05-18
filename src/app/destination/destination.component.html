@@ -110,437 +110,28 @@
         </div>
       </div>
       <div class="col-xs-6">
-        <div class="slider venues-wrapper mb-base editorial-slider venues-wrapper mb-base" data-itemsperpage="1" data-itemscount="11"
-          data-require="lang=en/slider" data-hasprevnextlabels="false" data-prevnextlabels-truncate="">
-          <div class="adv-overlay hidden"> </div>
-          <div class="slider-nav">
-            <div class="qlink-wrap">
-              <ul class="qlink-list">
-                <li class="qlink-link first slider-nav-elm nav-prev disabled">
-                  <div class="qlink-link-wrap">
-                    <a href="#">
-                      <span class="item"> </span>
-                    </a>
-                  </div>
-                </li>
-                <li class="qlink-link last slider-nav-elm nav-next">
-                  <div class="qlink-link-wrap">
-                    <a href="#">
-                      <span class="item"> </span>
-                    </a>
-                  </div>
-                </li>
-              </ul>
+        <div class="slider_venues-wrapper">          
+            <div class="owl-carousel slider-destination">
+              <div class="item" *ngFor="let item of data_news_link_string">
+                <img [src]="item.img_url" alt="">
+              </div>
+              <div class="arrow destination_navigate_left">
+                <span class="icon-arrow">
+                  <i class="icon-angle-left"></i>
+                </span>
+              </div>
+              <div class="arrow destination_navigate_right">
+                <span class="icon-arrow">
+                  <i class="icon-angle-right"></i>
+                </span>
+              </div>
+              
+              
             </div>
-          </div>
-          <div class="slider-wrap">
-            <ul class="slider-list items-1 have-slider-nav">
-              <!--1473935-->
-              <li class="noclick" paging-id="35122">
-                <h4 class="dcm-title">Ekaterinburg </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d35122/index.html">
-                    <img alt="Ekaterinburg" title="Ekaterinburg" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/77/1473877_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="1" ph-data-picture-id="1473935" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Ekaterinburg" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="Uniquely located on the geographical borderline of Europe and Asia, and at the foot of the Ural Mountains, Ekaterinburg has a population of 1.4 million."
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/77/1473877_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d35122/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5031304/index.html">Ekaterinburg Arena</a>
-                </div>
-              </li>
-              <!--1473947-->
-              <li class="noclick" paging-id="35137">
-                <h4 class="dcm-title">Kaliningrad </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d35137/index.html">
-                    <img alt="Kaliningrad" title="Kaliningrad" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/73/1473873_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="2" ph-data-picture-id="1473947" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Kaliningrad" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Founded in the 13th century by knights of the Teutonic Order and formerly known as Königsberg, the capital of East Prussia, Kaliningrad is home to over 459,000 people and an important Russian Baltic seaport and gateway to Europe.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/73/1473873_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d35137/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5000437/index.html">Kaliningrad Stadium</a>
-                </div>
-              </li>
-              <!--1473942-->
-              <li class="noclick" paging-id="73217">
-                <h4 class="dcm-title">Kazan </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d73217/index.html">
-                    <img alt="Kazan" title="Kazan" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/82/1473882_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="3" ph-data-picture-id="1473942" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Kazan" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="Kazan, one of the oldest Russian cities, has recently celebrated its millennium. The ancient walls of Kazan recall many dramatic events, including the historic siege by Ivan the Terrible in the 16th century."
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/82/1473882_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d73217/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5028773/index.html">Kazan Arena</a>
-                </div>
-              </li>
-              <!--1473945-->
-              <li class="noclick" paging-id="1559">
-                <h4 class="dcm-title">Moscow </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d1559/index.html">
-                    <img alt="Moscow" title="Moscow" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/79/1473879_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="4" ph-data-picture-id="1473945" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Moscow" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Founded in the 12th century, Moscow is the capital of the Russian Federation and one of the most renowned and fascinating cities in the world.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/79/1473879_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d1559/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper stadium-more">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5030706/index.html">Spartak Stadium</a>
-                </div>
-                <div class="stadium-wrapper stadium-more">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d810/index.html">Luzhniki Stadium</a>
-                </div>
-              </li>
-              <!--1473943-->
-              <li class="noclick" paging-id="35865">
-                <h4 class="dcm-title">Nizhny Novgorod </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d35865/index.html">
-                    <img alt="Nizhny Novgorod" title="Nizhny Novgorod" src="../../../img.fifa.com/image/upload/t_l4/odqlwnch4xpfvwzllpxb.jpg"
-                      class="i-lnd-6" ph-data-picture-index="5" ph-data-picture-id="1473943" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Nizhny Novgorod" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Due to its advantageous location on the Volga River, Nizhny Novgorod developed into Russia’s key commerce centre in the 19th century.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/odqlwnch4xpfvwzllpxb.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d35865/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5001165/index.html">Nizhny Novgorod Stadium</a>
-                </div>
-              </li>
-              <!--1473938-->
-              <li class="noclick" paging-id="35247">
-                <h4 class="dcm-title">Rostov-on-Don </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d35247/index.html">
-                    <img alt="Rostov-on-Don" title="Rostov-on-Don" src="../../../img.fifa.com/image/upload/t_l4/se8r7nmt1830fkvv5qna.jpg" class="i-lnd-6"
-                      ph-data-picture-index="6" ph-data-picture-id="1473938" ph-data-picture-copyright="FIFA.com" ph-data-picture-title="Rostov-on-Don"
-                      ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Known from the time of Herodotus as a land of warlike Scythians, the endless steppes of the Don river basin eventually became home to the freedom-loving Cossacks.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/se8r7nmt1830fkvv5qna.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d35247/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5000547/index.html">Rostov Arena</a>
-                </div>
-              </li>
-              <!--1473946-->
-              <li class="noclick" paging-id="1000000971">
-                <h4 class="dcm-title">Saint Petersburg </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d1000000971/index.html">
-                    <img alt="Saint Petersburg" title="Saint Petersburg" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/78/1473878_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="7" ph-data-picture-id="1473946" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Saint Petersburg" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="Founded by Peter I the Great in 1703 as Russia’s new imperial capital, Saint Petersburg is the ultimate embodiment of artistic talent."
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/78/1473878_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d1000000971/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5031303/index.html">Saint Petersburg Stadium</a>
-                </div>
-              </li>
-              <!--1473941-->
-              <li class="noclick" paging-id="1772">
-                <h4 class="dcm-title">Samara </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d1772/index.html">
-                    <img alt="Samara" title="Samara" src="../../../img.fifa.com/mm/photo/tournament/destination/01/56/07/32/1560732_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="8" ph-data-picture-id="1473941" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Samara" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Samara is the capital of the Samara Region and is home to 1.13 million people. Samara is one of the most prominent Volga region cities and it is famous as Russia’s aerospace centre.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/56/07/32/1560732_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d1772/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5001246/index.html">Samara Arena</a>
-                </div>
-              </li>
-              <!--1473940-->
-              <li class="noclick" paging-id="55696">
-                <h4 class="dcm-title">Saransk </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d55696/index.html">
-                    <img alt="Saransk" title="Saransk" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/84/1473884_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="9" ph-data-picture-id="1473940" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Saransk" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Located in central Russia, Saransk is the capital of the Republic of Mordovia and the area where all Finno-Ugric nations began.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/84/1473884_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d55696/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5031301/index.html">Mordovia Arena</a>
-                </div>
-              </li>
-              <!--1473936-->
-              <li class="noclick" paging-id="35268">
-                <h4 class="dcm-title">Sochi </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d35268/index.html">
-                    <img alt="Sochi" title="Sochi" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/76/1473876_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="10" ph-data-picture-id="1473936" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Sochi" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;The Black Sea resort of Sochi has risen to global prominence after having been awarded the 2014 Olympic Winter Games.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/76/1473876_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d35268/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5031302/index.html">Fisht Stadium</a>
-                </div>
-              </li>
-              <!--1473939-->
-              <li class="noclick" paging-id="14965">
-                <h4 class="dcm-title">Volgograd </h4>
-                <div class="ph-lnd-6 figure i-wrap ">
-                  <a class="dcm-internal" target="_self" href="cities/city%3d14965/index.html">
-                    <img alt="Volgograd" title="Volgograd" src="../../../img.fifa.com/mm/photo/tournament/destination/01/47/38/86/1473886_full-lnd.jpg"
-                      class="i-lnd-6" ph-data-picture-index="11" ph-data-picture-id="1473939" ph-data-picture-copyright="FIFA.com"
-                      ph-data-picture-title="Volgograd" ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Formerly known as Stalingrad, Volgograd extends alongside the Volga River and has 1 million residents.&lt;/p&gt;&#xD;&#xA;"
-                      ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/01/47/38/86/1473886_big-lnd.jpg"
-                      ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                    <span class="dcm-icoFrame dcm-ico-news">
-                      <span class="dcm-ico"> </span>
-                    </span>
-                  </a>
-                </div>
-                <div class="more-link" xmlns:cfg="urn:cfg.fifaExtension.com">
-                  <div class="qlink-wrap">
-                    <ul class="qlink-list">
-                      <li class="qlink-link last">
-                        <div class="qlink-link-wrap">
-                          <a href="cities/city%3d14965/index.html">
-                            <span class="item">Discover the city and the Fan Fest™</span>
-                          </a>
-                        </div>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-                <div class="stadium-wrapper">
-                  <span class="stadium-label">Stadium</span>
-                  <a class="stadium-name" href="stadiums/stadium%3d5000569/index.html">Volgograd Arena</a>
-                </div>
-              </li>
-            </ul>
-          </div>
-          <div class="slider-footer">
-            <div class="editorial-article"> </div>
-          </div>
+      
         </div>
       </div>
-      <div class="col-xs-12 clear-grid ">
-        <div class="adv-lb-wrap">
-          <!-- <script type="text/javascript">
-            var googletag = googletag || {}; googletag.cmd = googletag.cmd || []; (function () { var gscript = document.getElementById('google_adv_include'); if (gscript) { return; } var gads = document.createElement('script'); gads.id = 'google_adv_include'; gads.async = true; gads.type = 'text/javascript'; var useSSL = 'https:' == document.location.protocol; gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js'; var node = document.getElementsByTagName('script')[0]; node.parentNode.insertBefore(gads, node); })();
-            (function () {
-              if (window.gTag) { return; } googletag.cmd.push(function () { googletag.pubads().setTargeting('site', ['en']) });
-              (function () {
-                var DBClickKeyValues = document.location.pathname.match(/[^/]*=[^/|^\.]*/gi); if (DBClickKeyValues != null) { DBClickKeyValues = DBClickKeyValues.toString(); DBClickKeyValues = DBClickKeyValues.split(','); for (var i = 0; i != DBClickKeyValues.length; i++) { var key = DBClickKeyValues[i].split('=')[0]; var value = DBClickKeyValues[i].split('=')[1]; if (typeof value != 'undefined') { if (value.indexOf('-') != -1) { value = value.split('-'); value = value[value.length - 1]; } } googletag.cmd.push(function () { googletag.pubads().setTargeting(key, [value]); }); } }
-                window.DBClickRefresh = function () { googletag.cmd.push(function () { googletag.pubads().refresh(); }); };
-              })(); (function () { function getCookie(n) { var c = document.cookie.match(new RegExp('(^|;)\\s*' + escape(n) + '=([^;\\s]*)')); return (c ? unescape(c[2]) : null); } googletag.cmd.push(function () { googletag.pubads().setTargeting('user', [((getCookie('FIFACom')) ? 'loggedin' : 'notloggedin')]); }); })(); googletag.cmd.push(function () { googletag.display('div-gpt-ad-6b265dde-0c55-4057-a0f5-65dd3b34646c'); googletag.enableServices(); window.gTag = true; });
-            })();
-
-            amc.on('tagload.scbase', function () {
-              var s = window.s; var adUnit = s.pageName.replace(/ [^:]*/g, ""); adUnit = adUnit.split(':'); adUnit.splice(-1, 1); if (adUnit.length > 4) { adUnit.reverse(); adUnit.splice(0, adUnit.length - 4); adUnit.reverse(); } adUnit = adUnit.join('../../index.html'); if (adUnit.length != 0) { adUnit = '/' + adUnit; } wfa = window.fifa.analytics;
-              if (!!window.fifa && !!window.fifa.analytics) {
-                wfa = window.fifa.analytics;
-                wfaover = wfa.advoverride;
-                if (!!wfaover) {
-                  if (!!wfaover.adunit) {
-                    adUnit = wfaover.adunit;
-                  }
-                }
-              } googletag.cmd.push(function () {
-                googletag.defineSlot('/8584/fifa.com' + adUnit, [728, 90], 'div-gpt-ad-6b265dde-0c55-4057-a0f5-65dd3b34646c')
-                  .addService(googletag.pubads());
-              });
-            });
-          </script> -->
-          <div id="div-gpt-ad-6b265dde-0c55-4057-a0f5-65dd3b34646c" class="adv not-loaded adv-lb" style="width:728px;height:90px;margin:0 auto;">
-          </div>
-        </div>
-      </div>
+      
       <div class="mb-row">
         <div class="header-wrap mb-row">
           <div class="title-wrap">
@@ -561,7 +152,7 @@
             <!--2735405-->
             <div class="ph-lnd-4 figure i-wrap ">
               <a class="dcm-internal" href="http://welcome2018.com/en/" target="_blank">
-                <img alt="Welcome 2018 Tourist Portal" title="Welcome 2018 Tourist Portal" src="./CompiledAssets/img.fifa.com/image/upload/t_l5/ogvgihyrj4oaswivwz1d.jpg"
+                <img alt="Welcome 2018 Tourist Portal" title="Welcome 2018 Tourist Portal" src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
                   class="i-lnd-4" ph-data-picture-index="1" ph-data-picture-id="2735405" ph-data-picture-copyright="FIFA.com"
                   ph-data-picture-title="Thinking of visiting Russia?" ph-data-picture-date="Tuesday, 1 December 2015" ph-data-picture-comment="&lt;p&gt;Are you planning to visit Russia for the FIFA Confederations Cup 2017 or the 2018 FIFA World Cup™? Welcome2018.com is the tourist portal of the Russian government and provides fans travelling to Russia with useful information about the host nation of the next FIFA World Cup.&lt;/p&gt;&#xD;&#xA;"
                   ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/ogvgihyrj4oaswivwz1d.jpg"
@@ -611,7 +202,7 @@
         <!--1473849-->
         <div class="ph-lnd-4 figure i-wrap ">
           <a class="dcm-internal" target="_self" href="host-country/index.html">
-            <img alt="Host Cities Candidates" title="Host Cities Candidates" src="./CompiledAssets/img.fifa.com/mm/photo/tournament/destination/02/50/42/08/2504208_large-lnd.jpg"
+            <img alt="Host Cities Candidates" title="Host Cities Candidates" src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
               class="i-lnd-4" ph-data-picture-index="1" ph-data-picture-id="1473849" ph-data-picture-copyright="FIFA.com" ph-data-picture-title="Russia"
               ph-data-picture-date="Friday, 15 July 2011" ph-data-picture-comment="&lt;p&gt;Russia will offer international visitors the most dynamic possible experience of the 2018 FIFA World Cup™.&lt;/p&gt;&#xD;&#xA;"
               ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/destination/02/50/42/08/2504208_big-lnd.jpg"
@@ -661,7 +252,7 @@
           <div class="ph-lnd-6 figure i-wrap ">
             <a class="dcm-internal" target="_self" href="http://hotels.fifa.com/?lang=en">
               <img alt="A City view of the Cathedral of Saint righteous Warrior Feodor Ushakov" title="A City view of the Cathedral of Saint righteous Warrior Feodor Ushakov"
-                src="./CompiledAssets/img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_full-lnd.jpg" class="i-lnd-6"
+                src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg" class="i-lnd-6"
                 ph-data-picture-index="1" ph-data-picture-id="2756045" ph-data-picture-copyright="FIFA.com" ph-data-picture-title="Find your hotel in Russia!"
                 ph-data-picture-date="Thursday, 28 January 2016" ph-data-picture-comment="Eager to plan your trip to the FIFA Confederations Cup 2017 or the 2018 FIFA World Cup™? View our extensive list of hotels in Russia’s Host Cities."
                 ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/uejbptvctytjvwd6hte1.jpg"
@@ -705,7 +296,7 @@
           <!--2921559-->
           <div class="ph-lnd-6 figure i-wrap ">
             <a class="dcm-internal" target="_self" href="../organisation/hospitality/index.html">
-              <img alt="Russia and Mexico supporters enjoy the atmosphere" title="Russia and Mexico supporters enjoy the atmosphere" src="./CompiledAssets/img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_full-lnd.jpg"
+              <img alt="Russia and Mexico supporters enjoy the atmosphere" title="Russia and Mexico supporters enjoy the atmosphere" src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
                 class="i-lnd-6" ph-data-picture-index="1" ph-data-picture-id="2921559" ph-data-picture-copyright="FIFA.com"
                 ph-data-picture-title="Hospitality" ph-data-picture-date="Friday, 1 December 2017" ph-data-picture-comment="&lt;p&gt;Secure your seat at the FIFA World Cup™ and enjoy football in style with our Official Hospitality. &lt;/p&gt;&#xD;&#xA;"
                 ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
@@ -751,7 +342,7 @@
           <!--2919091-->
           <div class="ph-lnd-4 figure i-wrap ">
             <a class="dcm-internal" target="_self" href="../organisation/fan-id/index.html">
-              <img alt="Fan ID EN" title="Fan ID EN" src="./CompiledAssets/img.fifa.com/mm/photo/tournament/destination/02/50/42/08/2504208_large-lnd.jpg"
+              <img alt="Fan ID EN" title="Fan ID EN" src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
                 class="i-lnd-4" ph-data-picture-index="1" ph-data-picture-id="2919091" ph-data-picture-copyright="FIFA.com"
                 ph-data-picture-title="FAN ID" ph-data-picture-date="Wednesday, 8 November 2017" ph-data-picture-comment="&lt;p&gt;To attend Matches of the 2018 FIFA World Cup Russia™ you need to obtain a FAN ID. Please visit www.fan-id.ru for more information. You can apply for your FAN ID after paying for your Tickets and receiving your Ticket confirmation email. Please also inform your Guests and Companions about the requirement of obtaining a FAN ID.&#xD;&#xA;The FAN ID has been introduced at the request of the Russian authorities for all fans visiting Matches at the 2018 FIFA World Cup Russia™. FIFA does not assume any liability or responsibility in respect of the application, issuance and use of the FAN ID. &lt;/p&gt;&#xD;&#xA;"
                 ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/nb8w3jna1ykeiawykyqo.jpg"
@@ -814,7 +405,7 @@
           <!--2907787-->
           <div class="ph-lnd-4 figure i-wrap ">
             <a class="dcm-internal" target="_self" href="../trophy-tour/index.html">
-              <img alt="Trophy Tour - Discover the Russian Tour" title="Trophy Tour - Discover the Russian Tour" src="./CompiledAssets/img.fifa.com/mm/photo/tournament/destination/02/50/42/08/2504208_large-lnd.jpg"
+              <img alt="Trophy Tour - Discover the Russian Tour" title="Trophy Tour - Discover the Russian Tour" src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg"
                 class="i-lnd-4" ph-data-picture-index="1" ph-data-picture-id="2907787" ph-data-picture-copyright="FIFA.com"
                 ph-data-picture-title="Trophy Tour Promo" ph-data-picture-date="Wednesday, 13 September 2017" ph-data-picture-comment="&lt;p&gt;The FIFA World CupTM Trophy Tour by Coca-Cola is your chance to see the Original FIFA World Cup Trophy. From 9 September 2017 to 7 June 2018 fans from all over the world will get the chance to get their photo taken with the Original FIFA World Cup Trophy! Follow the tour, plan your experience or retrieve your photos here.&lt;/p&gt;&#xD;&#xA;"
                 ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/mm/photo/tournament/trophytour/02/90/60/94/2906094_big-lnd.jpg"
@@ -866,7 +457,7 @@
           <div class="ph-lnd-4 figure i-wrap ">
             <a class="dcm-internal" target="_self" href="../organisation/fan-fest/index.html">
               <img alt="The FIFA Fan Fest, a good option to celebrate and enjoy music during the FIFA World Cup" title="The FIFA Fan Fest, a good option to celebrate and enjoy music during the FIFA World Cup"
-                src="./CompiledAssets/img.fifa.com/mm/photo/tournament/destination/02/50/42/08/2504208_large-lnd.jpg" class="i-lnd-4"
+                src="//img.fifa.com/mm/photo/tournament/competition/02/91/91/98/2919198_big-lnd.jpg" class="i-lnd-4"
                 ph-data-picture-index="1" ph-data-picture-id="2919199" ph-data-picture-copyright="FIFA.com" ph-data-picture-title="FIFA Fan Fest™"
                 ph-data-picture-date="Wednesday, 8 November 2017" ph-data-picture-comment="&lt;p&gt;The FIFA Fan Fest™ is the perfect place to watch all matches of the FIFA World Cup™ live and to enjoy an exciting music and cultural entertainment programme, free of charge.&lt;/p&gt;&#xD;&#xA;"
                 ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/fo7cussjwtwif2ihkbrm.jpg"

@@ -29,6 +29,8 @@ import { GroupsComponent } from './groups/groups.component';
 import { ApiServices } from "./app.services";
 import { OwlModule } from 'ngx-owl-carousel'
 
+import { MomentModule } from 'ngx-moment';
+
 
 @NgModule({
   //import component child
@@ -56,6 +58,7 @@ import { OwlModule } from 'ngx-owl-carousel'
     HttpModule,
     HttpClientModule,
     OwlModule,
+    MomentModule
   ],
   providers: [
     ApiServices

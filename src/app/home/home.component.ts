@@ -3,7 +3,7 @@ import { Component, OnInit } from '@angular/core';
 // import {OwlCarousel} from 'ngx-owl-carousel';
 import { ApiServices } from "../app.services";
 
-import $ from 'jquery'
+declare var $: any;
 
 @Component({
   selector: 'app-home',
@@ -16,6 +16,8 @@ export class HomeComponent implements OnInit {
   data_news_link_string :any;
   data_video :any;
   data_video_link_string :any;
+  data_photos :any;
+  list_data_photos :any;
   data_top_carousel :any;
   list_data_top_carousel :any;
 
@@ -28,10 +30,15 @@ export class HomeComponent implements OnInit {
     limit: 10,
     page: 1
   }
+  get_photos: any = {
+    limit: 10,
+    page: 1
+  }
 
   carouselTopPage:any;
   carouselNewsOptions:any;
   carouselForCusOptions:any;
+  carouselVideosOptions:any;
   carouselTimelineOptions:any;
 
   constructor(private apiServices: ApiServices) { 
@@ -42,7 +49,10 @@ export class HomeComponent implements OnInit {
 
       this.GetNews();
 
-
+      this.GetPhotos()
+      
+      this.GetVideos();
+      
       this.apiServices.getDataTopCarousel().subscribe(res =>{
         // console.log('data json')
         this.data_top_carousel = res;
@@ -52,15 +62,7 @@ export class HomeComponent implements OnInit {
       })
    
       //carousel
-      this.carouselTopPage = {
-        nav : true, 
-        dots: true, 
-        loop:false, 
-        videoHeight : true,
-        items:1, 
-        navText: [$('.fi__nav--Top-next'), $('.fi__nav--Top-prev')]
-      }
-
+    
       this.carouselNewsOptions = {
         nav : true, 
         dots: true, 
@@ -92,6 +94,20 @@ export class HomeComponent implements OnInit {
       }
 
       this.carouselForCusOptions = {
+          nav : true, 
+          dots: true, 
+          loop:false, 
+          items:5, 
+          margin:10,
+          responsive: {       
+            0: {  items: 1, margin: 5 },
+            480: {  items: 2, margin: 5 },
+            768: { items: 3, margin: 5, centerMode:true },
+            1024: { items: 4, margin: 5 }
+          },  
+          navText: [$('.fi__nav--forcus-next'), $('.fi__nav--forcus-prev')]
+      }
+      this.carouselVideosOptions = {
           nav : true, 
           dots: true, 
           loop:false, 
@@ -139,7 +155,7 @@ export class HomeComponent implements OnInit {
       this.data_video = res;
   
       this.data_video_link_string = this.data_video.data.items;
-      console.log(this.data_video_link_string);
+      
   
       this.data_video_link_string.forEach(element => {
          
@@ -147,9 +163,19 @@ export class HomeComponent implements OnInit {
           // console.log(element);
           return element;
       });
-  
+      console.log(this.data_video_link_string);
     })
   }
   
+  GetPhotos() {
+    this.apiServices.getPhotos(this.get_photos).subscribe(res => {
+      this.data_photos = res;
+
+      this.list_data_photos = this.data_photos.data.items;
+
+      console.log(this.list_data_photos)
+
+    })
+  }
 
 }

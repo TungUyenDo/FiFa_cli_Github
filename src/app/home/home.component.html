@@ -1107,47 +1107,43 @@
             </div>
         
             <div class="container-fluid">
-        
-        
-                <div class="container-fluid no-padding">
-                    <div class="row">
-                        <div class="owl__custom owl_focus">
-                            <owl-carousel [options]="carouselForCusOptions" [items]="data_video_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                                <div class="item" *ngFor="let item of data_video_link_string">
-                                    <a href="#" class="item__thumb">
-                                        <img class="item__image" [src]="item.img_url" alt="">
-                                    </a>
-                        
-                                    <div class="item__body">
-                                        <div class="item__roofline">RUSSIA</div>
-                                        <h3 class="item__title">{{item.title}}</h3>
-                                        <div class="item__more">
-                                            <a class="item__link" href="#/" target="_self">
-                                                <svg class="fi-svg-icon icon-triangle">
-                                                    <use xlink:href="#icon-triangle"></use>
-                                                </svg>
-                                                <span class="item__more__label">Read More</span>
-                                            </a>
-                                        </div>
+                <div class="row">
+                    <div class="owl__custom owl_focus">
+                        <owl-carousel [options]="carouselVideosOptions" [items]="data_video_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                            <div class="item" *ngFor="let item of data_video_link_string">
+                                <a href="#" class="item__thumb">
+                                    <img class="item__image" [src]="item.image" alt="">
+                                </a>
+                    
+                                <div class="item__body">
+                                    <div class="item__roofline">RUSSIA</div>
+                                    <h3 class="item__title">{{item.title}}</h3>
+                                    <div class="item__more">
+                                        <a class="item__link" href="#/" target="_self">
+                                            <svg class="fi-svg-icon icon-triangle">
+                                                <use xlink:href="#icon-triangle"></use>
+                                            </svg>
+                                            <span class="item__more__label">Read More</span>
+                                        </a>
                                     </div>
-                        
                                 </div>
-                            </owl-carousel>
-                            
-                            <div  class="fi__nav--forcus-next">
-                                <span>
-                                    <svg class="fi-svg-icon ">
-                                        <use xlink:href="#icon-carousel-left"></use>
-                                    </svg>
-                                </span>
+                    
                             </div>
-                            <div class="fi__nav--forcus-prev">
-                                <span>
-                                    <svg class="fi-svg-icon ">
-                                        <use xlink:href="#icon-carousel-right"></use>
-                                    </svg>
-                                </span>
-                            </div>
+                        </owl-carousel>
+                        
+                        <div  class="fi__nav--forcus-next">
+                            <span>
+                                <svg class="fi-svg-icon ">
+                                    <use xlink:href="#icon-carousel-left"></use>
+                                </svg>
+                            </span>
+                        </div>
+                        <div class="fi__nav--forcus-prev">
+                            <span>
+                                <svg class="fi-svg-icon ">
+                                    <use xlink:href="#icon-carousel-right"></use>
+                                </svg>
+                            </span>
                         </div>
                     </div>
                 </div>
@@ -1172,10 +1168,10 @@
                 <div class="row">
                     <!-- You can use owl-carousel selector to include its component -->
                     <div class="owl__custom owl_news">
-                        <owl-carousel [options]="carouselTimelineOptions" [items]="data_news_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of data_news_link_string">
+                        <owl-carousel [options]="carouselTimelineOptions" [items]="list_data_photos" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                            <div class="item" *ngFor="let item of list_data_photos">
                                 <a href="#" class="item__thumb">
-                                    <img class="item__image" [src]="item.img_url" alt="">
+                                    <img class="item__image" [src]="item.photos.data[0].link" alt="">
                                 </a>
             
                                 <div class="item__body">
