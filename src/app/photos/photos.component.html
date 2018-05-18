@@ -44,7 +44,67 @@
       </div>
     </div>
     <div class="photos_slick">
-        
+      <div class="container-fluid">
+        <div class="row">
+            <div class="owl__custom owl_news">
+                <owl-carousel id="slider" [options]="carouselPhotosOptions" [items]="list_data_photo" 
+                                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                    <div class="item" *ngFor="let item of list_data_photo">
+                        <a href="#" class="item__thumb">
+                            <img class="item__image" [src]="item.img_url" alt="">
+                        </a>
+    
+                        <div class="item__body">
+                            <div class="item__roofline">RUSSIA</div>
+                            <h3 class="item__title">{{item.title}}</h3>
+                            <div class="item__more">
+                                <a class="item__link" href="#/" target="_self">
+                                    <svg class="fi-svg-icon icon-triangle">
+                                        <use xlink:href="#icon-triangle"></use>
+                                    </svg>
+                                    <span class="item__more__label">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </owl-carousel>
+                <owl-carousel id="sliderBottom" [options]="carouselPhotosOptionsBottom" [items]="list_data_photo" 
+                                [carouselClasses]="['owl-theme', 'row', 'sliding']">
+                    <div class="item" *ngFor="let item of list_data_photo">
+                        <a href="#" class="item__thumb">
+                            <img class="item__image" [src]="item.img_url" alt="">
+                        </a>
+    
+                        <div class="item__body">
+                            <div class="item__roofline">RUSSIA</div>
+                            <h3 class="item__title">{{item.title}}</h3>
+                            <div class="item__more">
+                                <a class="item__link" href="#/" target="_self">
+                                    <svg class="fi-svg-icon icon-triangle">
+                                        <use xlink:href="#icon-triangle"></use>
+                                    </svg>
+                                    <span class="item__more__label">Read More</span>
+                                </a>
+                            </div>
+                        </div>
+    
+                    </div>
+                </owl-carousel>
+                <div class="fi__nav--photos-next ">
+                    <svg class="fi-svg-icon ">
+                        <use xlink:href="#icon-carousel-left"></use>
+                    </svg>
+                </div>
+                <div class="fi__nav--photos-prev">
+                    <svg class="fi-svg-icon ">
+                        <use xlink:href="#icon-carousel-right"></use>
+                    </svg>
+                </div>
+            </div>
+    
+          </div>
+      </div>
     </div>
 
     <div class="row row-last">

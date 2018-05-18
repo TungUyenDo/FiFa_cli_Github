@@ -48,7 +48,7 @@ export class ApiServices {
 
     //get video
     public getVideos(data) {
-        console.log(data)
+        
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
@@ -59,7 +59,8 @@ export class ApiServices {
             )
             .pipe(
                 map(res => {
-                    return res
+                    return res;
+                    
                 }),
                 catchError(this.handleError)
             );
@@ -77,6 +78,18 @@ export class ApiServices {
             )
             .pipe(
                 map(res => {
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+    //get top carousel
+    public getDataTopCarousel() {
+       var dataJson = "../assets/data_json/json/data.json";
+        return this.http.get(dataJson)
+            .pipe(
+                map(res => {
+                    console.log(res)
                     return res
                 }),
                 catchError(this.handleError)

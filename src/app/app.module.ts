@@ -29,7 +29,6 @@ import { GroupsComponent } from './groups/groups.component';
 import { ApiServices } from "./app.services";
 import { OwlModule } from 'ngx-owl-carousel'
 
-import { SlickModule } from 'ngx-slick';
 
 @NgModule({
   //import component child
@@ -57,7 +56,6 @@ import { SlickModule } from 'ngx-slick';
     HttpModule,
     HttpClientModule,
     OwlModule,
-    SlickModule.forRoot()
   ],
   providers: [
     ApiServices

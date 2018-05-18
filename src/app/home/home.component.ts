@@ -14,9 +14,17 @@ export class HomeComponent implements OnInit {
 
   data_news :any;
   data_news_link_string :any;
+  data_video :any;
+  data_video_link_string :any;
+  data_top_carousel :any;
+  list_data_top_carousel :any;
 
   //data get news
   get_news: any = {
+    limit: 10,
+    page: 1
+  }
+  get_video: any = {
     limit: 10,
     page: 1
   }
@@ -31,22 +39,28 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(){
-      console.log('cli init')
-      this.apiServices.getNews(this.get_news).subscribe(res => {
-        this.data_news = res;
 
-        this.data_news_link_string = this.data_news.data.items;
-        console.log(this.data_news_link_string);
+      this.GetNews();
 
-        this.data_news_link_string.forEach(element => {
-           
-            element.img_url = 'https://' + element.img_url; 
-            // console.log(element);
-            return element;
-        });
+
+      this.apiServices.getDataTopCarousel().subscribe(res =>{
+        // console.log('data json')
+        this.data_top_carousel = res;
+
+        this.list_data_top_carousel = this.data_top_carousel.topCarousel;
 
       })
    
+      //carousel
+      this.carouselTopPage = {
+        nav : true, 
+        dots: true, 
+        loop:false, 
+        videoHeight : true,
+        items:1, 
+        navText: [$('.fi__nav--Top-next'), $('.fi__nav--Top-prev')]
+      }
+
       this.carouselNewsOptions = {
         nav : true, 
         dots: true, 
@@ -103,5 +117,39 @@ export class HomeComponent implements OnInit {
 
   
   } 
+
+  GetNews(){
+    this.apiServices.getNews(this.get_news).subscribe(res => {
+      this.data_news = res;
+  
+      this.data_news_link_string = this.data_news.data.items;
+      console.log(this.data_news_link_string);
+  
+      this.data_news_link_string.forEach(element => {
+         
+          element.img_url = 'https://' + element.img_url; 
+          // console.log(element);
+          return element;
+      });
+  
+    })
+  }
+  GetVideos(){
+    this.apiServices.getVideos(this.get_video).subscribe(res => {
+      this.data_video = res;
+  
+      this.data_video_link_string = this.data_video.data.items;
+      console.log(this.data_video_link_string);
+  
+      this.data_video_link_string.forEach(element => {
+         
+          element.img_url = 'https://' + element.img_url; 
+          // console.log(element);
+          return element;
+      });
+  
+    })
+  }
+  
 
 }

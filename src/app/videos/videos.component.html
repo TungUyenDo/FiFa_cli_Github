@@ -36,19 +36,20 @@
     <div class="header-wrap ">
       <div class="title-wrap">
         <h1 class="title">
-          <span>Video</span>
+          <span [hidden]="index > 1">Video</span>
+          <span [hidden]="index < 2">All Video</span>
         </h1>
       </div>
     </div>
     <div class="row row-first">
-      <div class="header-wrap ">
+      <div class="header-wrap"[hidden]="index > 1">
         <div class="title-wrap">
           <h2 class="title">
             <span>Latest Videos</span>
           </h2>
         </div>
       </div>
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid">
         <div class="dcm-list thumblist-lnd-3 grid-view list-videos ">
           <ul class="dcm-thumblist vertical">
             <li class="dcm-thumblist-item" *ngFor="let item of video_4Item" xmlns:cfg="urn:cfg.fifaExtension.com">
@@ -74,7 +75,7 @@
         </div>
       </div>
 
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid"[hidden]="index > 1">
         <div class="dcm-list thumblist-sqr-1 grid-view list-videos ">
           <ul class="dcm-thumblist inline-col4">
             <li class="dcm-thumblist-item" *ngFor="let item of video_6Item" xmlns:cfg="urn:cfg.fifaExtension.com">
@@ -100,18 +101,23 @@
           </ul>
         </div>
       </div>
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid" [hidden]="index > 1">
         <div class="qlink-wrap ">
           <ul class="qlink-list">
-            <li class="qlink-link last">
+            <li class="qlink-link last" (click)="click_moreVideos()" [attr.data-page]="index">
               <div class="qlink-link-wrap">
-                <a href="all-videos.html">
+                <a>
                   <span class="item">More Videos</span>
                 </a>
               </div>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="col-xs-12 fi-list__btn fi-navigation" [hidden]="index < 2">
+          <a role="navigation" class="fi-btn" [attr.data-page]="index" (click)="clickNextVideosPage()" [hidden]="end_page == index">
+            <span class="fi-btn__label">Next posts</span>
+          </a>
       </div>
     </div>
     <div class="row row-last">
@@ -184,9 +190,9 @@
           </ul>
           <div class="qlink-wrap">
             <ul class="qlink-list">
-              <li class="qlink-link last">
+              <li class="qlink-link last" >
                 <div class="qlink-link-wrap">
-                  <a href="../../videos/previous-world-cup/index.html">
+                  <a>
                     <span class="item">Previous FIFA World Cups™</span>
                   </a>
                 </div>
