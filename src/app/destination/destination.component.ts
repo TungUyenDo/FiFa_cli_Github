@@ -46,7 +46,7 @@ export class DestinationComponent implements OnInit {
 
   }
   slider_destination(){
-    $('.slider-destination').owlCarousel({
+    $('.owl_destination').owlCarousel({
       items: 1,
       nav: true,
       dots: false,

@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRouters } from "./app.routers";
 
 
@@ -31,6 +30,10 @@ import { OwlModule } from 'ngx-owl-carousel'
 
 import { MomentModule } from 'ngx-moment';
 
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { SharedModule } from './app.share'
+
 
 @NgModule({
   //import component child
@@ -58,7 +61,8 @@ import { MomentModule } from 'ngx-moment';
     HttpModule,
     HttpClientModule,
     OwlModule,
-    MomentModule
+    MomentModule,
+    SharedModule
   ],
   providers: [
     ApiServices

@@ -27,13 +27,13 @@ export class ApiServices {
                 catchError(this.handleError)
             );
     }
-
+// =============================================================================================================
     //get news
     public getNews(data) {
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
-            'FB-API-KEY': 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
+            'FB-API-KEY': environment.fbApiKey
         });
         return this.http.get(environment.pathUrlApi + "news/get-news?limit=" + data.limit + "&page=" + data.page, 
                 { headers: headers}
@@ -52,7 +52,7 @@ export class ApiServices {
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
-            'FB-API-KEY': 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
+            'FB-API-KEY': environment.fbApiKey
         });
         return this.http.get(environment.pathUrlApi + "news/get-videos?limit=" + data.limit + "&page=" + data.page, 
                 { headers: headers}
@@ -71,7 +71,7 @@ export class ApiServices {
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
-            'FB-API-KEY': 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
+            'FB-API-KEY': environment.fbApiKey
         });
         return this.http.get(environment.pathUrlApi + "news/get-photos?limit=" + data.limit + "&page=" + data.page, 
                 { headers: headers}

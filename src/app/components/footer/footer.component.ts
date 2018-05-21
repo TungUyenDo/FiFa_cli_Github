@@ -1,7 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 declare var $: any;
 
-declare var $: any;
+
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -9,7 +11,12 @@ declare var $: any;
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+
+  constructor(private translate: TranslateService) {}
+
+   switchLanguage(language: string) {
+      this.translate.use(language);
+  }
 
   ngOnInit() {
       $('.fi-select__languages').click(function(e){

@@ -28,7 +28,19 @@
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.js",
-              "./node_modules/owl.carousel/dist/owl.carousel.js"
+              "./node_modules/owl.carousel/dist/owl.carousel.js",
+              "./src/assets/root_scripts/vendor/requirejs/require-2.2.0.min2b53.js",
+              "./src/assets/root_scripts/vendor/picturefill/picturefill.min1e93.js",
+              "./src/assets/root_scripts/maind0d7.js",
+              "./src/assets/root_scripts/matchlist.js",
+              "./src/assets/root_scripts/standings.js",
+              "./src/assets/root_scripts/tabsManager.js",
+              "./src/assets/root_scripts/modules/carousela299.js",
+              "./src/assets/root_scripts/modules/countdown5f65.js",
+              "./src/assets/root_scripts/modules/fancybox0160.js",
+              "./src/assets/root_scripts/modules/rankinghp241c.js",
+              "./src/assets/root_scripts/modules/spotlightdd45.js",
+              "./src/assets/root_scripts/vendor/lazysizes/lazysizes.min2a2a.js"
             ]
           },
           "configurations": {

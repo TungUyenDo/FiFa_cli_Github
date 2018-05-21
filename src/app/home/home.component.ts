@@ -3,6 +3,8 @@ import { Component, OnInit } from '@angular/core';
 // import {OwlCarousel} from 'ngx-owl-carousel';
 import { ApiServices } from "../app.services";
 
+import {environment} from '../../environments/environment'
+
 declare var $: any;
 
 @Component({
@@ -53,16 +55,9 @@ export class HomeComponent implements OnInit {
       
       this.GetVideos();
       
-      this.apiServices.getDataTopCarousel().subscribe(res =>{
-        // console.log('data json')
-        this.data_top_carousel = res;
-
-        this.list_data_top_carousel = this.data_top_carousel.topCarousel;
-
-      })
+      this.GetTopCarousel();
    
-      //carousel
-    
+      //carousel News
       this.carouselNewsOptions = {
         nav : true, 
         dots: true, 
@@ -78,6 +73,7 @@ export class HomeComponent implements OnInit {
         navText: [$('.fi__nav--news-next'), $('.fi__nav--news-prev')]
       }
 
+      //carousel timeline
       this.carouselTimelineOptions = {
         nav : true, 
         dots: true, 
@@ -93,6 +89,7 @@ export class HomeComponent implements OnInit {
         navText: [$('.fi__nav--timeline-next'), $('.fi__nav--timeline-prev')]
       }
 
+       //carousel forcus
       this.carouselForCusOptions = {
           nav : true, 
           dots: true, 
@@ -107,6 +104,8 @@ export class HomeComponent implements OnInit {
           },  
           navText: [$('.fi__nav--forcus-next'), $('.fi__nav--forcus-prev')]
       }
+
+       //carousel video
       this.carouselVideosOptions = {
           nav : true, 
           dots: true, 
@@ -123,6 +122,7 @@ export class HomeComponent implements OnInit {
       }
 
 
+       //carousel Top
       this.carouselTopPage = {
           nav : true, 
           dots: true, 
@@ -133,6 +133,16 @@ export class HomeComponent implements OnInit {
 
   
   } 
+
+  GetTopCarousel(){
+    this.apiServices.getDataTopCarousel().subscribe(res =>{
+      // console.log('data json')
+      this.data_top_carousel = res;
+
+      this.list_data_top_carousel = this.data_top_carousel.topCarousel;
+
+    })
+  }
 
   GetNews(){
     this.apiServices.getNews(this.get_news).subscribe(res => {
@@ -159,8 +169,12 @@ export class HomeComponent implements OnInit {
   
       this.data_video_link_string.forEach(element => {
          
-          element.img_url = 'https://' + element.img_url; 
-          // console.log(element);
+          // element.image = element.image.split('http://img.fifa.com/image/upload/t_l5') 
+
+          if(element.image == 'http://img.fifa.com/image/upload/t_l5/.jpg'){
+             element.image = environment.imgForWrongLink;
+          }
+
           return element;
       });
       console.log(this.data_video_link_string);

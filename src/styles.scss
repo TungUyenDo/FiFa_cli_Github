@@ -1,6 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import 'owl.carousel/dist/assets/owl.carousel.css';
+
 @font-face {
     font-family: "Open Sans";
     src: url("./assets/fonts/OpenSans-Light-complete.eot");
@@ -9,13 +10,13 @@
     font-weight: 200
 }
 
-// @font-face {
-//     font-family: "Open Sans";
-//     src: url("./assets/fonts/OpenSans-Regular-complete.eot");
-//     src: local("☺"), url("./assets/fonts/OpenSans-Regular-complete.eot#iefix") format("embedded-opentype"), url("./assets/fonts/OpenSans-Regular-complete.woff") format("woff"), url("./assets/fonts/OpenSans-Regular-complete.ttf") format("truetype"), url("./assets/fonts/OpenSans-Regular-complete.svg#svgFontName") format("svg");
-//     font-style: normal;
-//     font-weight: 400
-// }
+@font-face {
+    font-family: "Open Sans Regular";
+    src: url("./assets/fonts/OpenSans-Regular-complete.eot");
+    src: local("☺"), url("./assets/fonts/OpenSans-Regular-complete.eot#iefix") format("embedded-opentype"), url("./assets/fonts/OpenSans-Regular-complete.woff") format("woff"), url("./assets/fonts/OpenSans-Regular-complete.ttf") format("truetype"), url("./assets/fonts/OpenSans-Regular-complete.svg#svgFontName") format("svg");
+    font-style: normal;
+    font-weight: 400
+}
 @font-face {
     font-family: "Open Sans";
     src: url("./assets/fonts/OpenSans-Bold-complete.eot");
@@ -25,14 +26,14 @@
 }
 
 // @font-face {
-//     font-family: "Open Sans Condensed";
+//     font-family: "Open Sans condbold";
 //     src: url("./assets/fonts/opensans-condbold-complete.html");
 //     src: local("☺"), url("./assets/fonts/opensans-condbold-complete.eot#iefix") format("embedded-opentype"), url("./assets/fonts/opensans-condbold-complete.woff") format("woff"), url("./assets/fonts/opensans-condbold-complete.ttf") format("truetype"), url("./assets/fonts/opensans-condbold-complete.svg#svgFontName") format("svg");
 //     font-style: normal;
 //     font-weight: 700
 // }
 // @font-face {
-//     font-family: "Open Sans Condensed";
+//     font-family: "Open Sans condlight";
 //     src: url("./assets/fonts/opensans-condlight-complete.eot");
 //     src: local("☺"), url("./assets/fonts/opensans-condlight-complete.eot#iefix") format("embedded-opentype"), url("./assets/fonts/opensans-condlight-complete.woff") format("woff"), url("./assets/fonts/opensans-condlight-complete.ttf") format("truetype"), url("./assets/fonts/opensans-condlight-complete.svg#svgFontName") format("svg");
 //     font-style: normal;
@@ -59,7 +60,11 @@
 }
 
 /*# sourceMappingURL=fonts.css.map */
-
+.fi-quicklink__label, .fi-callToAction__label{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: 700;
+}
 [hidden] {
     display: none !important
 }
@@ -117,7 +122,14 @@
     .item {
         background-color: #f1ebe3;
     }
+    &.owl__video{
+        .item__thumb{
+            max-height: 166px;
+        }
+        
+    }
     .item__thumb {
+       
         display: block;
         position: relative;
         overflow: hidden;
@@ -151,9 +163,32 @@
             font-size: 21px;
             line-height: 1.1;
         }
+        .item__link{
+            transition-duration: .2s;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+            backface-visibility: hidden;
+            -webkit-transition-property: opacity transform;
+            transition-property: opacity transform;
+            -webkit-transition-duration: .2s;
+            &:hover{
+                .fi-svg-icon{
+                    transform: translateX(2px)
+                }
+            }
+        }
         .item__more {
             margin: 6%;
             font-size: 14px;
+            .item__more__label{
+                color:#474747;
+                
+                margin-left: 5px;
+                &:hover{
+                    opacity: 0.5;
+                    text-decoration: none;
+                }
+            }
         }
     } //owl-dots
     &.owl_topCarousel {
@@ -490,8 +525,12 @@
 .slider_venues-wrapper{
     margin-top: 40px;
 }
-.slider-destination {
-
+.owl_destination {
+    .item{
+        position: relative;
+        max-height: 275px;
+        overflow: hidden
+    }
     .owl-nav {
         position: absolute;
         top: -40px;

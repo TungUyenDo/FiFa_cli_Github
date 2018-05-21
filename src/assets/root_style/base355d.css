@@ -306,13 +306,6 @@ html {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
 }
 
-body {
-    font-family: 'Open Sans', sans-serif;
-    font-size: 13px;
-    line-height: 1.54;
-    color: #666;
-    background-color: #fff
-}
 
 input,
 button,
@@ -471,23 +464,6 @@ cite {
     text-align: center
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    line-height: 1.1;
-    color: inherit
-}
 
 h1 small,
 h2 small,

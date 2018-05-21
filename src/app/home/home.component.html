@@ -1108,7 +1108,7 @@
         
             <div class="container-fluid">
                 <div class="row">
-                    <div class="owl__custom owl_focus">
+                    <div class="owl__custom owl__video">
                         <owl-carousel [options]="carouselVideosOptions" [items]="data_video_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
                             <div class="item" *ngFor="let item of data_video_link_string">
                                 <a href="#" class="item__thumb">
@@ -1167,7 +1167,7 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- You can use owl-carousel selector to include its component -->
-                    <div class="owl__custom owl_news">
+                    <div class="owl__custom owl_timeline">
                         <owl-carousel [options]="carouselTimelineOptions" [items]="list_data_photos" [carouselClasses]="['owl-theme', 'row', 'sliding']">
                             <div class="item" *ngFor="let item of list_data_photos">
                                 <a href="#" class="item__thumb">

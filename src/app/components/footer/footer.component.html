@@ -8,8 +8,8 @@
           Follow us on
         </h4>
 
-
-
+        
+      
         <ul class="fi-social-channels--svg">
           <li>
             <a class="fi-social-channels__fb--f" href="#">
@@ -112,38 +112,48 @@
       <div class="fi-site-footer__language col-xs-12 col-md-2">
         <div class="fi-footer__language dropup">
           <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
-            <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
+            <!-- <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
               <span class="fi-selected-item">English</span>
-            </button>
-            <ul class="dropdown-menu">
-              <li data-value="en-GB">
-                <a href="#">English</a>
+            </button> -->
+            <!-- <ul class="dropdown-menu">
+              <li [attr.data-value]="en-GB">
+                <a>English</a>
               </li>
-              <li data-value="de-DE">
-                <a href="#">Deutsch</a>
+              <li [attr.data-value]="de-DE">
+                <a>Deutsch</a>
               </li>
-              <li data-value="fr-FR">
-                <a href="#">Fran&#231;ais</a>
+              <li [attr.data-value]="fr-FR">
+                <a>Fran&#231;ais</a>
               </li>
-              <li data-value="es-ES">
-                <a href="#">Espa&#241;ol</a>
+              <li [attr.data-value]="es-ES">
+                <a>Espa&#241;ol</a>
               </li>
-              <li data-value="ar-SA">
-                <a href="#">عربي</a>
+              <li [attr.data-value]="ar-SA">
+                <a>عربي</a>
               </li>
-              <li data-value="ru-RU">
-                <a href="#">Русский</a>
+              <li [attr.data-value]="ru-RU">
+                <a>Русский</a>
               </li>
-            </ul>
-            <select class="fi-select">
-              <option value="en-GB" data-abbr="EN">English</option>
-              <option value="de-DE" data-abbr="DE">Deutsch</option>
-              <option value="fr-FR" data-abbr="FR">Fran&#231;ais</option>
-              <option value="es-ES" data-abbr="ES">Espa&#241;ol</option>
-              <option value="ar-SA" data-abbr="AR">عربي</option>
-              <option value="ru-RU" data-abbr="RU">Русский</option>
+            </ul> -->
+            <select class="fi-select" style="display:block">
+              <option value="en-GB" data-lang="EN">English</option>
+              <option value="de-DE" data-lang="DE">Deutsch</option>
+              <option value="fr-FR" data-lang="FR">Fran&#231;ais</option>
+              <option value="es-ES" data-lang="ES">Espa&#241;ol</option>
+              <option value="ar-SA" data-lang="AR">عربي</option>
+              <option value="ru-RU" data-lang="RU">Русский</option>
             </select>
             <i class="fi-icon fi-icon-down"></i>
+
+
+            <select class="select_languages">
+              <option [value]="en" >English</option>
+              <option [value]="de" >Deutsch</option>
+              <option [value]="fr" >Fran&#231;ais</option>
+              <option [value]="es" >Espa&#241;ol</option>
+              <option [value]="ar" >عربي</option>
+              <option [value]="ru" >Русский</option>
+            </select>
           </div>
         </div>
       </div>
@@ -190,5 +200,14 @@
         <span>Copyright &#169;1994 - 2018 FIFA. All rights reserved</span>
       </div>
     </div>
+  </div>
+  <div class="container-fluid">
+    <h1 translate>Title</h1>
+
+    <div>
+      {{ 'HOME.HELLO' | translate:user }}
+    </div>
+    <button (click)="switchLanguage('en')">en</button>
+    <button (click)="switchLanguage('fr')">fr</button>
   </div>
 </footer>
