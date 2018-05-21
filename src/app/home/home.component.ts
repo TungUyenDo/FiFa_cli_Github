@@ -149,7 +149,7 @@ export class HomeComponent implements OnInit {
       this.data_news = res;
   
       this.data_news_link_string = this.data_news.data.items;
-      console.log(this.data_news_link_string);
+      // console.log(this.data_news_link_string);
   
       this.data_news_link_string.forEach(element => {
          
@@ -177,7 +177,7 @@ export class HomeComponent implements OnInit {
 
           return element;
       });
-      console.log(this.data_video_link_string);
+      // console.log(this.data_video_link_string);
     })
   }
   
@@ -187,7 +187,7 @@ export class HomeComponent implements OnInit {
 
       this.list_data_photos = this.data_photos.data.items;
 
-      console.log(this.list_data_photos)
+      // console.log(this.list_data_photos)
 
     })
   }

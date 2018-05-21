@@ -14,7 +14,7 @@ export class ApiServices {
 
    
     constructor(private http: HttpClient) {
-        console.log('service')
+        // console.log('service')
     }
 
     //api test demo
@@ -67,7 +67,7 @@ export class ApiServices {
     }
     //get photos
     public getPhotos(data) {
-        console.log(data)
+        // console.log(data)
         let headers = new HttpHeaders({
             'Cache-Control': 'no-cache',
             'Accept': 'application/json',
@@ -89,7 +89,19 @@ export class ApiServices {
         return this.http.get(dataJson)
             .pipe(
                 map(res => {
-                    console.log(res)
+                    // console.log(res)
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+    //get top list languages
+    public getListLanguages() {
+       var dataJson = "../assets/data_json/json/languages.json";
+        return this.http.get(dataJson)
+            .pipe(
+                map(res => {
+                    // console.log(res)
                     return res
                 }),
                 catchError(this.handleError)

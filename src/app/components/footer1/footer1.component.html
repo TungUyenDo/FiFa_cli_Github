@@ -5,36 +5,8 @@
         <div class="fi-site-footer__language col-xs-12 col-md-2">
           <div class="fi-footer__language dropup">
             <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
-              <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
-                <span class="fi-selected-item"></span>
-              </button>
-              <ul class="dropdown-menu">
-                <li data-value="en-GB">
-                  <a href="http://en.fifa.com/">English</a>
-                </li>
-                <li data-value="de-DE">
-                  <a href="http://de.fifa.com/">Deutsch</a>
-                </li>
-                <li data-value="fr-FR">
-                  <a href="http://fr.fifa.com/">Fran&#231;ais</a>
-                </li>
-                <li data-value="es-ES">
-                  <a href="http://es.fifa.com/">Espa&#241;ol</a>
-                </li>
-                <li data-value="ar-SA">
-                  <a href="http://ar.fifa.com/">عربي</a>
-                </li>
-                <li data-value="ru-RU">
-                  <a href="http://ru.fifa.com/">Русский</a>
-                </li>
-              </ul>
-              <select class="fi-select">
-                <option value="en-GB" data-abbr="EN">English</option>
-                <option value="de-DE" data-abbr="DE">Deutsch</option>
-                <option value="fr-FR" data-abbr="FR">Fran&#231;ais</option>
-                <option value="es-ES" data-abbr="ES">Espa&#241;ol</option>
-                <option value="ar-SA" data-abbr="AR">عربي</option>
-                <option value="ru-RU" data-abbr="RU">Русский</option>
+              <select class="select_languages" (change)="switchLanguage($event.target.value)" [attr.item]="current_languages" ([ngModel])="current_languages">
+                <option [value]="item.short_code" [selected]="item.short_code === current_languages" *ngFor="let item of datalanguages">{{item.name}}</option>
               </select>
               <i class="fi-icon fi-icon-down"></i>
             </div>

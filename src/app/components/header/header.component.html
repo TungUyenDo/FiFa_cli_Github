@@ -38,8 +38,8 @@
             </a>
           </li>
           <li class="fi-icons-bar__lang">
-            <a href="#" data-dropdown="fi-site-header__dropdown__lang">
-              EN
+            <a data-dropdown="fi-site-header__dropdown__lang">
+              {{current_languages_header}}
             </a>
           </li>
           <li class="fi-icons-bar__search">
@@ -142,38 +142,10 @@
       <!-- LANGUAGES -->
       <div class="fi-site-header__dropdown__lang fi-site-header__dropdown--vertical hidden">
 
-
         <ul class="nav nav-langs">
-          <li class="" data-value="en-GB">
-            <a href="http://en.fifa.com/">
-              English
-            </a>
-          </li>
-          <li class="" data-value="de-DE">
-            <a href="http://de.fifa.com/">
-              Deutsch
-            </a>
-          </li>
-          <li class="" data-value="fr-FR">
-            <a href="http://fr.fifa.com/">
-              Fran&#231;ais
-            </a>
-          </li>
-          <li class="" data-value="es-ES">
-            <a href="http://es.fifa.com/">
-              Espa&#241;ol
-            </a>
-          </li>
-          <li class="" data-value="ar-SA">
-            <a href="http://ar.fifa.com/">
-              عربي
-            </a>
-          </li>
-          <li class="" data-value="ru-RU">
-            <a href="http://ru.fifa.com/">
-              Русский
-            </a>
-          </li>
+            <li *ngFor="let item of datalanguages" (click)="switchLanguage(item.short_code)">
+              <a>{{item.name}}</a>
+            </li>
         </ul>
 
       </div>

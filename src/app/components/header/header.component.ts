@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { ApiServices } from '../../app.services'
 
 declare var $: any;
 
@@ -9,9 +11,17 @@ declare var $: any;
 })
 export class HeaderComponent implements OnInit {
 
-  constructor() { }
+  listlanguages :any;
+  datalanguages :any;
+  current_languages_header :any
+
+  constructor(private translate: TranslateService, private services : ApiServices) { }
 
   ngOnInit() {
+
+      this.current_languages_header = localStorage.getItem('currentLanguages');
+      // console.log(this.current_languages_header);
+
       (<any> $)('.fi-site-toggle').click(function(){
           console.log(1)
           $('body').addClass("fi-cookie-banner-open dropdown-main--open fi-section-dropdown-open");
@@ -76,7 +86,31 @@ export class HeaderComponent implements OnInit {
         }
       });
 
+      //call data languages
+      this.GetLanguages();
 
   }
+
+
+
+
+
+    //get languages
+    GetLanguages(){
+      this.services.getListLanguages().subscribe(res =>{
+
+          this.listlanguages = res;
+
+          this.datalanguages = this.listlanguages.languages;
+      })
+    }
+
+    //change languages
+    switchLanguage(lang){
+        localStorage.setItem("currentLanguages", lang);
+
+        this.translate.use(localStorage.getItem('currentLanguages'));
+        window.location.reload();
+    }
 
 }

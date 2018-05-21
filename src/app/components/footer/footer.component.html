@@ -108,12 +108,13 @@
           <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
             
             <select class="select_languages" (change)="switchLanguage($event.target.value)" [attr.item]="current_languages" ([ngModel])="current_languages">
-              <option value="en" >English</option>
+              <!-- <option value="en" >English</option>
               <option value="de" >Deutsch</option>
               <option value="fr" >Fran&#231;ais</option>
               <option value="es" >Espa&#241;ol</option>
               <option value="ar" >عربي</option>
-              <option value="ru" >Русский</option>
+              <option value="ru" >Русский</option> -->
+              <option [value]="item.short_code" [selected]="item.short_code === current_languages" *ngFor="let item of datalanguages">{{item.name}}</option>
             </select>
             <i class="fi-icon fi-icon-down"></i>
           </div>
@@ -159,7 +160,7 @@
         </div>
       </div>
       <div class="fi-site-footer__row2 col-xs-12">
-        <span>Copyright &#169;1994 - 2018 FIFA. All rights reserved</span>
+        <span>{{'footer.navigationBottom.copyright' | translate}}</span>
       </div>
     </div>
   </div>
