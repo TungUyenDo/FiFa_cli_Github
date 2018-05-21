@@ -8,7 +8,6 @@
           Follow us on
         </h4>
 
-        
       
         <ul class="fi-social-channels--svg">
           <li>
@@ -54,29 +53,24 @@
 
       <ul class="nav fi-fwc__pre-footer">
         <li>
-
-          <a href="matches/index.html">
-            Matches </a>
+          <a href="/matches">
+            {{'footer.navigationTop.matches' | translate}} 
+          </a>
         </li>
         <li>
-
-          <a href="teams/index-2.html">
-            Teams </a>
+          <a href="/teams">
+             {{'footer.navigationTop.teams' | translate}}
+           </a>
         </li>
         <li>
-
-          <a href="groups/index.html">
-            Groups </a>
+          <a href="/groups">
+           {{'footer.navigationTop.groups' | translate}}
+          </a>
         </li>
         <li>
-
-          <a href="destination/index-2.html">
-            Destination </a>
-        </li>
-        <li>
-
-          <a href="organisation/ticketing/index.html">
-            Ticketing </a>
+          <a href="/destination">
+             {{'footer.navigationTop.destination' | translate}}
+          </a>
         </li>
       </ul>
 
@@ -112,48 +106,16 @@
       <div class="fi-site-footer__language col-xs-12 col-md-2">
         <div class="fi-footer__language dropup">
           <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
-            <!-- <button class="btn btn-select dropdown-toggle" type="button" data-toggle="dropdown">
-              <span class="fi-selected-item">English</span>
-            </button> -->
-            <!-- <ul class="dropdown-menu">
-              <li [attr.data-value]="en-GB">
-                <a>English</a>
-              </li>
-              <li [attr.data-value]="de-DE">
-                <a>Deutsch</a>
-              </li>
-              <li [attr.data-value]="fr-FR">
-                <a>Fran&#231;ais</a>
-              </li>
-              <li [attr.data-value]="es-ES">
-                <a>Espa&#241;ol</a>
-              </li>
-              <li [attr.data-value]="ar-SA">
-                <a>عربي</a>
-              </li>
-              <li [attr.data-value]="ru-RU">
-                <a>Русский</a>
-              </li>
-            </ul> -->
-            <select class="fi-select" style="display:block">
-              <option value="en-GB" data-lang="EN">English</option>
-              <option value="de-DE" data-lang="DE">Deutsch</option>
-              <option value="fr-FR" data-lang="FR">Fran&#231;ais</option>
-              <option value="es-ES" data-lang="ES">Espa&#241;ol</option>
-              <option value="ar-SA" data-lang="AR">عربي</option>
-              <option value="ru-RU" data-lang="RU">Русский</option>
+            
+            <select class="select_languages" (change)="switchLanguage($event.target.value)" [attr.item]="current_languages" ([ngModel])="current_languages">
+              <option value="en" >English</option>
+              <option value="de" >Deutsch</option>
+              <option value="fr" >Fran&#231;ais</option>
+              <option value="es" >Espa&#241;ol</option>
+              <option value="ar" >عربي</option>
+              <option value="ru" >Русский</option>
             </select>
             <i class="fi-icon fi-icon-down"></i>
-
-
-            <select class="select_languages" [ngModel]="selectedDevice" >
-              <option [value]="en" >English</option>
-              <option [value]="de" >Deutsch</option>
-              <option [value]="fr" >Fran&#231;ais</option>
-              <option [value]="es" >Espa&#241;ol</option>
-              <option [value]="ar" >عربي</option>
-              <option [value]="ru" >Русский</option>
-            </select>
           </div>
         </div>
       </div>
@@ -164,33 +126,33 @@
         <div class="fi-site-footer__row1">
           <ul class="fi-footer-menu">
             <li>
-              <a href="../../legal/terms-of-service.html">
-                Terms of Service
+              <a href="#">
+                 {{'footer.navigationBottom.termOfService' | translate}}
               </a>
             </li>
             <li>
-              <a href="../../legal/privacy-policy.html">
-                Privacy Policy
+              <a href="#">
+                 {{'footer.navigationBottom.privacyPolicy' | translate}}
               </a>
             </li>
             <li>
-              <a href="../../legal/downloads.html">
-                Downloads
+              <a href="#">
+                 {{'footer.navigationBottom.downloads' | translate}}
               </a>
             </li>
             <li>
-              <a href="../../faq.html">
-                Contact FIFA
+              <a href="#">
+               {{'footer.navigationBottom.contactFifa' | translate}}
               </a>
             </li>
             <li>
-              <a href="../../mobile/index.html">
-                Mobile Apps
+              <a href="#">
+                 {{'footer.navigationBottom.mobileApps' | translate}}
               </a>
             </li>
             <li>
-              <a href="../../widgets/index.html">
-                Widgets
+              <a href="#">
+                 {{'footer.navigationBottom.widgets' | translate}}
               </a>
             </li>
           </ul>
@@ -201,13 +163,5 @@
       </div>
     </div>
   </div>
-  <div class="container-fluid">
-    <h1 translate>Title</h1>
-
-    <div>
-      {{ 'HOME.HELLO' | translate:user }}
-    </div>
-    <button (click)="switchLanguage('en')">en</button>
-    <button (click)="switchLanguage('fr')">fr</button>
-  </div>
+  
 </footer>

@@ -10,6 +10,7 @@ export function HttpLoaderFactory(http: HttpClient) {
    return new TranslateHttpLoader(http);
 }
 
+
 @NgModule({
     imports: [
     HttpClientModule,
@@ -28,20 +29,16 @@ export function HttpLoaderFactory(http: HttpClient) {
     ]
 })
 export class SharedModule {
-  
+    language_default: any;
+
     constructor(private translate: TranslateService) {
-        translate.setDefaultLang('fr');
+        this.language_default = localStorage.getItem('currentLanguages');
+
+       if(!this.language_default){
+            this.language_default = 'fr'
+            translate.use(this.language_default);
+           localStorage.setItem('currentLanguages',this.language_default)
+       }
     }
 
-
-   
-
-    //  constructor(private translate: TranslateService) {
-                  
-    //     translate.addLangs(["en", "fr"]);
-    //     translate.setDefaultLang('en');
-
-    //     let browserLang = translate.getBrowserLang();
-    //     translate.use(browserLang.match(/en|fr/) ? browserLang : 'en');
-    // }
 }

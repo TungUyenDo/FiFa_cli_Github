@@ -11,7 +11,6 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Footer1Component } from './components/footer1/footer1.component';
-import { Footer2Component } from './components/footer2/footer2.component';
 
 import { NewsComponent } from './news/news.component';
 import { NewsDetailComponent } from './news/news-detail/news-detail.component';
@@ -42,7 +41,6 @@ import { SharedModule } from './app.share'
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    Footer2Component,
     Footer1Component,
     PhotosComponent,
     VideosComponent,

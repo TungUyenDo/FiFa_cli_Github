@@ -150,11 +150,9 @@
 
 <!-- font awesome -->
 
-<app-header></app-header>
 <div class="content-wrap fi-basic-template">
     <div class="fi-boxed-page">
        
-      
         <div class="top__owl">
             <div class="owl__custom owl_topCarousel">
                 <owl-carousel [options]="carouselTopPage" [items]="list_data_top_carousel" 
@@ -190,13 +188,13 @@
                 <div class="row">
                     <div class="col-xs-9 col-md-7">
                         <h4 class="fi-countdown__container">
-                            <span class="fi-countdown__title">TOURNAMENT STARTS IN: </span>
+                            <span class="fi-countdown__title">{{'home.tournamentstartin.text' | translate}}: </span>
                             <span data-type="day-container" class="fi-countdown__numbers"></span>
-                            <span class="fi-countdown__abbreviation">Days</span>
+                            <span class="fi-countdown__abbreviation">{{'home.tournamentstartin.days' | translate}}</span>
                             <span data-type="hour-container" class="fi-countdown__numbers"></span>
-                            <span class="fi-countdown__abbreviation">hours</span>
+                            <span class="fi-countdown__abbreviation">{{'home.tournamentstartin.hours' | translate}}</span>
                             <span data-type="minute-container" class="fi-countdown__numbers"></span>
-                            <span class="fi-countdown__abbreviation">minutes</span>
+                            <span class="fi-countdown__abbreviation">{{'home.tournamentstartin.minutes' | translate}}</span>
                         </h4>
                     </div>
 
@@ -221,7 +219,7 @@
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
-                        Groups
+                        {{'home.groups.title' |  translate}}
                     </h1>
         
                 </header>
@@ -1009,7 +1007,7 @@
                                 <div class="fi-quicklink" role="presentation">
                                     <a href="matches/index.html" target="_self" class="fi-quicklink__link btn btn-primary-inverse">
                                         <span class="fi-quicklink__label">
-                                            All Matches
+                                             {{'home.groups.allmatches' | translate}}
                                             <i class="fi-icon fi-icon-next"></i>
                                         </span>
                                     </a>
@@ -1020,7 +1018,7 @@
                                     <a href="http://resources.fifa.com/image/upload/2018-fifa-world-cup-russiatm-match-schedule-2667162.pdf?cloudid=wzuz9z88012mh7hykadr"
                                         target="_blank" class="fi-callToAction__link btn btn-primary-inverse">
                                         <span class="fi-callToAction__label">
-                                            Match Schedule
+                                             {{'home.groups.matchschedule' | translate}}
                                             <i class="fi-icon fi-icon-ext-link"></i>
                                         </span>
                                     </a>
@@ -1040,7 +1038,7 @@
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
-                        Latest News
+                     {{'home.latestnews.title' | translate}}
                     </h1>
         
                     <div class="fi-call__more fi-module__call">
@@ -1048,7 +1046,7 @@
                             <svg class="fi-svg-icon icon-triangle">
                                 <use xlink:href="#icon-triangle"></use>
                             </svg>
-                            <span class="fi-o-media-object__more__label">All News</span>
+                            <span class="fi-o-media-object__more__label"> {{'home.latestnews.allnews' | translate}}</span>
                         </a>
                     </div>
                 </header>
@@ -1101,7 +1099,7 @@
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
-                        Latest Video
+                         {{'home.latestvideos.title' | translate}}
                     </h1>
                 </header>
             </div>
@@ -1156,7 +1154,7 @@
             <div class="container-fluid">
                 <header class="section__header">
                     <h1 class="section__title ">
-                        World Cup Timeline
+                     {{'home.timeline.title' | translate}}
                     </h1>
 
                 </header>
@@ -1209,7 +1207,7 @@
             <div class="container-fluid">
                 <div class="fi-sponsor-list--home" >
                     <div class="fi-sponsor-list--fifa-partners">
-                        <h4 class="fi-sponsor-list__title">FIFA Partners</h4>
+                        <h4 class="fi-sponsor-list__title">{{'home.fifaPartners' | translate}}</h4>
                         <ul class="fi-sponsor-list">
                             <li data-sponsor="adidas" class="fi-sponsor fi-sponsor__adidas">
                                 <a href="/about-fifa/marketing/sponsorship/partners/adidas.html" title="Adidas" class="fi-sponsor__link">

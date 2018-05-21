@@ -1,6 +1,67 @@
 {
+    "header": {
+      "competition_title": "2018 FIFA World Cup Russia™",
+      "competition_date": "14 June - 15 July",
+      "navigation":{
+        "matches":"Matches",
+        "teams":"Teams",
+        "groups":"Groups",
+        "destination":"Destinations",
+        "news":"News",
+        "photos":"Photos",
+        "videos":"Videos",
+        "searchonfifa":"Search on FIFA.com"
+      }
+    },
+    "home":{
+      "tournamentstartin":{
+          "text":"TOURNAMENT STARTS IN",
+          "days":"DAYS",
+          "hours":"HOURS",
+          "minutes":"MINUTES"
+      },
+      "groups":{
+          "title":"groups",
+          "allmatches":"all matches",
+          "matchschedule":"match schedule"
+      },
+      "latestnews": {
+        "title": "latest news",
+        "allnews": "All news"
+      },
+      "latestvideos": {
+        "title": "latest videos"
+      },
+      "timeline": {
+        "title": "world cup timeline"
+      },
+      "fifaPartners": "FIFA Partners"
+    },
+    
+
+    "footer":{
+      "navigationTop": {
+        "matches": "Matches",
+        "teams": "Teams",
+        "groups": "Groups",
+        "destination": "Destinations",
+        "news": "News",
+        "photos": "Photos",
+        "videos": "Videos",
+        "searchonfifa": "Search on FIFA.com"
+      },
+      "navigationBottom":{
+        "termOfService":"Terms of Service",
+        "privacyPolicy":"Terms of Service",
+        "downloads":"Downloads",
+        "contactFifa":"Contact FIFA",
+        "mobileApps":"Mobile Apps",
+        "widgets":"Widgets"
+      }
+    },
+    
     "HOME": {
       "SELECT": "Change language",
-      "HELLO": "Hello from Home!!!! My name is Uyen"
+      "HELLO": "Hello from Home!!!! En"
     }
-  }
+}
