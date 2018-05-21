@@ -1,0 +1,29 @@
+.fi-select__languages .dropdown-menu.active {
+    display: block !important
+}
+
+.fi-select__languages {
+    .select_languages {
+        background-color: #fff;
+        min-width: 100px;
+        width: 100%;
+        cursor: pointer;
+        border: 1px solid #326295;
+        color: #326295;
+        padding-left: 10px;
+        padding-top: 7px;
+        padding-bottom: 7px;
+        padding: 4px;
+        outline: none;
+        -webkit-appearance: none;
+        appearance: none;
+        -moz-appearance: none;
+        -ms-appearance: none;
+        position: relative;
+    }
+    .fi-icon-down {
+        position: absolute;
+        right: 10px;
+        top: 30%;
+    }
+}

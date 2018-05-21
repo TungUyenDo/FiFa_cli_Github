@@ -1,5 +1,4 @@
-<app-header>
-</app-header>
+
 <div id="content-wrap">
   <div class="container">
     <div class="page-share hidden-print">
@@ -36,26 +35,27 @@
     <div class="header-wrap ">
       <div class="title-wrap">
         <h1 class="title">
-          <span>Video</span>
+          <span [hidden]="index > 1">Video</span>
+          <span [hidden]="index < 2">All Video</span>
         </h1>
       </div>
     </div>
     <div class="row row-first">
-      <div class="header-wrap ">
+      <div class="header-wrap"[hidden]="index > 1">
         <div class="title-wrap">
           <h2 class="title">
             <span>Latest Videos</span>
           </h2>
         </div>
       </div>
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid">
         <div class="dcm-list thumblist-lnd-3 grid-view list-videos ">
           <ul class="dcm-thumblist vertical">
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
+            <li class="dcm-thumblist-item" *ngFor="let item of video_4Item" xmlns:cfg="urn:cfg.fifaExtension.com">
               <!--2944622-->
               <div class="ph-lnd-3 figure i-wrap ">
                 <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d49-days-to-go-costa-rica-mark-their-mark.html">
-                  <img alt="49 DAYS TO GO! Costa Rica make their mark" title="49 DAYS TO GO! Costa Rica make their mark" src="./CompiledAssets/img-news/y1zvfop5kw4gnr96f67h.jpg"
+                  <img alt="49 DAYS TO GO! Costa Rica make their mark" title="49 DAYS TO GO! Costa Rica make their mark" [src]="item.image"
                     class="i-lnd-3" ph-data-picture-index="1" ph-data-picture-id="2944622" ph-data-picture-copyright="YouTube"
                     ph-data-picture-title="49 DAYS TO GO! Costa Rica make their mark" ph-data-picture-date="Thursday, 26 April 2018"
                     ph-data-picture-comment="Upon taking their opening bow at the FIFA World Cup™ at Italy 1990, it took Costa Rica 49 minutes to open their account, with a slick move against Scotland being converted by Juan Cayasso to secure victory."
@@ -67,80 +67,23 @@
                 </a>
               </div>
               <h4 class="dcm-title">
-                <a href="y%3d2018/m%3d4/video%3d49-days-to-go-costa-rica-mark-their-mark.html">49 DAYS TO GO! Costa Rica make their mark</a>
-              </h4>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2944319-->
-              <div class="ph-lnd-3 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d50-days-to-go-heroic-hat-tricks.html">
-                  <img alt="50 DAYS TO GO! Heroic hat-tricks" title="50 DAYS TO GO! Heroic hat-tricks" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-lnd-3" ph-data-picture-index="2" ph-data-picture-id="2944319" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="50 DAYS TO GO! Heroic hat-tricks" ph-data-picture-date="Wednesday, 25 April 2018"
-                    ph-data-picture-comment="There have been a half-century of hat-tricks at the FIFA World Cup™, with Xherdan Shaqiri's treble against Honduras at Brazil 2014 bringing up the 50. Geoff Hurst scored the only hat-trick in a Final back in 1966."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/l3cpwhrtx6qg0bewh7vi.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <h4 class="dcm-title">
-                <a href="y%3d2018/m%3d4/video%3d50-days-to-go-heroic-hat-tricks.html">50 DAYS TO GO! Heroic hat-tricks</a>
-              </h4>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2943948-->
-              <div class="ph-lnd-3 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d51-days-to-go-peru-s-proud-performers.html">
-                  <img alt="51 DAYS TO GO! Peru's proud performers" title="51 DAYS TO GO! Peru's proud performers" src="./CompiledAssets/img-news/dm5d1yxxzi2mjmo5a52d.jpg"
-                    class="i-lnd-3" ph-data-picture-index="3" ph-data-picture-id="2943948" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="51 DAYS TO GO! Peru's proud performers" ph-data-picture-date="Tuesday, 24 April 2018"
-                    ph-data-picture-comment="La Blanquirroja have had 51 players represent them at the FIFA World Cup™, with the legendary Teofilo Cubillas playing the most games (13) and scoring the most goals (10)."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/dm5d1yxxzi2mjmo5a52d.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <h4 class="dcm-title">
-                <a href="y%3d2018/m%3d4/video%3d51-days-to-go-peru-s-proud-performers.html">51 DAYS TO GO! Peru&#39;s proud performers</a>
-              </h4>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2940557-->
-              <div class="ph-lnd-3 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d52-days-to-go-batista-s-red-mist.html">
-                  <img alt="52 DAYS TO GO! Batista's red mist" title="52 DAYS TO GO! Batista's red mist" src="./CompiledAssets/img-news/recgjwvwe5pvocmxshju.jpg"
-                    class="i-lnd-3" ph-data-picture-index="4" ph-data-picture-id="2940557" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="52 DAYS TO GO! Batista's red mist" ph-data-picture-date="Monday, 23 April 2018"
-                    ph-data-picture-comment="It took just 52 seconds for Uruguay's Jose Batista to receive his marching orders in his country's clash with Scotland, after a very early foul on Gordon Strachan."
-                    ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/recgjwvwe5pvocmxshju.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <h4 class="dcm-title">
-                <a href="y%3d2018/m%3d4/video%3d52-days-to-go-batista-s-red-mist.html">52 DAYS TO GO! Batista&#39;s red mist</a>
+                <a href="y%3d2018/m%3d4/video%3d49-days-to-go-costa-rica-mark-their-mark.html">{{item.title}}</a>
               </h4>
             </li>
           </ul>
         </div>
       </div>
 
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid"[hidden]="index > 1">
         <div class="dcm-list thumblist-sqr-1 grid-view list-videos ">
           <ul class="dcm-thumblist inline-col4">
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
+            <li class="dcm-thumblist-item" *ngFor="let item of video_6Item" xmlns:cfg="urn:cfg.fifaExtension.com">
               <!--2940185-->
               <div class="ph-sqr-1 figure i-wrap ">
                 <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d53-days-to-go-super-sanchez.html">
-                  <img alt="53 DAYS TO GO! Super Sanchez" title="53 DAYS TO GO! Super Sanchez" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="1" ph-data-picture-id="2940185" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="53 DAYS TO GO! Super Sanchez" ph-data-picture-date="Sunday, 22 April 2018" ph-data-picture-comment="There have been 53 FIFA World Cup™ matches played by players with the surname Sanchez. Chile's Leonel won the adidas Golden Boot in 1962, while Mexico's Hugo appeared at three tournaments."
+                  <img alt="53 DAYS TO GO! Super Sanchez" title="53 DAYS TO GO! Super Sanchez" [src]="item.image" class="i-sqr-1" ph-data-picture-index="1"
+                    ph-data-picture-id="2940185" ph-data-picture-copyright="YouTube" ph-data-picture-title="53 DAYS TO GO! Super Sanchez"
+                    ph-data-picture-date="Sunday, 22 April 2018" ph-data-picture-comment="There have been 53 FIFA World Cup™ matches played by players with the surname Sanchez. Chile's Leonel won the adidas Golden Boot in 1962, while Mexico's Hugo appeared at three tournaments."
                     ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/yjbbtra6ejxesari1iqr.jpg"
                     ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
                   <span class="dcm-icoFrame dcm-ico-videos">
@@ -150,129 +93,30 @@
               </div>
               <div class="dcm-thumblist-title">
                 <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d53-days-to-go-super-sanchez.html">53 DAYS TO GO! Super Sanchez</a>
-                </h4>
-              </div>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2939866-->
-              <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d54-days-to-go-beamed-around-the-world.html">
-                  <img alt="54 DAYS TO GO! Beamed around the world" title="54 DAYS TO GO! Beamed around the world" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="2" ph-data-picture-id="2939866" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="54 DAYS TO GO! Beamed around the world" ph-data-picture-date="Saturday, 21 April 2018"
-                    ph-data-picture-comment="The 1954 FIFA World Cup™ was the first to be televised, with Fritz Walter's West Germany defeating Hungary's Magical Magyars in a thrilling finale."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/w89cjblv4nla04zezesb.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <div class="dcm-thumblist-title">
-                <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d54-days-to-go-beamed-around-the-world.html">54 DAYS TO GO! Beamed around the world</a>
-                </h4>
-              </div>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2939564-->
-              <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d55-days-to-go-maradona-s-moment-of-magic.html">
-                  <img alt="55 DAYS TO GO! Maradona's moment of magic  " title="55 DAYS TO GO! Maradona's moment of magic  " src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="3" ph-data-picture-id="2939564" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="55 DAYS TO GO! Maradona's moment of magic  " ph-data-picture-date="Friday, 20 April 2018"
-                    ph-data-picture-comment="After Diego Maradona's indiscretion - the 'Hand of God' - four minutes prior, fans at the Azteca Stadium did not have long to wait until the 55th minute of Argentina's clash against England at Mexico 1986 to see the 'Goal of the Century'"
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/jlwzyh2uuhwe6c6q19s5.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <div class="dcm-thumblist-title">
-                <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d55-days-to-go-maradona-s-moment-of-magic.html">55 DAYS TO GO! Maradona&#39;s moment of magic&#160;&#160;</a>
-                </h4>
-              </div>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2939248-->
-              <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d56-days-to-go-three-lions-defensive-record.html">
-                  <img alt="56 DAYS TO GO! Three Lions' defensive record" title="56 DAYS TO GO! Three Lions' defensive record" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="4" ph-data-picture-id="2939248" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="56 DAYS TO GO! Three Lions' defensive record" ph-data-picture-date="Thursday, 19 April 2018"
-                    ph-data-picture-comment="England have conceded 56 goals in 62 FIFA World Cup™ matches, with Germany the biggest beneficiaries: Die Nationalmannschaft have scored ten in five meetings with the Three Lions."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/bhtc1xbmudqx6jjqxwkg.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <div class="dcm-thumblist-title">
-                <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d56-days-to-go-three-lions-defensive-record.html">56 DAYS TO GO! Three Lions&#39; defensive record</a>
-                </h4>
-              </div>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2938668-->
-              <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3done-to-eleven-andreas-brehme.html">
-                  <img alt="One to Eleven: Andreas Brehme" title="One to Eleven: Andreas Brehme" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="5" ph-data-picture-id="2938668" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="One to Eleven: Andreas Brehme" ph-data-picture-date="Wednesday, 18 April 2018" ph-data-picture-comment="Stadio Olimpico, Rome. July 8th, 1990. A place and date that Andreas Brehme will never forget. Enjoy the third in our series of shorts, highlighting some of the stories featured in the upcoming FIFA World Cup Film, One to Eleven. The full film is being made available to all Official FIFA world cup broadcasters."
-                    ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/ixsbl5i7wcee7pilcel8.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <div class="dcm-thumblist-title">
-                <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3done-to-eleven-andreas-brehme.html">One to Eleven: Andreas Brehme</a>
-                </h4>
-              </div>
-            </li>
-            <li class="dcm-thumblist-item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2938484-->
-              <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d57-days-to-go-la-albiceleste-s-able-marksmen.html">
-                  <img alt="57 DAYS TO GO! La Albiceleste's able marksmen" title="57 DAYS TO GO! La Albiceleste's able marksmen" src="./CompiledAssets/img-news/l3cpwhrtx6qg0bewh7vi.jpg"
-                    class="i-sqr-1" ph-data-picture-index="6" ph-data-picture-id="2938484" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="57 DAYS TO GO! La Albiceleste's able marksmen" ph-data-picture-date="Wednesday, 18 April 2018"
-                    ph-data-picture-comment="There have been 57 different goalscorers for Argentina at the FIFA World Cup™, spanning 84 years from Luis Monti's opener against France at the 1930 finals, to Angel Di Maria's remarkable extra time winner against Switzerland at Brazil 2014."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/falmirllhp0ylpqxpjrk.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
-                </a>
-              </div>
-              <div class="dcm-thumblist-title">
-                <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d57-days-to-go-la-albiceleste-s-able-marksmen.html">57 DAYS TO GO! La Albiceleste&#39;s able marksmen</a>
+                  <a href="y%3d2018/m%3d4/video%3d53-days-to-go-super-sanchez.html">{{item.title}}</a>
                 </h4>
               </div>
             </li>
           </ul>
         </div>
       </div>
-      <div class="col-xs-12 clear-grid ">
+      <div class="col-xs-12 clear-grid" [hidden]="index > 1">
         <div class="qlink-wrap ">
           <ul class="qlink-list">
-            <li class="qlink-link last">
+            <li class="qlink-link last" (click)="click_moreVideos()" [attr.data-page]="index">
               <div class="qlink-link-wrap">
-                <a href="all-videos.html">
+                <a>
                   <span class="item">More Videos</span>
                 </a>
               </div>
             </li>
           </ul>
         </div>
+      </div>
+      <div class="col-xs-12 fi-list__btn fi-navigation" [hidden]="index < 2">
+          <a role="navigation" class="fi-btn" [attr.data-page]="index" (click)="clickNextVideosPage()" [hidden]="end_page == index">
+            <span class="fi-btn__label">Next posts</span>
+          </a>
       </div>
     </div>
     <div class="row row-last">
@@ -290,7 +134,7 @@
               <!--2940081-->
               <div class="ph-lnd-4 figure i-wrap ">
                 <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3djapan-0-0-greece-brazil-2014.html">
-                  <img alt="Japan 0-0 Greece (Brazil 2014)" title="Japan 0-0 Greece (Brazil 2014)" src="./CompiledAssets/img-news/uufjdo5afhxcvbu8o0is.jpg"
+                  <img alt="Japan 0-0 Greece (Brazil 2014)" title="Japan 0-0 Greece (Brazil 2014)" src="../../assets/images/2018-FIFA-World-Cup-Logo-Vector.png"
                     class="i-lnd-4" ph-data-picture-index="1" ph-data-picture-id="2940081" ph-data-picture-copyright="YouTube"
                     ph-data-picture-title="Japan 0-0 Greece (Brazil 2014)" ph-data-picture-date="Saturday, 21 April 2018" ph-data-picture-comment="Greece survived the dismissal of captain Konstantinos Katsouranis to eke out a goalless draw with Japan that keeps both teams in with a chance of progressing."
                     ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/uufjdo5afhxcvbu8o0is.jpg"
@@ -308,7 +152,7 @@
               <!--2940080-->
               <div class="ph-lnd-4 figure i-wrap ">
                 <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3dcolombia-2-1-cote-d-ivoire-brazil-2014.html">
-                  <img alt="Colombia 2-1 Côte d'Ivoire (Brazil 2014)" title="Colombia 2-1 Côte d'Ivoire (Brazil 2014)" src="./CompiledAssets/img-news/tvjjjwwqp36envxkrdbn.jpg"
+                  <img alt="Colombia 2-1 Côte d'Ivoire (Brazil 2014)" title="Colombia 2-1 Côte d'Ivoire (Brazil 2014)" src="../../assets/images/2018-FIFA-World-Cup-Logo-Vector.png"
                     class="i-lnd-4" ph-data-picture-index="2" ph-data-picture-id="2940080" ph-data-picture-copyright="YouTube"
                     ph-data-picture-title="Colombia 2-1 Côte d'Ivoire (Brazil 2014)" ph-data-picture-date="Saturday, 21 April 2018"
                     ph-data-picture-comment="Goals from James Rodriguez and Juan Quintero helped Colombia to a 2-1 win over Côte d'Ivoire with the result, combined with a stalemate between Greece and Japan, pushing Los Cafeteros into the knockout stage for the first time in 24 years."
@@ -327,7 +171,7 @@
               <!--2940075-->
               <div class="ph-lnd-4 figure i-wrap ">
                 <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3dhonduras-0-3-switzerland-brazil-2014.html">
-                  <img alt="Honduras 0-3 Switzerland (Brazil 2014)" title="Honduras 0-3 Switzerland (Brazil 2014)" src="./CompiledAssets/img-news/qbehhfrkab98belwwt0c.jpg"
+                  <img alt="Honduras 0-3 Switzerland (Brazil 2014)" title="Honduras 0-3 Switzerland (Brazil 2014)" src="../../assets/images/2018-FIFA-World-Cup-Logo-Vector.png"
                     class="i-lnd-4" ph-data-picture-index="3" ph-data-picture-id="2940075" ph-data-picture-copyright="YouTube"
                     ph-data-picture-title="Honduras 0-3 Switzerland (Brazil 2014)" ph-data-picture-date="Saturday, 21 April 2018"
                     ph-data-picture-comment="Switzerland will face Argentina in the last 16 at Brazil 2014 after a Xherdan Shaqiri hat-trick secured a 3-0 win over Honduras and second place in Group E."
@@ -345,9 +189,9 @@
           </ul>
           <div class="qlink-wrap">
             <ul class="qlink-list">
-              <li class="qlink-link last">
+              <li class="qlink-link last" >
                 <div class="qlink-link-wrap">
-                  <a href="../../videos/previous-world-cup/index.html">
+                  <a>
                     <span class="item">Previous FIFA World Cups™</span>
                   </a>
                 </div>
@@ -360,4 +204,4 @@
   </div>
 </div>
 
-<app-footer-1></app-footer-1>
+<app-footer1></app-footer1>

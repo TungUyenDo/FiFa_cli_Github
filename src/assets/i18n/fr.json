@@ -1,0 +1,64 @@
+{
+    "header": {
+      "competition_title": "2018 Coupe du Monde de la FIFA Russie™",
+      "competition_date": "14 juin au 15 juillet",
+      "navigation": {
+        "matches": "Allumettes",
+        "teams": "Équipes",
+        "groups": "Groupes",
+        "destination": "Destinations",
+        "news": "Nouvelles",
+        "photos": "Photos",
+        "videos": "Vidéos",
+        "searchonfifa": "Cherchez sur FIFA.com"
+      }
+    },
+    "home": {
+      "tournamentstartin": {
+        "text": "LE TOURNOI COMMENCE DANS",
+        "days": "JOURNÉES",
+        "hours": "HEURES",
+        "minutes": "MINUTES"
+      },
+      "groups": {
+        "title": "groupes",
+        "allmatches": "tous les matchs",
+        "matchschedule": "calendrier de match"
+      },
+      "latestnews": {
+        "title": "dernières nouvelles",
+        "allnews": "Toutes les nouvelles"
+      },
+      "latestvideos": {
+        "title": "Dernières vidéos"
+      },
+      "timeline": {
+        "title": "Chronologie de la coupe du monde"
+      },
+      "fifaPartners": "Partenaires de la FIFA"
+    },
+    "footer": {
+      "navigationTop": {
+        "matches": "Allumettes",
+        "teams": "Équipes",
+        "groups": "Groupes",
+        "destination": "Destinations",
+        "news": "Nouvelles",
+        "photos": "Photos",
+        "videos": "Vidéos",
+        "searchonfifa": "Cherchez sur FIFA.com"
+      },
+      "navigationBottom": {
+        "termOfService": "Conditions d'utilisation",
+        "privacyPolicy": "Politique de confidentialité",
+        "downloads": "Téléchargements",
+        "contactFifa": "Contactez FIFA",
+        "mobileApps": "Application mobile",
+        "widgets": "Widgets"
+      }
+    },
+    "HOME": {
+      "SELECT": "Changer la langue",
+      "HELLO": "Hello from Home!!!! fr"
+    }
+  }

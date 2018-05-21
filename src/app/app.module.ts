@@ -2,7 +2,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
-import { HttpClientModule } from '@angular/common/http';
 import { AppRouters } from "./app.routers";
 
 
@@ -11,8 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { Footer1Component } from './components/footer-1/footer-1.component';
-import { Footer2Component } from './components/footer-2/footer-2.component';
+import { Footer1Component } from './components/footer1/footer1.component';
 
 import { NewsComponent } from './news/news.component';
 import { NewsDetailComponent } from './news/news-detail/news-detail.component';
@@ -26,34 +24,43 @@ import { MatchesComponent } from './matches/matches.component';
 import { GroupsComponent } from './groups/groups.component';
 
 
-import { SharedModule} from "./share/share.module";
+import { ApiServices } from "./app.services";
+import { OwlModule } from 'ngx-owl-carousel'
 
-import { ApiServices } from "./services/api.services";
+import { MomentModule } from 'ngx-moment';
+
+import { HttpClientModule, HttpClient } from '@angular/common/http';
+
+import { SharedModule } from './app.share'
+
+
 @NgModule({
   //import component child
   declarations: [
     AppComponent,
     HomeComponent,
+    HeaderComponent,
     FooterComponent,
+    Footer1Component,
     PhotosComponent,
     VideosComponent,
     TeamsComponent,
     DestinationComponent,
     MatchesComponent,
     GroupsComponent,
-    Footer2Component,
-    Footer1Component,
     NewsDetailComponent,
     NewsMainComponent,
     NewsComponent
   ],
   //import module parent 
   imports: [
-    SharedModule,
     BrowserModule,
     AppRouters,
     HttpModule,
-    HttpClientModule
+    HttpClientModule,
+    OwlModule,
+    MomentModule,
+    SharedModule
   ],
   providers: [
     ApiServices
