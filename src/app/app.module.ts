@@ -47,7 +47,6 @@ import { SharedModule } from './app.share'
     MatchesComponent,
     GroupsComponent,
     NewsComponent,
-    NewsComponent,
     SafePipe
   ],
   //import module parent 
@@ -65,4 +64,4 @@ import { SharedModule } from './app.share'
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule { }  

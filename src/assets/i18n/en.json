@@ -6,7 +6,7 @@
         "matches":"Matches",
         "teams":"Teams",
         "groups":"Groups",
-        "stadium":"Stadium",
+        "stadiums":"Stadiums",
         "news":"News",
         "photos":"Photos",
         "videos":"Videos",
@@ -62,8 +62,7 @@
       "title_groups":"groups",
       "group_analysis":"Group Analysis",
 
-      "title_stadium":"Stadium",
-      "title_stadium":"Stadium",
+      "title_stadiums":"Stadiums",
 
       "btn_nextpost":"Next post"
     },
@@ -91,7 +90,13 @@
       }
     },
     "footer_blue":{
-      
+        "terms_of_services":"Terms of Services",
+        "privacy_policy":"Privacy Policy",
+        "downloads":"Downloads",
+        "contact_fifa":"Contact FIFA",
+        "mobile_apps":"Mobile Apps",
+        "widgets":"Widgets",
+        "copyright":"Copyright ©1994 - 2018 FIFA. All rights reserved"
     },
     
     "HOME": {
