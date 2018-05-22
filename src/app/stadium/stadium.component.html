@@ -1,0 +1,78 @@
+
+<div id="content-wrap">
+  <div class="container">
+    <div class="page-share hidden-print">
+      <div class="header-share">
+        <div class="header-listchannel">
+          <span class="header-share-title">Follow us on</span>
+          <ul class="social-list">
+            <li class="social-item">
+              <a href="https://twitter.com/fifaworldcup" target="_blank" class="ico-24-twitter-g"> </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.facebook.com/fifaworldcup" target="_blank" class="ico-24-facebook-g"> </a>
+            </li>
+            <li class="social-item">
+              <a href="http://instagram.com/fifaworldcup" target="_blank" class="ico-24-instagram-g"> </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.youtube.com/FIFATV" target="_blank" class="ico-24-youtube-g"> </a>
+            </li>
+            <li class="social-item">
+              <a href="https://www.linkedin.com/company/fifa" target="_blank" class="ico-24-linkedin-g"> </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-sharebtn">
+          <div class="sharebtn-wrap">
+            <a href="#" data-share-type="page">
+              <span>Share</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="fi-boxed-page">
+      <h1 class="fi-page-title">
+         {{'general.title_stadium' | translate}}
+      </h1>
+    </div>
+    <hr>
+    <div class="row row-first">
+      <div class="col-xs-12">
+        <div class="slider_venues-wrapper">          
+            <div class="owl-carousel owl_destination">
+              <div class="item" *ngFor="let item of data_stadium">
+                <div class="images">
+                    <img [src]="item.image_path" alt="">
+                </div>
+                <div class="content">
+                    <ul>
+                      <li> <b> Stadium name</b>: {{item.name}}</li>
+                      <li> <b> Address</b>: {{item.address}}</li>
+                      <li> <b> Surface</b>: {{item.surface}}</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="arrow destination_navigate_left">
+                <span class="icon-arrow">
+                  <i class="icon-angle-left"></i>
+                </span>
+              </div>
+              <div class="arrow destination_navigate_right">
+                <span class="icon-arrow">
+                  <i class="icon-angle-right"></i>
+                </span>
+              </div>
+              
+              
+            </div>
+      
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+<app-footer1></app-footer1>

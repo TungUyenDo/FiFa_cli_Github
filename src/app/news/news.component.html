@@ -1,1 +1,76 @@
-<router-outlet></router-outlet>
+<div class="content-wrap fi-basic-template">
+  <div class="fi-boxed-page">
+    <h1 class="fi-page-title">{{'general.title_news' | translate}}</h1>
+    <svg style="position: absolute; width: 0; height: 0;" width="0" height="0" version="1.1">
+      <defs>
+        <symbol id="icon-triangle" viewBox="0 0 8.63 15.48" width="100%" height="100%">
+          <path class="cls-1" d="M8.11,6.37,2.45.71a1.56,1.56,0,0,0-2-.48A.85.85,0,0,0,.06,1V14.6a.85.85,0,0,0,.41.73,1.56,1.56,0,0,0,2-.48L8.11,9.19A2,2,0,0,0,8.11,6.37Z"
+            transform="translate(-0.06 -0.04)"></path>
+        </symbol>
+        ;
+      </defs>
+    </svg>
+    <section class="section">
+      <div class="container-fluid">
+      </div>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="fi-newslist fi-newslist--grid fi-newslist--4-3-1" data-mobile="1" data-tablet="3" data-desktop="4" data-hasnext="true">
+           
+            <div class="col-xs-12 col-sm-4 col-md-3 col-flex" *ngFor="let item of data_news_link_string" (click)="click_open_link(item.link, $event)">
+              <div class="d3-o-media-object d3-o-media-object--vertical fi-o-media-object--vertical">
+                <figure class="d3-o-media-object__figure fi-o-media-object__figure">
+                  <a class="fi-o-media-object__link">
+                    <picture>
+                      <img [src]="item.img_url" onerror="setDefaultPicture(this,'t_l5', 't_l5', 't_l5', 't_l4');"
+                        class="img-responsive lazyloaded" src="https://img.fifa.com/image/upload/t_l4/wnem9cirdbfjxnvgtuwn.jpg">
+                    </picture>
+                  </a>
+                </figure>
+                <div class="d3-o-media-object__body fi-o-media-object__body">
+                  <a target="_self" class="fi-o-media-object__link">
+                    <h3 class="d3-o-media-object__title fi-o-media-object__title">{{item.title}}</h3>
+                  </a>
+                  <p class="d3-o-media-object__date fi-o-media-object__date">{{item.pubDate * 1000| amDateFormat:'LL'}}</p>
+                </div>
+              </div>
+            </div>
+          
+          </div>
+          <div class="col-xs-12 fi-list__btn fi-navigation">
+            <a role="navigation" class="fi-btn" [attr.data-page]="index" (click)="clickNextNewsPage()" [hidden]="end_page == index">
+              <span class="fi-btn__label">{{'general.btn_nextpost' | translate}}</span>
+            </a>
+            <div class="fi-btn__progress">
+              <div class="percent"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</div>
+<app-footer></app-footer>
+
+<div class="popup_modal">
+      <div class="popup_modal-item">
+          <div class="head">
+              <div class="logo">
+                  <img src="../../../assets/images/fifacom-blue.svg" alt="">
+              </div>
+              <div class="close" (click)="close_popup()">
+                <img src="../../../assets/images/cancel-icon.png" alt="">
+              </div>
+              <div class="clearfix"></div>
+          </div>
+          
+          <div class="body">
+              <div class="title">
+                Link for news:
+              </div>
+              <div class="link">
+                 {{link}} 
+              </div>
+          </div>
+      </div>
+</div>

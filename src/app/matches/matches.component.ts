@@ -1,4 +1,6 @@
+import { ApiServices } from './../app.services';
 import { Component, OnInit } from '@angular/core';
+
 
 @Component({
   selector: 'app-matches',
@@ -7,9 +9,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MatchesComponent implements OnInit {
 
-  constructor() { }
+  constructor( private apiServices : ApiServices) { }
 
   ngOnInit() {
   }
+
+  GetScheduleKnockout(){
+    this.apiServices.getScheduleKnockout().subscribe(res => {
+          console.log(res)
+    })
+  }
+
   
 }

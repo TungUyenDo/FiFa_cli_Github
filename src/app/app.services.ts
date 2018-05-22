@@ -83,6 +83,68 @@ export class ApiServices {
                 catchError(this.handleError)
             );
     }
+    //get teams
+    public getTeams() {
+        // console.log(data)
+        let headers = new HttpHeaders({
+            'Cache-Control': 'no-cache',
+            'Accept': 'application/json',
+            'FB-API-KEY': environment.fbApiKey
+        });
+        return this.http.get(environment.pathUrlApi + "livescores/get-teams-worldcup", { headers: headers}
+            )
+            .pipe(
+                map(res => {
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+    //get stadium
+    public getStadium() {
+        // console.log(data)
+        let headers = new HttpHeaders({
+            'Cache-Control': 'no-cache',
+            'Accept': 'application/json',
+            'FB-API-KEY': environment.fbApiKey
+        });
+        console.log(headers)
+        return this.http.get(environment.pathUrlApi + "livescores/get-all-stadium", { headers: headers}
+            )
+            .pipe(
+                map(res => {
+                    console.log(res)
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+    //get get-schedule-knockout
+    public getScheduleKnockout() {
+        // console.log(data)
+        let headers = new HttpHeaders({
+            'Cache-Control': 'no-cache',
+            'Accept': 'application/json',
+            'FB-API-KEY': environment.fbApiKey
+        });
+        console.log(headers)
+        return this.http.get(environment.pathUrlApi + "livescores/get-schedule-knockout", { headers: headers}
+            )
+            .pipe(
+                map(res => {
+                    console.log(res)
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+
+
+
+
+
+
+    // data global==========================================================================================================
     //get top carousel
     public getDataTopCarousel() {
        var dataJson = "../assets/data_json/json/data.json";

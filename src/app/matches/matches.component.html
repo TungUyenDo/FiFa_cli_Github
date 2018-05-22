@@ -2,10 +2,9 @@
 <div class="content-wrap fi-basic-template">
   <div class="fi-boxed-page">
 
-    <h1 class="fi-page-title" data-asset="header-banner">Matches</h1>
-
-
-
+    <h1 class="fi-page-title" data-asset="header-banner">
+       {{'general.title_matches' | translate}}
+    </h1>
     <script language="javascript" type="text/javascript">
       var _cfg = {};
       _cfg.pageSwitch = {}; _cfg.pageSwitch.url = '/live/17/2018/_live_blog_competition'; _cfg.pageSwitch.polling = '5000';
@@ -20,7 +19,7 @@
             <div class="tab-item" data-tab-id="groupphase">
               <div class="tab-main-container">
                 <a href="#groupphase">
-                  <span>Group Phase</span>
+                  <span> {{'general.groups_phase' | translate}}</span>
                 </a>
               </div>
             </div>
@@ -28,7 +27,7 @@
             <div class="tab-item" data-tab-id="knockoutphase">
               <div class="tab-main-container">
                 <a href="#knockoutphase">
-                  <span>Knockout Phase</span>
+                  <span>{{'general.knockout_phase' | translate}}</span>
                 </a>
               </div>
             </div>
@@ -60,7 +59,7 @@
           <script type='text/javascript'>requirejs(['/CompiledAssets/js/modules/teamFilter.js']);</script>
           <div class="fi-page-nav__filters">
             <span class="fi-page-nav__filters-btn">
-              <span class="fi-page-nav__filters-label">Filter by team</span>
+              <span class="fi-page-nav__filters-label">{{'general.filter_by_team' | translate}}</span>
               <svg class="fi-page-nav__filters-icon" viewBox="0 0 100 110">
                 <path d="M91.816,12.306c-0.408-0.886-1.295-1.454-2.271-1.454H12.309c-0.976,0-1.862,0.567-2.271,1.454  c-0.408,0.886-0.264,1.928,0.37,2.67l30.287,35.458v39.283c0,1.033,0.635,1.959,1.599,2.332c0.293,0.113,0.599,0.168,0.901,0.168  c0.691,0,1.367-0.287,1.851-0.818L60.51,74.383c0.419-0.46,0.65-1.06,0.65-1.682V50.434l30.287-35.458  C92.08,14.234,92.225,13.191,91.816,12.306z"></path>
               </svg>
@@ -210,7 +209,7 @@
           <div class="fi-matchlist">
 
             <div class="time-converter" data-forcedtime="mytime" data-vocab-day="Day">
-              <p>Kick-offs are shown in your time zone</p>
+              <p>{{'general.your_timezone' | translate}}</p>
             </div>
 
             <div class="fi-mu-list today" data-matchesdate="20180614">

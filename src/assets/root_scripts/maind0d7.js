@@ -110,19 +110,19 @@ define('utility', ['jquery', 'modernizr'], function ($) {
 
 		log: function () {
 			if (!window.console) { return; }
-			Function.apply.call(console.log, console, arguments);
+			// Function.apply.call(console.log, console, arguments);
 		},
 		info: function () {
 			if (!window.console) { return; }
-			Function.apply.call(console.info, console, arguments);
+			// Function.apply.call(console.info, console, arguments);
 		},
 		warn: function () {
 			if (!window.console) { return; }
-			Function.apply.call(console.warn, console, arguments);
+			// Function.apply.call(console.warn, console, arguments);
 		},
 		error: function () {
 			if (!window.console) { return; }
-			Function.apply.call(console.error, console, arguments);
+			// Function.apply.call(console.error, console, arguments);
 		},
 		splitResourceId: function (id, splitLen) {
 			var ret = '';

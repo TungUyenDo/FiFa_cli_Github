@@ -157,11 +157,21 @@
             <div class="owl__custom owl_topCarousel">
                 <owl-carousel [options]="carouselTopPage" [items]="list_data_top_carousel" 
                                 [carouselClasses]="['owl-theme', 'sliding']">
-                    <div class="item" *ngFor="let item of list_data_top_carousel">
+                    <!-- <div class="item" *ngFor="let item of list_data_top_carousel">
                         <a href="#" class="item__thumb">
                             <img class="item__image" [src]="item.image_link" alt="">
                         </a>
-    
+                    </div> -->
+                    <div class="fi-o-media-object__top-content" *ngFor="let item of list_data_top_carousel">
+                        <img [src]="item.image_link" alt="">
+                        <div class="fi-o-media-object__body">
+                            <p class="d3-o-media-object__roofline fi-o-media-object__roofline">
+                                {{item.roofline}}
+                            </p>
+                            <h1 class="d3-o-media-object__title fi-o-media-object__title">
+                                 {{item.title}}
+                            </h1>
+                        </div>
                     </div>
                 </owl-carousel>
                 <div class="fi__nav--Top-next ">
@@ -234,7 +244,7 @@
                             <div class="row fi-groups fi-groups__carousel" data-container="groups-container">
                                 <div class="owl-carousel owl-theme owl-loaded owl-drag owl-carousel-groups" data-mobile="1" data-tablet="2" data-desktop="8">
                                     <div class="col-xs-12 col-md-3" data-group-id="275075">
-                                        <a href="groups/group/275075/index.html" title="Group A">
+                                        <a href="/groups" title="Group A">
                                             <div class="fi-groups__group">
         
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
@@ -319,7 +329,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275077">
-                                        <a href="groups/group/275077/index.html" title="Group B">
+                                        <a href="/groups" title="Group B">
                                             <div class="fi-groups__group">
         
         
@@ -399,7 +409,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275079">
-                                        <a href="groups/group/275079/index.html" title="Group C">
+                                        <a href="/groups" title="Group C">
                                             <div class="fi-groups__group">
         
                                                 <svg id="" class="fi-clip-svg fi-groups__group__drop-star" viewBox="0 0 612 700">
@@ -496,7 +506,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275081">
-                                        <a href="groups/group/275081/index.html" title="Group D">
+                                        <a href="/groups" title="Group D">
                                             <div class="fi-groups__group">
         
         
@@ -594,7 +604,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275083">
-                                        <a href="groups/group/275083/index.html" title="Group E">
+                                        <a href="/groups" title="Group E">
                                             <div class="fi-groups__group">
         
         
@@ -692,7 +702,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275085">
-                                        <a href="groups/group/275085/index.html" title="Group F">
+                                        <a href="/groups" title="Group F">
                                             <div class="fi-groups__group">
         
         
@@ -790,7 +800,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275087">
-                                        <a href="groups/group/275087/index.html" title="Group G">
+                                        <a href="/groups" title="Group G">
                                             <div class="fi-groups__group">
         
         
@@ -888,7 +898,7 @@
                                         </a>
                                     </div>
                                     <div class="col-xs-12 col-md-3" data-group-id="275089">
-                                        <a href="groups/group/275089/index.html" title="Group H">
+                                        <a href="/groups" title="Group H">
                                             <div class="fi-groups__group">
         
         
@@ -1005,7 +1015,7 @@
                         <div class="box-content clearfix">
                             <div class="fi-quicklinks btn-fwc">
                                 <div class="fi-quicklink" role="presentation">
-                                    <a href="matches/index.html" target="_self" class="fi-quicklink__link btn btn-primary-inverse">
+                                    <a href="/matches" target="_self" class="fi-quicklink__link btn btn-primary-inverse">
                                         <span class="fi-quicklink__label">
                                              {{'home.groups.allmatches' | translate}}
                                             <i class="fi-icon fi-icon-next"></i>
@@ -1015,7 +1025,7 @@
                             </div>
                             <div class="btn-fwc">
                                 <div class="fi-callToAction " role="presentation">
-                                    <a href="http://resources.fifa.com/image/upload/2018-fifa-world-cup-russiatm-match-schedule-2667162.pdf?cloudid=wzuz9z88012mh7hykadr"
+                                    <a href="/"
                                         target="_blank" class="fi-callToAction__link btn btn-primary-inverse">
                                         <span class="fi-callToAction__label">
                                              {{'home.groups.matchschedule' | translate}}
@@ -1060,8 +1070,8 @@
                             [options]="carouselNewsOptions"
                             [items]="data_news_link_string"
                             [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of data_news_link_string">
-                                <a href="#" class="item__thumb">
+                            <div class="item" *ngFor="let item of data_news_link_string"  (click)="click_open_link(item.link, $event)">
+                                <a class="item__thumb">
                                     <img class="item__image" [src]="item.img_url" alt="">
                                 </a>
                                 
@@ -1069,7 +1079,7 @@
                                     <div class="item__roofline">RUSSIA</div>
                                     <h3 class="item__title">{{item.title}}</h3>
                                     <div class="item__more">
-                                        <a class="item__link" href="#/" target="_self">
+                                        <a class="item__link"target="_self">
                                         <svg class="fi-svg-icon icon-triangle"><use xlink:href="#icon-triangle"></use></svg>
                                         <span class="item__more__label">Read More</span></a>
                                     </div>
@@ -1108,8 +1118,8 @@
                 <div class="row">
                     <div class="owl__custom owl__video">
                         <owl-carousel [options]="carouselVideosOptions" [items]="data_video_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of data_video_link_string">
-                                <a href="#" class="item__thumb">
+                            <div class="item" *ngFor="let item of data_video_link_string"  (click)="click_open_link_video(item.link, $event)">
+                                <a class="item__thumb">
                                     <img class="item__image" [src]="item.image" alt="">
                                 </a>
                     
@@ -1117,7 +1127,7 @@
                                     <div class="item__roofline">RUSSIA</div>
                                     <h3 class="item__title">{{item.title}}</h3>
                                     <div class="item__more">
-                                        <a class="item__link" href="#/" target="_self">
+                                        <a class="item__link" target="_self">
                                             <svg class="fi-svg-icon icon-triangle">
                                                 <use xlink:href="#icon-triangle"></use>
                                             </svg>
@@ -1167,7 +1177,7 @@
                     <!-- You can use owl-carousel selector to include its component -->
                     <div class="owl__custom owl_timeline">
                         <owl-carousel [options]="carouselTimelineOptions" [items]="list_data_photos" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of list_data_photos">
+                            <div class="item" *ngFor="let item of list_data_photos" >
                                 <a href="#" class="item__thumb">
                                     <img class="item__image" [src]="item.photos.data[0].link" alt="">
                                 </a>
@@ -1202,6 +1212,10 @@
                 </div>
             </div>
         </section>
+
+        <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/CDNg5f2UJFY?origin=https://www.fifa.com/?nav=internal"
+                frameborder="0">
+        </iframe>
         
         <section class="section">
             <div class="container-fluid">
@@ -1210,37 +1224,37 @@
                         <h4 class="fi-sponsor-list__title">{{'home.fifaPartners' | translate}}</h4>
                         <ul class="fi-sponsor-list">
                             <li data-sponsor="adidas" class="fi-sponsor fi-sponsor__adidas">
-                                <a href="/about-fifa/marketing/sponsorship/partners/adidas.html" title="Adidas" class="fi-sponsor__link">
+                                <a title="Adidas" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--adidas"></span>
                                 </a>
                             </li>
                             <li data-sponsor="cocacola" class="fi-sponsor fi-sponsor__cocacola">
-                                <a href="/about-fifa/marketing/sponsorship/partners/coca-cola.html" title="Coca-Cola" class="fi-sponsor__link">
+                                <a title="Coca-Cola" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--cocacola"></span>
                                 </a>
                             </li>
                             <li data-sponsor="wanda-group" class="fi-sponsor fi-sponsor__wandagroup">
-                                <a href="/about-fifa/marketing/sponsorship/partners/wanda-group.html" title="Wanda Group" class="fi-sponsor__link">
+                                <a title="Wanda Group" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--wandagroup"></span>
                                 </a>
                             </li>
                             <li data-sponsor="gazprom" class="fi-sponsor fi-sponsor__gazprom">
-                                <a href="/about-fifa/marketing/sponsorship/partners/gazprom.html" title="Gazprom" class="fi-sponsor__link">
+                                <a title="Gazprom" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--gazprom"></span>
                                 </a>
                             </li>
                             <li data-sponsor="hyundai_kia" class="fi-sponsor fi-sponsor__hyundaikia">
-                                <a href="/about-fifa/marketing/sponsorship/partners/hyundai-kia.html" title="Hyundai • Kia Motors" class="fi-sponsor__link">
+                                <a title="Hyundai • Kia Motors" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--hyundaikia"></span>
                                 </a>
                             </li>
                             <li data-sponsor="qatar-airways" class="fi-sponsor fi-sponsor__qatarairways">
-                                <a href="/about-fifa/marketing/sponsorship/partners/qatar-airways.html" title="Qatar Airways" class="fi-sponsor__link">
+                                <a title="Qatar Airways" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--qatarairways"></span>
                                 </a>
                             </li>
                             <li data-sponsor="visa" class="fi-sponsor fi-sponsor__visa">
-                                <a href="/about-fifa/marketing/sponsorship/partners/visa.html" title="Visa" class="fi-sponsor__link">
+                                <a title="Visa" class="fi-sponsor__link">
                                     <span class="fi-sponsor__image--visa"></span>
                                 </a>
                             </li>
@@ -1252,3 +1266,51 @@
     </div>
 </div>
 <app-footer></app-footer>
+
+<!-- modal detail item -->
+<div class="popup_modal news">
+    <div class="popup_modal-item">
+        <div class="head">
+            <div class="logo">
+                <img src="../../../assets/images/fifacom-blue.svg" alt="">
+            </div>
+            <div class="close" (click)="close_popup()">
+                <img src="../../../assets/images/cancel-icon.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="body">
+            <div class="title">
+                Link for news:
+            </div>
+            <div class="link">
+                {{link}}
+                         
+            </div>
+        </div>
+    </div>
+</div>
+<!-- modal detail item -->
+<div class="popup_modal video">
+    <div class="popup_modal-item">
+        <div class="head">
+            <div class="logo">
+                <img src="../../../assets/images/fifacom-blue.svg" alt="">
+            </div>
+            <div class="close" (click)="close_popup()">
+                <img src="../../../assets/images/cancel-icon.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="body">
+         
+            <div class="link">
+                <!-- <iframe width="300" height="200" [src]="link | safe" frameborder="0" 
+                allow="autoplay; encrypted-media"
+                    allowfullscreen></iframe>             -->
+            </div>
+        </div>
+    </div>
+</div>

@@ -72,6 +72,8 @@ export class VideosComponent implements OnInit {
               ele.image = environment.imgForWrongLink;
           }
 
+          ele.link = "https://www.youtube.com/embed/" + ele.link
+
       })
 
 
@@ -86,8 +88,12 @@ export class VideosComponent implements OnInit {
       }
 
       this.array_news = this.data_video;
+      console.log(this.data_video)
 
     })
   }
 
 }
+
+
+// <iframe width="560" height = "315" src = "https://www.youtube.com/embed/pcD1zSInt9A" frameborder = "0" allow = "autoplay; encrypted-media" allowfullscreen > </iframe>

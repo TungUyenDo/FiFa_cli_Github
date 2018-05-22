@@ -5,20 +5,18 @@ import { HttpModule } from '@angular/http';
 import { AppRouters } from "./app.routers";
 
 
-import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
+import { AppComponent  } from './app.component';
+import { HomeComponent, SafePipe } from './home/home.component';
 
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { Footer1Component } from './components/footer1/footer1.component';
 
 import { NewsComponent } from './news/news.component';
-import { NewsDetailComponent } from './news/news-detail/news-detail.component';
-import { NewsMainComponent } from './news/news-main/news-main.component';
 import { PhotosComponent } from './photos/photos.component';
 import { VideosComponent } from './videos/videos.component';
 import { TeamsComponent } from './teams/teams.component';
-import { DestinationComponent } from './destination/destination.component';
+import { StadiumComponent } from './stadium/stadium.component';
 
 import { MatchesComponent } from './matches/matches.component';
 import { GroupsComponent } from './groups/groups.component';
@@ -45,12 +43,12 @@ import { SharedModule } from './app.share'
     PhotosComponent,
     VideosComponent,
     TeamsComponent,
-    DestinationComponent,
+    StadiumComponent,
     MatchesComponent,
     GroupsComponent,
-    NewsDetailComponent,
-    NewsMainComponent,
-    NewsComponent
+    NewsComponent,
+    NewsComponent,
+    SafePipe
   ],
   //import module parent 
   imports: [

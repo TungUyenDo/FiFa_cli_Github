@@ -6,7 +6,7 @@
         "matches":"Matches",
         "teams":"Teams",
         "groups":"Groups",
-        "destination":"Destinations",
+        "stadium":"Stadium",
         "news":"News",
         "photos":"Photos",
         "videos":"Videos",
@@ -38,6 +38,36 @@
       "fifaPartners": "FIFA Partners"
     },
     
+    "general":{
+      "title_news":"news",
+
+      "title_photos":"Photos",
+      "all_photo":"All photos",
+
+      "title_videos":"Video",
+      "all_videos":"All Videos",
+      "latest_videos":"Latest Videos",
+      "more_videos":"More Videos",
+
+      "title_matches":"MATCHES",
+      "groups_phase":"Group Phase",
+      "knockout_phase":"Knockout Phase",
+      "filter_by_team":"Filter by team",
+      "your_timezone":"Kick-offs are shown in your time zone",
+      "list_view":"List view",
+      "bracket_view":"Bracket view",
+
+      "title_teams":"Teams",
+
+      "title_groups":"groups",
+      "group_analysis":"Group Analysis",
+
+      "title_stadium":"Stadium",
+      "title_stadium":"Stadium",
+
+      "btn_nextpost":"Next post"
+    },
+
 
     "footer":{
       "navigationTop": {
@@ -59,6 +89,9 @@
         "widgets":"Widgets",
         "copyright":"Copyright ©1994 - 2018 FIFA. All rights reserved"
       }
+    },
+    "footer_blue":{
+      
     },
     
     "HOME": {

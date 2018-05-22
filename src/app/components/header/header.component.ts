@@ -23,7 +23,6 @@ export class HeaderComponent implements OnInit {
       // console.log(this.current_languages_header);
 
       (<any> $)('.fi-site-toggle').click(function(){
-          console.log(1)
           $('body').addClass("fi-cookie-banner-open dropdown-main--open fi-section-dropdown-open");
           $('.fi-section-header__dropdown__close').removeClass('hidden');
           $('.fi-section-header__dropdown--vertical').removeClass('hidden');
@@ -32,7 +31,6 @@ export class HeaderComponent implements OnInit {
       })  
 
       $('.icon-close').on('click', function () {
-          console.log(2)
           $('.icon-close').addClass('hidden');
           $('body').removeClass("fi-site-dropdown-open");
           $('body').removeClass("dropdown-main--open");

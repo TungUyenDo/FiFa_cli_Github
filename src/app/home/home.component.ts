@@ -1,12 +1,19 @@
-import { Component, OnInit } from '@angular/core';
-
-// import {OwlCarousel} from 'ngx-owl-carousel';
+import { Component, OnInit, ViewEncapsulation, ViewChild, ElementRef, PipeTransform, Pipe } from '@angular/core';
+import { DomSanitizer } from "@angular/platform-browser";
 import { ApiServices } from "../app.services";
 
 import {environment} from '../../environments/environment'
 
 declare var $: any;
 
+
+@Pipe({ name: 'safe' })
+export class SafePipe implements PipeTransform {
+  constructor(private sanitizer: DomSanitizer) { }
+  transform(url) {
+    return this.sanitizer.bypassSecurityTrustResourceUrl(url);
+  }
+}
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -43,6 +50,8 @@ export class HomeComponent implements OnInit {
   carouselVideosOptions:any;
   carouselTimelineOptions:any;
 
+  link : any
+
   constructor(private apiServices: ApiServices) { 
       
   }
@@ -56,6 +65,12 @@ export class HomeComponent implements OnInit {
       this.GetVideos();
       
       this.GetTopCarousel();
+
+      $(window).click(function () {
+        $(".popup_modal.news").removeClass('in');
+        $(".popup_modal.video").removeClass('in');
+        $('body').css('overflow', 'auto')
+      })
    
       //carousel News
       this.carouselNewsOptions = {
@@ -175,9 +190,10 @@ export class HomeComponent implements OnInit {
              element.image = environment.imgForWrongLink;
           }
 
+          element.link = "https://www.youtube.com/embed/" + element.link
           return element;
       });
-      // console.log(this.data_video_link_string);
+      console.log(this.data_video_link_string);
     })
   }
   
@@ -191,5 +207,29 @@ export class HomeComponent implements OnInit {
 
     })
   }
+
+  click_open_link(link, e) {
+    e.stopPropagation();
+
+    this.link = link;
+    $(".popup_modal.news").addClass('in');
+    $('body').css('overflow', 'hidden')
+  }
+
+
+  click_open_link_video(link, e) {
+    e.stopPropagation();
+
+    this.link = link;
+    $(".popup_modal.video").addClass('in');
+    $('body').css('overflow', 'hidden')
+  }
+
+
+  close_popup() {
+    $(".popup_modal").removeClass('in');
+    $('body').css('overflow', 'auto')
+  }
+
 
 }
