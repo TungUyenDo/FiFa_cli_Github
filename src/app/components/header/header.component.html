@@ -14,7 +14,7 @@
         <ul class="fi-icons-bar">
 
           <li class="fi-icons-bar__score">
-            <a href="../live-scores/index.html" title="Live Scores">
+            <a href="#" title="Live Scores">
               <svg class="fi-svg-icon icon-ball">
                 <use xlink:href="#icon-ball"></use>
               </svg>
@@ -76,20 +76,18 @@
             <img class="fi-login__theclub-logo" src="../../../assets/images/theClub.png" alt="The Club" />
           </div>
           <div class="fi-login__form">
-            <p class="fi-login__desc">Please sign in to your FIFA.com user account below. This will allow you to make the most of your account with
-              personalization, plus get access to commenting tools, exclusive games, the chance to win cool football prizes
-              and much, much more.</p>
+            <p class="fi-login__desc">{{'login.text'|translate}}</p>
             <div class="fi-login__theclub form-group">
               <a id="fi-login-signin-link" href="https://account.fifa.com/5a7baeb7-e706-4830-ad9f-103eba126311/oauth2/v2.0/authorize?p=b2c_1a_fifa_signuporsignin&amp;client_Id=64e9afa8-c5c0-413d-882b-bc9e6a81e264&amp;nonce=defaultNonce&amp;prompt=login&amp;redirect_uri=https%3A%2F%2Fwww.fifa.com%2Ftheclub%2Ftools%2Fcomment%2F_ms_login_handler.htmx&amp;scope=openid%20offline_access&amp;response_type=code&amp;response_mode=form_post">
                 <div class="fi-login__submit-wrap">
-                  <input class="btn btn-primary fi-btn--submit" value="Login" type="submit">
+                  <input class="btn btn-primary fi-btn--submit" [value]="'login.title_login'|translate" type="submit">
                 </div>
               </a>
             </div>
             <div class="fi-login__not-member form-group">
-              <p class="fi-login__not-member__desc">Don&#39;t have an account yet?</p>
+              <p class="fi-login__not-member__desc">{{'login.text_dont_have_acc'|translate}}</p>
               <div class="fi-login__submit-wrap">
-                <input class="btn btn-primary-inverse fi-btn--submit" value="Sign Up now" type="submit">
+                <input class="btn btn-primary-inverse fi-btn--submit" [value]="'login.sign_up_now'|translate" type="submit">
               </div>
             </div>
           </div>

@@ -414,6 +414,7 @@
         position: absolute;
         top: -40px;
         right: 0;
+        left: 0;
         button {
             width: 40px;
             height: 38px;
@@ -689,6 +690,17 @@
             max-width: 770px !important;
         }
     }
+    &.photos {
+        padding-bottom: 30px;
+        height: 100% !important;
+        .popup_modal-item {
+            height: auto !important;
+            max-width: 900px;
+            .link{
+                img{width: 100%;}
+            }
+        }
+    }
     .popup_modal-item {
         height: 200px;
         background-color: #fff;
@@ -730,6 +742,7 @@
         .body {
             margin-top: 20px;
             padding: 0 20px;
+            margin-bottom: 20px;
             .title {
                 font-size: 22px;
                 font-weight: bold;

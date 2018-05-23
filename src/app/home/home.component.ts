@@ -66,11 +66,11 @@ export class HomeComponent implements OnInit {
       
       this.GetTopCarousel();
 
-      $(window).click(function () {
-        $(".popup_modal.news").removeClass('in');
-        $(".popup_modal.video").removeClass('in');
-        $('body').css('overflow', 'auto')
-      })
+      // $(window).click(function () {
+      //   $(".popup_modal.news").removeClass('in');
+      //   $(".popup_modal.video").removeClass('in');
+      //   $('body').css('overflow', 'auto')
+      // })
    
       //carousel News
       this.carouselNewsOptions = {
@@ -209,7 +209,7 @@ export class HomeComponent implements OnInit {
   }
 
   click_open_link(link, e) {
-    e.stopPropagation();
+    // e.stopPropagation();
 
     this.link = link;
     $(".popup_modal.news").addClass('in');
@@ -218,7 +218,7 @@ export class HomeComponent implements OnInit {
 
 
   click_open_link_video(link, e) {
-    e.stopPropagation();
+    // e.stopPropagation();
 
     this.link = link;
     $(".popup_modal.video").addClass('in');

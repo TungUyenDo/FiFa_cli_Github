@@ -34,10 +34,10 @@ export class NewsComponent implements OnInit {
     this.GetNews(this.array_news);
 
 
-    $(window).click(function () {
-      $(".popup_modal").removeClass('in');
-      $('body').css('overflow', 'auto')
-    })
+    // $(window).click(function () {
+    //   $(".popup_modal").removeClass('in');
+    //   $('body').css('overflow', 'auto')
+    // })
   }
 
   clickNextNewsPage(){
@@ -74,7 +74,7 @@ export class NewsComponent implements OnInit {
   }
 
   click_open_link(link,e){
-    e.stopPropagation();
+    // e.stopPropagation();
 
     this.link = link;
     $(".popup_modal").addClass('in');

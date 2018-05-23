@@ -37,12 +37,18 @@
       },
       "fifaPartners": "FIFA Partners"
     },
+    "login":{
+      "text":"Please sign in to your FIFA.com user account below. This will allow you to make the most of your account with personalization, plus get access to commenting tools, exclusive games, the chance to win cool football prizes and much, much more.",
+      "title_login":"Login",
+      "text_dont_have_acc":"Don't have an account yet?",
+      "sign_up_now":"sign up now"
+    },
     
     "general":{
       "title_news":"news",
 
       "title_photos":"Photos",
-      "all_photo":"All photos",
+      "all_photos":"All photos",
 
       "title_videos":"Video",
       "all_videos":"All Videos",
@@ -61,6 +67,8 @@
 
       "title_groups":"groups",
       "group_analysis":"Group Analysis",
+      "text_group": "group",
+                
 
       "title_stadiums":"Stadiums",
 

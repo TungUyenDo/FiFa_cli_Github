@@ -1,46 +1,19 @@
 
 <div id="content-wrap">
     <div class="container">
-        <div class="page-share hidden-print">
-            <div class="header-share">
-                <div class="header-listchannel">
-                    <span class="header-share-title">Follow us on</span>
-                    <ul class="social-list">
-                        <li class="social-item">
-                            <a href="https://twitter.com/fifaworldcup" target="_blank" class="ico-24-twitter-g"> </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="https://www.facebook.com/fifaworldcup" target="_blank" class="ico-24-facebook-g"> </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="http://instagram.com/fifaworldcup" target="_blank" class="ico-24-instagram-g"> </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="https://www.youtube.com/FIFATV" target="_blank" class="ico-24-youtube-g"> </a>
-                        </li>
-                        <li class="social-item">
-                            <a href="https://www.linkedin.com/company/fifa" target="_blank" class="ico-24-linkedin-g"> </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="header-sharebtn">
-                    <div class="sharebtn-wrap">
-                        <a href="#" data-share-type="page">
-                            <span>Share</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
+        
         <div class="fi-boxed-page">
-            <h1 class="fi-page-title">
+            <h1 class="fi-page-title" [hidden]="index > 1">
              {{'general.title_photos' | translate}}
+            </h1>
+            <h1 class="fi-page-title" [hidden]="index < 2">
+             {{'general.all_photos' | translate}}
             </h1>
         </div>
         <hr>
 
         <!-- photo slider -->
-        <div class="photos_carousel">
+        <div class="photos_carousel"  [hidden]="index > 1">
             <div class="slider-container">
                 <div id="sliderTop" class="owl-carousel">
                     <div class="item" *ngFor="let item of list_data_photo_top">
@@ -79,19 +52,69 @@
                 </div>
             </div>
         </div>
-        <div class="qlink-wrap">
-            <ul class="qlink-list">
+        <div class="qlink-wrap" [hidden]="index > 1">
+            <ul class="qlink-list" (click)="GetAllPhotos()" [attr.index]="index">
                 <li class="qlink-link last">
                     <div class="qlink-link-wrap">
-                        <a href="/worldcup/photos/all-photos.html">
-                            <span class="item">{{'general.all_photo' | translate}}</span>
+                        <a>
+                            <span class="item">{{'general.all_photos' | translate}}</span>
                         </a>
                     </div>
                 </li>
             </ul>
         </div>
+
+        <!-- item later -->
+        <div class="row row-first" [hidden]="index < 2 ">
+            <div class="col-xs-12 clear-grid ">
+                <div class="dcm-list thumblist-lnd-3 grid-view list-photos " data-loaded="true">
+                    
+                    <ul class="dcm-thumblist vertical">
+
+                        <li class="dcm-thumblist-item" style="cursor: pointer;" *ngFor="let item of list_image_link">
+                            <div class="ph-lnd-3 figure i-wrap" (click)="click_detailImage(item)">
+                                <a class="dcm-internal" target="_self">
+                                    <img alt="fifa2018" [src]="item" class="i-lnd-3" >
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
+                
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 fi-list__btn fi-navigation" [hidden]="index < 2 " style="margin-bottom: 20px;">
+            <a role="navigation" class="fi-btn" [attr.index]="index" (click)="click_NextPhotosPage()" [hidden]="end_page == index">
+                <span class="fi-btn__label">{{'general.btn_nextpost' | translate}}</span>
+            </a>
+        </div>
+        
        
     </div>
 </div>
 
 <app-footer></app-footer>
+
+<div class="popup_modal photos">
+    <div class="popup_modal-item">
+        <div class="head">
+            <div class="logo">
+                <img src="../../../assets/images/fifacom-blue.svg" alt="">
+            </div>
+            <div class="close" (click)="close_popup()">
+                <img src="../../../assets/images/cancel-icon.png" alt="">
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+        <div class="body">
+            <div class="link">
+                <img [src]="link" alt="">
+
+                <!-- <div id="Photo_detail" class=" owl-theme  owl-carousel">
+                    <img [src]="item" alt="" *ngFor="let item of list_images_owl" >
+                </div> -->
+            </div>
+        </div>
+    </div>
+</div>

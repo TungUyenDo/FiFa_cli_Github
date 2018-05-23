@@ -127,12 +127,12 @@ export class ApiServices {
             'Accept': 'application/json',
             'FB-API-KEY': environment.fbApiKey
         });
-        console.log(headers)
+        // console.log(headers)
         return this.http.get(environment.pathUrlApi + "livescores/get-schedule-knockout", { headers: headers}
             )
             .pipe(
                 map(res => {
-                    console.log(res)
+                    // console.log(res)
                     return res
                 }),
                 catchError(this.handleError)
