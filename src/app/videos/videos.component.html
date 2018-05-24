@@ -1,37 +1,6 @@
 
 <div id="content-wrap">
   <div class="container">
-    <div class="page-share hidden-print">
-      <div class="header-share">
-        <div class="header-listchannel">
-          <span class="header-share-title">Follow us on</span>
-          <ul class="social-list">
-            <li class="social-item">
-              <a href="https://twitter.com/fifaworldcup" target="_blank" class="ico-24-twitter-g"> </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.facebook.com/fifaworldcup" target="_blank" class="ico-24-facebook-g"> </a>
-            </li>
-            <li class="social-item">
-              <a href="http://instagram.com/fifaworldcup" target="_blank" class="ico-24-instagram-g"> </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.youtube.com/FIFATV" target="_blank" class="ico-24-youtube-g"> </a>
-            </li>
-            <li class="social-item">
-              <a href="https://www.linkedin.com/company/fifa" target="_blank" class="ico-24-linkedin-g"> </a>
-            </li>
-          </ul>
-        </div>
-        <!-- <div class="header-sharebtn">
-          <div class="sharebtn-wrap">
-            <a href="#" data-share-type="page">
-              <span>Share</span>
-            </a>
-          </div>
-        </div> -->
-      </div>
-    </div>
 
     <div class="fi-boxed-page">
       <h1 class="fi-page-title"  [hidden]="index > 1">{{'general.title_videos' | translate}}</h1>
@@ -49,25 +18,18 @@
       <div class="col-xs-12 clear-grid">
         <div class="dcm-list thumblist-lnd-3 grid-view list-videos ">
           <ul class="dcm-thumblist vertical">
-            <li class="dcm-thumblist-item" *ngFor="let item of video_4Item" xmlns:cfg="urn:cfg.fifaExtension.com">
-              <!--2944622-->
+
+            <li class="dcm-thumblist-item" *ngFor="let item of video_4Item"  (click)="click_open_link_video(item.link, item.image_full, item.description, $event)">
               <div class="ph-lnd-3 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d49-days-to-go-costa-rica-mark-their-mark.html">
-                  <img alt="49 DAYS TO GO! Costa Rica make their mark" title="49 DAYS TO GO! Costa Rica make their mark" [src]="item.image"
-                    class="i-lnd-3" ph-data-picture-index="1" ph-data-picture-id="2944622" ph-data-picture-copyright="YouTube"
-                    ph-data-picture-title="49 DAYS TO GO! Costa Rica make their mark" ph-data-picture-date="Thursday, 26 April 2018"
-                    ph-data-picture-comment="Upon taking their opening bow at the FIFA World Cup™ at Italy 1990, it took Costa Rica 49 minutes to open their account, with a slick move against Scotland being converted by Juan Cayasso to secure victory."
-                    ph-data-picture-orientation="landscape" ph-data-picture-url="//img.fifa.com/image/upload/t_l3/y1zvfop5kw4gnr96f67h.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
+                <a class="dcm-internal" target="_self">
+                  <img [src]="item.image" class="i-lnd-3" />
                 </a>
               </div>
               <h4 class="dcm-title">
-                <a href="y%3d2018/m%3d4/video%3d49-days-to-go-costa-rica-mark-their-mark.html">{{item.title}}</a>
+                <a>{{item.title}}</a>
               </h4>
             </li>
+
           </ul>
         </div>
       </div>
@@ -75,23 +37,17 @@
       <div class="col-xs-12 clear-grid"[hidden]="index > 1">
         <div class="dcm-list thumblist-sqr-1 grid-view list-videos ">
           <ul class="dcm-thumblist inline-col4">
-            <li class="dcm-thumblist-item" *ngFor="let item of video_6Item" xmlns:cfg="urn:cfg.fifaExtension.com">
+            <li class="dcm-thumblist-item" *ngFor="let item of video_6Item" (click)="click_open_link_video(item.link, item.image_full, item.description, $event)">
               <!--2940185-->
               <div class="ph-sqr-1 figure i-wrap ">
-                <a class="dcm-internal" target="_self" href="y%3d2018/m%3d4/video%3d53-days-to-go-super-sanchez.html">
-                  <img alt="53 DAYS TO GO! Super Sanchez" title="53 DAYS TO GO! Super Sanchez" [src]="item.image" class="i-sqr-1" ph-data-picture-index="1"
-                    ph-data-picture-id="2940185" ph-data-picture-copyright="YouTube" ph-data-picture-title="53 DAYS TO GO! Super Sanchez"
-                    ph-data-picture-date="Sunday, 22 April 2018" ph-data-picture-comment="There have been 53 FIFA World Cup™ matches played by players with the surname Sanchez. Chile's Leonel won the adidas Golden Boot in 1962, while Mexico's Hugo appeared at three tournaments."
-                    ph-data-picture-orientation="portrait" ph-data-picture-url="//img.fifa.com/image/upload/t_p3/yjbbtra6ejxesari1iqr.jpg"
-                    ph-data-picture-sizewidth="" ph-data-picture-sizeheight="" />
-                  <span class="dcm-icoFrame dcm-ico-videos">
-                    <span class="dcm-ico"> </span>
-                  </span>
+                <a class="dcm-internal" target="_self" >
+                  <img alt="53 DAYS TO GO! Super Sanchez" title="53 DAYS TO GO! Super Sanchez" [src]="item.image" class="i-sqr-1" />
+                
                 </a>
               </div>
               <div class="dcm-thumblist-title">
                 <h4 class="dcm-title">
-                  <a href="y%3d2018/m%3d4/video%3d53-days-to-go-super-sanchez.html">{{item.title}}</a>
+                  <a>{{item.title}}</a>
                 </h4>
               </div>
             </li>
@@ -122,3 +78,28 @@
 </div>
 
 <app-footer1></app-footer1>
+
+<!-- modal detail item -->
+<div class="popup_modal video">
+  <div class="popup_modal-item">
+    <div class="head">
+      <div class="logo">
+        <img src="../../../assets/images/fifacom-blue.svg" alt="">
+      </div>
+      <div class="close" (click)="close_popup()">
+        <img src="../../../assets/images/cancel-icon.png" alt="">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="body">
+
+      <div class="link">
+        <a [href]="video_link">
+          <img [src]="video_images_full" alt="video images" style="width: 100%;">
+        </a>
+        <p style="margin-top: 10px">{{video_description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

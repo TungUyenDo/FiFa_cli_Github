@@ -2,6 +2,8 @@ import { environment } from './../../environments/environment';
 import { Component, OnInit } from '@angular/core';
 import { ApiServices } from "../app.services";
 
+declare var $: any;
+
 @Component({
   selector: 'app-videos',
   templateUrl: './videos.component.html',
@@ -72,6 +74,9 @@ export class VideosComponent implements OnInit {
               ele.image = environment.imgForWrongLink;
           }
 
+          ele.image_full = ele.image.replace('http://img.fifa.com/image/upload/t_l5/', 'http://img.fifa.com/image/upload/t_l3/')
+
+
           ele.link = "https://www.youtube.com/embed/" + ele.link
 
       })
@@ -88,9 +93,30 @@ export class VideosComponent implements OnInit {
       }
 
       this.array_news = this.data_video;
-      console.log(this.data_video)
+      // console.log(this.data_video)
 
     })
+  }
+
+  video_link :any
+  video_images_full :any
+  video_description :any
+
+  click_open_link_video(link, images_full, des, e) {
+    // e.stopPropagation();
+
+    this.video_link = link;
+    this.video_images_full = images_full;
+    this.video_description = des
+
+    $(".popup_modal.video").addClass('in');
+    $('body').css('overflow', 'hidden')
+  }
+
+
+  close_popup() {
+    $(".popup_modal").removeClass('in');
+    $('body').css('overflow', 'auto')
   }
 
 }

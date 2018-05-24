@@ -75,7 +75,7 @@
       </ul>
 
       <!--SEARCH-->
-      <div class="fi-search">
+      <!-- <div class="fi-search">
         <div class="form-group">
           <form method="get">
             <input name="q" maxlength="100" data-required="true" class="fi-search__text" title="Search" type="text" placeholder="Search on FIFA.com">
@@ -90,7 +90,7 @@
             </div>
           </form>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </section>
@@ -98,32 +98,7 @@
 <footer class="fi-site-footer hidden-print">
   <div class="container-fluid">
     <div class="row">
-      <div class="fi-site-footer__copyright col-md-1 visible-md visible-lg">
-        <svg class="fi-svg-icon fifa-icon">
-          <use xlink:href="#fifa-icon"></use>
-        </svg>
-      </div>
-      <div class="fi-site-footer__language col-xs-12 col-md-2">
-        <div class="fi-footer__language dropup">
-          <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
-            
-            <select class="select_languages" (change)="switchLanguage($event.target.value)" [attr.item]="current_languages" ([ngModel])="current_languages">
-              <!-- <option value="en" >English</option>
-              <option value="de" >Deutsch</option>
-              <option value="fr" >Fran&#231;ais</option>
-              <option value="es" >Espa&#241;ol</option>
-              <option value="ar" >عربي</option>
-              <option value="ru" >Русский</option> -->
-              <option [value]="item.short_code" [selected]="item.short_code === current_languages" *ngFor="let item of datalanguages">{{item.name}}</option>
-            </select>
-            <i class="fi-icon fi-icon-down"></i>
-          </div>
-        </div>
-      </div>
-      <div class="fi-site-footer__copyright col-xs-12 hidden-md hidden-lg">
-        <i class="fi-icon fi-icon-logo"></i>
-      </div>
-      <div class="fi-site-footer__right col-xs-12 col-md-8">
+      <div class="fi-site-footer__right col-xs-12 col-md-12">
         <div class="fi-site-footer__row1">
           <ul class="fi-footer-menu">
             <li>

@@ -5,7 +5,7 @@
 export const environment = {
   production: false,
   pathUrlApi: "http://worldcup2018.acc-svrs.com/api/v1/worldcup/",
-  imgForWrongLink : 'https://i.pinimg.com/originals/ae/65/20/ae652081172e9499fda3e4780924e1b1.png',
+  imgForWrongLink: 'https://image.freepik.com/vector-gratis/plantilla-de-fondo-de-la-copa-del-mundo_9111-14.jpg',
   fbApiKey : 'lLtwhoe60R8Lw8mr8AnQfNkcezipgrHv'
 };
 

@@ -73,7 +73,7 @@ export class DestinationComponent implements OnInit {
 
 
       this.array_news = this.data_news_link_string;
-      console.log(this.data_news_link_string)
+      // console.log(this.data_news_link_string)
 
       setTimeout(() => {
         this.slider_destination()

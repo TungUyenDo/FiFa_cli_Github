@@ -35,7 +35,7 @@ export class StadiumComponent implements OnInit {
   GetStadium() {
     this.apiServices.getStadium().subscribe(res => {
       this.data_stadium = res;
-      console.log(res)
+      // console.log(res)
 
       this.data_stadium = this.data_stadium.data.items
 

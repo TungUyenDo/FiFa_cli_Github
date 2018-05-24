@@ -3,7 +3,6 @@
         position: relative;
         height: 150px;
         overflow: hidden;
-       
         .name {
             position: absolute;
             width: 50%;
@@ -14,6 +13,8 @@
             -o-transform: translateY(-50%);
             -webkit-transform: translateY(-50%);
             padding-left: 10px;
+            font-family: "dusha_plusregular";
+            color: #000
         }
         .images {
             position: absolute;

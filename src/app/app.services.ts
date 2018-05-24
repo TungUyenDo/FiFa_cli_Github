@@ -108,28 +108,41 @@ export class ApiServices {
             'Accept': 'application/json',
             'FB-API-KEY': environment.fbApiKey
         });
-        console.log(headers)
+        // console.log(headers)
         return this.http.get(environment.pathUrlApi + "livescores/get-all-stadium", { headers: headers}
             )
             .pipe(
                 map(res => {
-                    console.log(res)
+                    // console.log(res)
                     return res
                 }),
                 catchError(this.handleError)
             );
     }
     //get get-schedule-knockout
+    // public getScheduleKnockout() {
+    //     let headers = new HttpHeaders({
+    //         'Cache-Control': 'no-cache',
+    //         'Accept': 'application/json',
+    //         'FB-API-KEY': environment.fbApiKey
+    //     });
+    //     // console.log(headers)
+    //     return this.http.get(environment.pathUrlApi + "livescores/get-schedule-knockout", { headers: headers}
+    //         )
+    //         .pipe(
+    //             map(res => {
+    //                 // console.log(res)
+    //                 return res
+    //             }),
+    //             catchError(this.handleError)
+    //         );
+    // }
+
+    //get get-schedule-knockout static local
     public getScheduleKnockout() {
-        // console.log(data)
-        let headers = new HttpHeaders({
-            'Cache-Control': 'no-cache',
-            'Accept': 'application/json',
-            'FB-API-KEY': environment.fbApiKey
-        });
         // console.log(headers)
-        return this.http.get(environment.pathUrlApi + "livescores/get-schedule-knockout", { headers: headers}
-            )
+        var dataJson = "../assets/data_json/json/get-schedule-knockout.json";
+        return this.http.get(dataJson)
             .pipe(
                 map(res => {
                     // console.log(res)

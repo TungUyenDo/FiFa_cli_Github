@@ -50,7 +50,10 @@ export class HomeComponent implements OnInit {
   carouselVideosOptions:any;
   carouselTimelineOptions:any;
 
-  link : any
+  news_link : any;
+  video_link : any;
+  video_images_full : any;
+  video_description:any
 
   constructor(private apiServices: ApiServices) { 
       
@@ -190,10 +193,14 @@ export class HomeComponent implements OnInit {
              element.image = environment.imgForWrongLink;
           }
 
+          element.image_full = element.image.replace('http://img.fifa.com/image/upload/t_l5/','http://img.fifa.com/image/upload/t_l3/')
+
+
+
           element.link = "https://www.youtube.com/embed/" + element.link
           return element;
       });
-      console.log(this.data_video_link_string);
+      // console.log(this.data_video_link_string);
     })
   }
   
@@ -211,16 +218,19 @@ export class HomeComponent implements OnInit {
   click_open_link(link, e) {
     // e.stopPropagation();
 
-    this.link = link;
+    this.news_link = link;
     $(".popup_modal.news").addClass('in');
     $('body').css('overflow', 'hidden')
   }
 
 
-  click_open_link_video(link, e) {
+  click_open_link_video(link,images_full,des, e) {
     // e.stopPropagation();
 
-    this.link = link;
+    this.video_link = link;
+    this.video_images_full = images_full;
+    this.video_description = des
+
     $(".popup_modal.video").addClass('in');
     $('body').css('overflow', 'hidden')
   }

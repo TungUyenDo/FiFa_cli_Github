@@ -20,14 +20,14 @@ define('fi_carousel', ['jquery', 'owlcarousel'], function ($) {
   };
 
   function destroyCarosuel(carousel_obj) {
-    console.log("destroy carousel");
+    // console.log("destroy carousel");
     carousel_obj.trigger('destroy.owl.carousel').removeClass('owl-carousel owl-loaded owl-hidden');
     carousel_obj.find('.owl-stage-outer').children().unwrap();
     carousel_obj.find('.item').wrap('<div class="col-xs-6 col-sm-4 col-md-3 col-lg-2"></div>');
   }
 
   function reInitCarousel(carousel_obj, options) {
-    console.log("reinit carousel");
+    // console.log("reinit carousel");
     carousel_obj.parent().prepend('<div class="owl-nav"/>');
     carousel_obj.find('.item').unwrap();
     carousel_obj.addClass('owl-carousel');

@@ -1118,7 +1118,7 @@
                 <div class="row">
                     <div class="owl__custom owl__video">
                         <owl-carousel [options]="carouselVideosOptions" [items]="data_video_link_string" [carouselClasses]="['owl-theme', 'row', 'sliding']">
-                            <div class="item" *ngFor="let item of data_video_link_string"  (click)="click_open_link_video(item.link, $event)">
+                            <div class="item" *ngFor="let item of data_video_link_string"  (click)="click_open_link_video(item.link, item.image_full, item.description, $event)">
                                 <a class="item__thumb">
                                     <img class="item__image" [src]="item.image" alt="">
                                 </a>
@@ -1213,10 +1213,6 @@
             </div>
         </section>
 
-        <iframe id="ytplayer" type="text/html" width="640" height="360" src="https://www.youtube.com/embed/CDNg5f2UJFY?origin=localhost:4200"
-                frameborder="0">
-        </iframe>
-        
         <section class="section">
             <div class="container-fluid">
                 <div class="fi-sponsor-list--home" >
@@ -1285,7 +1281,7 @@
                 Link for news:
             </div>
             <div class="link">
-                {{link}}
+                {{news_link}}
                          
             </div>
         </div>
@@ -1307,6 +1303,10 @@
         <div class="body">
          
             <div class="link">
+                <a [href]="video_link">
+                    <img [src]="video_images_full" alt="video images" style="width: 100%;">
+                </a>
+                <p style="margin-top: 10px">{{video_description}}</p>
                 <!-- <iframe width="300" height="200" [src]="link | safe" frameborder="0" 
                 allow="autoplay; encrypted-media"
                     allowfullscreen></iframe>             -->

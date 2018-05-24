@@ -124,6 +124,7 @@
     }
     .item {
         background-color: #f1ebe3;
+        cursor: pointer;
     }
     &.owl__video {
         .item__thumb {
@@ -530,6 +531,7 @@
 
 .owl_destination {
     .item {
+        cursor: pointer;
         .images {
             position: relative;
             height: 520px;
@@ -684,7 +686,7 @@
     }
     &.video {
         .popup_modal-item {
-            height: 500px !important;
+            height: auto !important;
             background-color: #fff !important;
             width: 100% !important;
             max-width: 770px !important;

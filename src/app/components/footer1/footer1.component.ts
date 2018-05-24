@@ -23,7 +23,7 @@ export class Footer1Component implements OnInit {
         this.current_languages = localStorage.getItem('currentLanguages');
         this.translate.use(this.current_languages);
 
-        console.log(this.current_languages)
+        // console.log(this.current_languages)
     }
 
 
@@ -41,19 +41,19 @@ export class Footer1Component implements OnInit {
 
   //change languages
   switchLanguage(a) {
-    console.log('ngmodel:',a);
+    // console.log('ngmodel:',a);
     
     this.current_languages = localStorage.getItem('currentLanguages');
-    console.log('lang from localstorage:',this.current_languages);
+    // console.log('lang from localstorage:',this.current_languages);
 
     localStorage.setItem('currentLanguages',a);
-    console.log('after setItem into localtorage:',a);
+    // console.log('after setItem into localtorage:',a);
 
 
-    console.log('current languages:',localStorage.getItem('currentLanguages'))
+    // console.log('current languages:',localStorage.getItem('currentLanguages'))
     this.translate.use(localStorage.getItem('currentLanguages'));
 
-    // localStorage.setItem('currentLanguages', this.current_languages);
+    window.location.reload()
 
   }
 }
