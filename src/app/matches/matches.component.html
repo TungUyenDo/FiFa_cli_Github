@@ -7508,7 +7508,7 @@
             <a href="#" class="fi-knockout-tabs__listview active" id="listview">
               <span>List view</span>
             </a>
-            <a href="#" class="fi-knockout-tabs__bracketview" id="bracketview">
+            <a href="#" class="fi-knockout-tabs__bracketview" id="bracketview" (click)="click_openbracketview()">
               <span>Bracket view</span>
             </a>
           </div>
@@ -7521,10 +7521,8 @@
 
             <div class="fi-matchlist">
 
-
-
-
-              <div class="fi-mu-list" data-idstage="275093">
+              <!-- round 16 -->
+              <div class="fi-mu-list">
                 <div class="fi-mu-list__head">
                   <span class="fi-mu-list__head__date">
                     Round of 16
@@ -7546,9 +7544,10 @@
                   <div class="fi-mu__m">
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
+                      <span>Name Left</span>
                     </div>
 
                     <div class="fi-s-wrap">
@@ -7562,1231 +7561,225 @@
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
+                      <span>Name right</span>
+
                     </div>
 
                   </div>
 
                 </div>
               </div>
-              <!-- <div class="fi-mu-list" data-idstage="275095">
+
+              <!-- quarters_finals -->
+              <div class="fi-mu-list">
                 <div class="fi-mu-list__head">
                   <span class="fi-mu-list__head__date">
-                    Quarter-finals
+                      Quarter-finals
                   </span>
                 </div>
 
-                <div data-id="300331543" data-status="1" class="fi-mu fixture">
+                <div data-status="1" class="fi-mu fixture" *ngFor="let item of quarters_finals_1">
                   <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-06T02:00:00.000Z">
-                      06 Jul 2018 - 17:00
+                    <div class="fi-mu__info__datetime" data-utcdate="2018-06-30T02:00:00.000Z">
+                       {{item.starting_at[0] }} - {{item.starting_at[1] }}
                       <span class="fi-mu__info__localtime">Local time</span>
                     </div>
-                    <div class="fi__info__datetime--abbr">
-                      06 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
                     <div class="fi__info__location">
-                      <div class="fi__info__stadium">Nizhny Novgorod Stadium</div>
-                      <div class="fi__info__venue">NIZHNY NOVGOROD</div>
+                      <div class="fi__info__stadium">{{item.venues}}</div>
+                      <div class="fi__info__venue">{{item.city}}</div>
                     </div>
                   </div>
 
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W49" title="W49" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W49</span>
-                        <span class="fi-t__nTri">W49</span>
-                      </div>
+                      <span>Name Left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">06 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="0607" data-timelocal="17:00">
+                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            17:00 </span>
+                               {{item.starting_at[1] }}
+                          </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W50" title="W50" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W50</span>
-                        <span class="fi-t__nTri">W50</span>
-                      </div>
+                      <span>Name right</span>
+
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
-                  </div>
-
-                </div>
-                <div data-id="300331538" data-status="1" class="fi-mu fixture">
-                  <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-06T06:00:00.000Z">
-                      06 Jul 2018 - 21:00
-                      <span class="fi-mu__info__localtime">Local time</span>
-                    </div>
-                    <div class="fi__info__datetime--abbr">
-                      06 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
-                    <div class="fi__info__location">
-                      <div class="fi__info__stadium">Kazan Arena</div>
-                      <div class="fi__info__venue">KAZAN</div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W53" title="W53" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W53</span>
-                        <span class="fi-t__nTri">W53</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">06 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0607" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W54" title="W54" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W54</span>
-                        <span class="fi-t__nTri">W54</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
-                  </div>
-
-                </div>
-                <div data-id="300331541" data-status="1" class="fi-mu fixture">
-                  <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-07T02:00:00.000Z">
-                      07 Jul 2018 - 18:00
-                      <span class="fi-mu__info__localtime">Local time</span>
-                    </div>
-                    <div class="fi__info__datetime--abbr">
-                      07 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
-                    <div class="fi__info__location">
-                      <div class="fi__info__stadium">Samara Arena</div>
-                      <div class="fi__info__venue">SAMARA</div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W55" title="W55" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W55</span>
-                        <span class="fi-t__nTri">W55</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">07 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="240" data-daymonthutc="0707" data-timelocal="18:00">
-                          <span class="fi-s__scoreText">
-                            18:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W56" title="W56" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W56</span>
-                        <span class="fi-t__nTri">W56</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
-                  </div>
-
-                </div>
-                <div data-id="300331504" data-status="1" class="fi-mu fixture">
-                  <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-07T06:00:00.000Z">
-                      07 Jul 2018 - 21:00
-                      <span class="fi-mu__info__localtime">Local time</span>
-                    </div>
-                    <div class="fi__info__datetime--abbr">
-                      07 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
-                    <div class="fi__info__location">
-                      <div class="fi__info__stadium">Fisht Stadium</div>
-                      <div class="fi__info__venue">SOCHI</div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W51" title="W51" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W51</span>
-                        <span class="fi-t__nTri">W51</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">07 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0707" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W52" title="W52" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W52</span>
-                        <span class="fi-t__nTri">W52</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
                   </div>
 
                 </div>
               </div>
-              <div class="fi-mu-list" data-idstage="275097">
+              <!-- Semi-finals -->
+              <div class="fi-mu-list">
                 <div class="fi-mu-list__head">
                   <span class="fi-mu-list__head__date">
-                    Semi-finals
+                      Semi-finals
                   </span>
                 </div>
 
-                <div data-id="300331531" data-status="1" class="fi-mu fixture">
+                <div data-status="1" class="fi-mu fixture" *ngFor="let item of semi_finals">
                   <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-10T06:00:00.000Z">
-                      10 Jul 2018 - 21:00
+                    <div class="fi-mu__info__datetime" data-utcdate="2018-06-30T02:00:00.000Z">
+                       {{item.starting_at[0] }} - {{item.starting_at[1] }}
                       <span class="fi-mu__info__localtime">Local time</span>
                     </div>
-                    <div class="fi__info__datetime--abbr">
-                      10 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
                     <div class="fi__info__location">
-                      <div class="fi__info__stadium">Saint Petersburg Stadium</div>
-                      <div class="fi__info__venue">ST. PETERSBURG</div>
+                      <div class="fi__info__stadium">{{item.venues}}</div>
+                      <div class="fi__info__venue">{{item.city}}</div>
                     </div>
                   </div>
 
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W57" title="W57" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W57</span>
-                        <span class="fi-t__nTri">W57</span>
-                      </div>
+                      <span>Name Left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">10 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="1007" data-timelocal="21:00">
+                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            21:00 </span>
+                               {{item.starting_at[1] }}
+                          </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W58" title="W58" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W58</span>
-                        <span class="fi-t__nTri">W58</span>
-                      </div>
+                      <span>Name right</span>
+
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
-                  </div>
-
-                </div>
-                <div data-id="300331522" data-status="1" class="fi-mu fixture">
-                  <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-11T06:00:00.000Z">
-                      11 Jul 2018 - 21:00
-                      <span class="fi-mu__info__localtime">Local time</span>
-                    </div>
-                    <div class="fi__info__datetime--abbr">
-                      11 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
-                    <div class="fi__info__location">
-                      <div class="fi__info__stadium">Luzhniki Stadium</div>
-                      <div class="fi__info__venue">MOSCOW</div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W59" title="W59" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W59</span>
-                        <span class="fi-t__nTri">W59</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">11 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="1107" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W60" title="W60" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W60</span>
-                        <span class="fi-t__nTri">W60</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
                   </div>
 
                 </div>
               </div>
-              <div class="fi-mu-list" data-idstage="275099">
+
+              <!-- Play-off for third place -->
+              <div class="fi-mu-list">
                 <div class="fi-mu-list__head">
                   <span class="fi-mu-list__head__date">
-                    Play-off for third place
+                      Play-off for third place
                   </span>
                 </div>
 
-                <div data-id="300331536" data-status="1" class="fi-mu fixture">
+                <div data-status="1" class="fi-mu fixture" *ngFor="let item of play_off">
                   <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-14T02:00:00.000Z">
-                      14 Jul 2018 - 17:00
+                    <div class="fi-mu__info__datetime" data-utcdate="2018-06-30T02:00:00.000Z">
+                       {{item.starting_at[0] }} - {{item.starting_at[1] }}
                       <span class="fi-mu__info__localtime">Local time</span>
                     </div>
-                    <div class="fi__info__datetime--abbr">
-                      14 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
                     <div class="fi__info__location">
-                      <div class="fi__info__stadium">Saint Petersburg Stadium</div>
-                      <div class="fi__info__venue">ST. PETERSBURG</div>
+                      <div class="fi__info__stadium">{{item.venues}}</div>
+                      <div class="fi__info__venue">{{item.city}}</div>
                     </div>
                   </div>
 
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L61" title="L61" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">L61</span>
-                        <span class="fi-t__nTri">L61</span>
-                      </div>
+                      <span>Name Left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">14 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="1407" data-timelocal="17:00">
+                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            17:00 </span>
+                               {{item.starting_at[1] }}
+                          </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L62" title="L62" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">L62</span>
-                        <span class="fi-t__nTri">L62</span>
-                      </div>
+                      <span>Name right</span>
+
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
                   </div>
 
                 </div>
               </div>
-              <div class="fi-mu-list" data-idstage="275101">
+
+              <!-- Final -->
+              <div class="fi-mu-list">
                 <div class="fi-mu-list__head">
                   <span class="fi-mu-list__head__date">
-                    Final
+                      Final
                   </span>
                 </div>
 
-                <div data-id="300331552" data-status="1" class="fi-mu fixture">
+                <div data-status="1" class="fi-mu fixture" *ngFor="let item of final">
                   <div class="fi-mu__info">
-                    <div class="fi-mu__info__datetime" data-utcdate="2018-07-15T03:00:00.000Z">
-                      15 Jul 2018 - 18:00
+                    <div class="fi-mu__info__datetime" data-utcdate="2018-06-30T02:00:00.000Z">
+                       {{item.starting_at[0] }} - {{item.starting_at[1] }}
                       <span class="fi-mu__info__localtime">Local time</span>
                     </div>
-                    <div class="fi__info__datetime--abbr">
-                      15 Jul 2018
-                    </div>
-                    <div class="fi__info__group"></div>
                     <div class="fi__info__location">
-                      <div class="fi__info__stadium">Luzhniki Stadium</div>
-                      <div class="fi__info__venue">MOSCOW</div>
+                      <div class="fi__info__stadium">{{item.venues}}</div>
+                      <div class="fi__info__venue">{{item.city}}</div>
                     </div>
                   </div>
 
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W61" title="W61" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W61</span>
-                        <span class="fi-t__nTri">W61</span>
-                      </div>
+                      <span>Name Left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">15 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="15:00" data-timeshiftutc="180" data-daymonthutc="1507" data-timelocal="18:00">
+                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            18:00 </span>
+                               {{item.starting_at[1] }}
+                          </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W62" title="W62" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W62</span>
-                        <span class="fi-t__nTri">W62</span>
-                      </div>
+                      <span>Name right</span>
+
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="fi-mu__calls">
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--lb hidden">
-                      <span class="fi-mu__calls__label">Live Blog</span>
-                      <span class="icon-lb"></span>
-                    </div>
-
-                    <div class="fi-mu__calls__call fi-mu__calls__call--hl hidden">
-                      <span class="fi-mu__calls__label">Highlights</span>
-                      <span class="icon-hl"></span>
-                    </div>
                   </div>
 
                 </div>
-              </div> -->
+              </div>
+             
             </div>
 
           </div>
@@ -8797,731 +7790,76 @@
               <!-- BRACKET ROW EIGHT-->
               <div class="fi-bracket__row fi-bracket__row--eight">
 
-                <div data-id="300331544" data-stageid="275093" data-status="1" class="fi-mu fixture ">
+                <div  class="fi-mu fixture " *ngFor="let item of round8_1">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
+                
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1A" title="1A" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1A" title="1A" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1A</span>
-                        <span class="fi-t__nTri">1A</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">30 June</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }}</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="21:00">
                           <span class="fi-s__scoreText">
-                            21:00 </span>
+                              {{item.starting_at[1] }}
+                            </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2B" title="2B" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2B" title="2B" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2B</span>
-                        <span class="fi-t__nTri">2B</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
-
-
-                <div data-id="300331537" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1C" title="1C" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1C</span>
-                        <span class="fi-t__nTri">1C</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">30 June</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="3006" data-timelocal="17:00">
-                          <span class="fi-s__scoreText">
-                            17:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2D" title="2D" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2D</span>
-                        <span class="fi-t__nTri">2D</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331535" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1E" title="1E" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1E</span>
-                        <span class="fi-t__nTri">1E</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">02 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="240" data-daymonthutc="0207" data-timelocal="18:00">
-                          <span class="fi-s__scoreText">
-                            18:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2F" title="2F" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2F</span>
-                        <span class="fi-t__nTri">2F</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331551" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1G" title="1G" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1G</span>
-                        <span class="fi-t__nTri">1G</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">02 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0207" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2H" title="2H" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2H</span>
-                        <span class="fi-t__nTri">2H</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
 
               </div>
               <!-- END BRACKET ROW EIGHT-->
               <!-- BRACKET ROW QUARTER-->
               <div class="fi-bracket__row fi-bracket__row--quarter">
 
-                <div data-id="300331543" data-stageid="275095" data-status="1" class="fi-mu fixture ">
+                <div class="fi-mu fixture"  *ngFor="let item of quarters_finals_1">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
+                    
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W49" title="W49" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W49" title="W49" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W49</span>
-                        <span class="fi-t__nTri">W49</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">06 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="0607" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            17:00 </span>
+                              {{item.starting_at[1] }}</span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W50" title="W50" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W50" title="W50" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W50</span>
-                        <span class="fi-t__nTri">W50</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331538" data-stageid="275095" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W53" title="W53" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W53</span>
-                        <span class="fi-t__nTri">W53</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">06 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0607" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W54" title="W54" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W54</span>
-                        <span class="fi-t__nTri">W54</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
                     <div class="fi-mu__details">
@@ -9539,122 +7877,34 @@
               <!-- BRACKET ROW SEMI-->
               <div class="fi-bracket__row fi-bracket__row--semi">
 
-                <div data-id="300331531" data-stageid="275097" data-status="1" class="fi-mu fixture ">
+                <div class="fi-mu fixture "  *ngFor="let item of semi_finals_1">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W57" title="W57" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W57" title="W57" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W57</span>
-                        <span class="fi-t__nTri">W57</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">10 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="1007" data-timelocal="21:00">
                           <span class="fi-s__scoreText">
-                            21:00 </span>
+                            {{item.starting_at[1] }}</span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W58" title="W58" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W58" title="W58" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W58</span>
-                        <span class="fi-t__nTri">W58</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
+                      <span>Name right</span>
                     </div>
                   </div>
 
@@ -9666,245 +7916,70 @@
               <!-- BRACKET ROW FINAL-->
               <div class="fi-bracket__row fi-bracket__row--final">
 
-                <div data-id="300331536" data-stageid="275099" data-status="1" class="fi-mu fixture ">
+                <div  class="fi-mu fixture " *ngFor="let item of play_off">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L61" title="L61" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L61" title="L61" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">L61</span>
-                        <span class="fi-t__nTri">L61</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">14 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="1407" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            17:00 </span>
+                              {{item.starting_at[1] }}</span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L62" title="L62" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="L62" title="L62" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">L62</span>
-                        <span class="fi-t__nTri">L62</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
+                      <span>Name right</span>
                     </div>
                   </div>
 
                 </div>
 
 
-                <div data-id="300331552" data-stageid="275101" data-status="1" class="fi-mu fixture fi-mu--final">
+                <div class="fi-mu fixture fi-mu--final" *ngFor="let item of play_off">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W61" title="W61" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W61" title="W61" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W61</span>
-                        <span class="fi-t__nTri">W61</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">15 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="15:00" data-timeshiftutc="180" data-daymonthutc="1507" data-timelocal="18:00">
                           <span class="fi-s__scoreText">
-                            18:00 </span>
+                              {{item.starting_at[0] }</span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W62" title="W62" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W62" title="W62" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W62</span>
-                        <span class="fi-t__nTri">W62</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
@@ -9915,123 +7990,36 @@
               <!-- BRACKET ROW SEMI-->
               <div class="fi-bracket__row fi-bracket__row--semi">
 
-                <div data-id="300331522" data-stageid="275097" data-status="1" class="fi-mu fixture ">
+                <div class="fi-mu fixture "  *ngFor="let item of semi_finals_1">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W59" title="W59" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W59" title="W59" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W59</span>
-                        <span class="fi-t__nTri">W59</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">11 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="1107" data-timelocal="21:00">
                           <span class="fi-s__scoreText">
-                            21:00 </span>
+                              {{item.starting_at[1] }}</span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W60" title="W60" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W60" title="W60" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W60</span>
-                        <span class="fi-t__nTri">W60</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
@@ -10042,245 +8030,36 @@
               <!-- BRACKET ROW QUARTER-->
               <div class="fi-bracket__row fi-bracket__row--quarter">
 
-                <div data-id="300331504" data-stageid="275095" data-status="1" class="fi-mu fixture ">
+                <div class="fi-mu fixture "  *ngFor="let item of quarters_finals_2">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W51" title="W51" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W51" title="W51" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W51</span>
-                        <span class="fi-t__nTri">W51</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">07 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }}</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0707" data-timelocal="21:00">
                           <span class="fi-s__scoreText">
-                            21:00 </span>
+                              {{item.starting_at[1] }} </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W52" title="W52" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W52" title="W52" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W52</span>
-                        <span class="fi-t__nTri">W52</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331541" data-stageid="275095" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W55" title="W55" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W55</span>
-                        <span class="fi-t__nTri">W55</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">07 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="240" data-daymonthutc="0707" data-timelocal="18:00">
-                          <span class="fi-s__scoreText">
-                            18:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="W56" title="W56" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">W56</span>
-                        <span class="fi-t__nTri">W56</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
@@ -10291,492 +8070,40 @@
               <!-- BRACKET ROW EIGHT-->
               <div class="fi-bracket__row fi-bracket__row--eight">
 
-                <div data-id="300331517" data-stageid="275093" data-status="1" class="fi-mu fixture ">
+                <div class="fi-mu fixture "  *ngFor="let item of round8_2">
                   <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
                     <div class="fi-t home">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1B" title="1B" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1B" title="1B" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1B</span>
-                        <span class="fi-t__nTri">1B</span>
-                      </div>
+                      <span>Name left</span>
                     </div>
 
                     <div class="fi-s-wrap">
                       <div class="fi-s">
                         <div>
-                          <span class="fi-s__matchDate">01 July</span>
+                          <span class="fi-s__matchDate">{{item.starting_at[0] }}</span>
                         </div>
 
                         <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="0107" data-timelocal="17:00">
                           <span class="fi-s__scoreText">
-                            17:00 </span>
+                              {{item.starting_at[1] }} </span>
                         </div>
                       </div>
                     </div>
                     <div class="fi-t away">
                       <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2A" title="2A" class="fi-flag--placeholder fi-flag--4"
+                        <img src="http://www.fifa.com/assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2A" title="2A" class="fi-flag--placeholder fi-flag--4"
                         />
                       </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2A</span>
-                        <span class="fi-t__nTri">2A</span>
-                      </div>
+                      <span>Name right</span>
                     </div>
 
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
                   </div>
 
                 </div>
 
-
-                <div data-id="300331498" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1D" title="1D" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1D</span>
-                        <span class="fi-t__nTri">1D</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">01 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0107" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2C" title="2C" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2C</span>
-                        <span class="fi-t__nTri">2C</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331514" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1F" title="1F" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1F</span>
-                        <span class="fi-t__nTri">1F</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">03 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="14:00" data-timeshiftutc="180" data-daymonthutc="0307" data-timelocal="17:00">
-                          <span class="fi-s__scoreText">
-                            17:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2E" title="2E" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2E</span>
-                        <span class="fi-t__nTri">2E</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-
-                <div data-id="300331542" data-stageid="275093" data-status="1" class="fi-mu fixture ">
-                  <div class="fi-mu__m">
-                    <div class="fi-mu__status">
-                      <div class="fi-s__status">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                      <div class="fi-s__status--abbr">
-                        <span class="period abandoned hidden">
-                          Abandoned
-                        </span>
-                        <span class="period suspended hidden">
-                          Suspended
-                        </span>
-                        <span class="period postponed hidden">
-                          Postponed
-                        </span>
-                        <span class="period cancelled hidden">
-                          Cancelled
-                        </span>
-                        <span class="period lineups hidden">
-                          LineUps
-                        </span>
-                        <span class="period half_time hidden">
-                          Half-time
-                        </span>
-                        <span class="period extra_time hidden">
-                          End of Second Half
-                        </span>
-                        <span class="period extra_half_time hidden">
-                          End of First Half Extra Time
-                        </span>
-                        <span class="period penalty_shootout hidden">
-                          Penalties
-                        </span>
-                        <span class="period full_time hidden">
-                          Full-time
-                        </span>
-                        <span class="period post_match hidden">
-                          Full-time
-                        </span>
-                        <span class="period minute hidden"></span>
-
-                      </div>
-                    </div>
-                    <div class="fi-t home">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="1H" title="1H" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">1H</span>
-                        <span class="fi-t__nTri">1H</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-s-wrap">
-                      <div class="fi-s">
-                        <div>
-                          <span class="fi-s__matchDate">03 July</span>
-                        </div>
-
-                        <div class="fi-s__score fi-s__date-HHmm" data-timeutc="18:00" data-timeshiftutc="180" data-daymonthutc="0307" data-timelocal="21:00">
-                          <span class="fi-s__scoreText">
-                            21:00 </span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="fi-t away">
-                      <div class="fi-t__i ">
-                        <img src="../../assets/img/tournaments/17/2018/flag-fwc2018-placeholder.png" alt="2G" title="2G" class="fi-flag--placeholder fi-flag--4"
-                        />
-                      </div>
-                      <div class="fi-t__n">
-                        <span class="fi-t__nText ">2G</span>
-                        <span class="fi-t__nTri">2G</span>
-                      </div>
-                    </div>
-
-                    <div class="fi-mu__details">
-                      <div class="fi-mu__reasonwin-wrap">
-
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
 
 
               </div>
