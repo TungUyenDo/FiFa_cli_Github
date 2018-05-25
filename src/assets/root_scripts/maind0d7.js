@@ -1906,15 +1906,15 @@ define('header', ['jquery', 'mslogin'], function ($, MsLogin) {
       });
 
       //Languages dropdown
-      $langItems.on('click', function (e) {
-        e.preventDefault();
-        var _this = this;
-        var _location = $(_this).find('a').attr('href');
-        _location = [_location, window.location.pathname, window.location.search, window.location.hash].join('');
+      // $langItems.on('click', function (e) {
+      //   e.preventDefault();
+      //   var _this = this;
+      //   var _location = $(_this).find('a').attr('href');
+      //   _location = [_location, window.location.pathname, window.location.search, window.location.hash].join('');
 
-        window.location = _location;
+      //   window.location = _location;
 
-      });
+      // });
 
     },
     setMSURLOnButtons: function () {

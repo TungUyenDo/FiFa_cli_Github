@@ -10,6 +10,7 @@
         "news":"News",
         "photos":"Photos",
         "videos":"Videos",
+        "livecores": "Live Scores",
         "searchonfifa":"Search on FIFA.com"
       }
     },
@@ -54,6 +55,8 @@
       "all_videos":"All Videos",
       "latest_videos":"Latest Videos",
       "more_videos":"More Videos",
+
+      
 
       "title_matches":"MATCHES",
       "groups_phase":"Group Phase",

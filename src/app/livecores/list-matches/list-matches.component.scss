@@ -1,0 +1,12 @@
+.col_viewDetail {
+    button {
+        border: 1px solid #0f4583;
+        color: #0f4583;
+        background-color: #fff;
+        font-weight: 700;
+        &:hover{
+            background-color: #0f4583;
+            color:#fff
+        }
+    }
+}

@@ -1,3 +1,4 @@
+
 import {RouterModule, Routes} from '@angular/router';
 import {NgModule} from '@angular/core';
 
@@ -14,6 +15,10 @@ import { StadiumComponent} from './stadium/stadium.component'
 import {GroupsComponent} from './groups/groups.component'
 import {MatchesComponent} from './matches/matches.component'
 
+import { LivecoresComponent} from './livecores/livecores.component'
+import { DetailMatchesComponent } from './livecores/detail-matches/detail-matches.component';
+import { ListMatchesComponent } from './livecores/list-matches/list-matches.component';
+
 const MainRouters: Routes = [
     {   path: '', component: HomeComponent },
     {   path: 'news',component: NewsComponent},  
@@ -23,6 +28,15 @@ const MainRouters: Routes = [
     {   path: 'stadium',component: StadiumComponent},  
     {   path: 'groups',component: GroupsComponent},  
     {   path: 'matches',component: MatchesComponent},  
+    {   path: 'livecores',component: LivecoresComponent}, 
+    {
+      path: "livecores", component: LivecoresComponent,
+      children: [
+        { path: '', redirectTo: 'list', pathMatch: 'full' },
+        { path: "list", component: ListMatchesComponent },
+        { path: "detail/234", component: DetailMatchesComponent }
+      ]
+    }, 
     {   path: '**', component: HomeComponent }
 ];
 

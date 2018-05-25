@@ -1,5 +1,4 @@
 
-import { Observable, of, throwError} from "rxjs"
 import { map, filter, catchError, mergeMap } from 'rxjs/operators';
 
 import { environment } from '../environments/environment';
@@ -8,7 +7,13 @@ import { Injectable } from '@angular/core';
 
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 
-
+import { Observable, Subject, asapScheduler, pipe, of, from, interval, merge, fromEvent } from 'rxjs';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/catch';
+// import 'rxjs/add/observable/throw';
+// import 'rxjs/add/observable/interval';
+// import 'rxjs/add/operator/mergeMap';
+// import 'rxjs/add/operator/startWith';
 @Injectable()
 export class ApiServices {
 
@@ -111,6 +116,20 @@ export class ApiServices {
         // console.log(headers)
         return this.http.get(environment.pathUrlApi + "livescores/get-all-stadium", { headers: headers}
             )
+            .pipe(
+                map(res => {
+                    // console.log(res)
+                    return res
+                }),
+                catchError(this.handleError)
+            );
+    }
+
+        
+    // }
+    public getLiveCores() {
+        var dataJson = "../assets/data_json/json/fixture_example.json";
+        return this.http.get(dataJson)
             .pipe(
                 map(res => {
                     // console.log(res)

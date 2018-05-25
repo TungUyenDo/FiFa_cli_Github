@@ -29,7 +29,10 @@ import { MomentModule } from 'ngx-moment';
 
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 
-import { SharedModule } from './app.share'
+import { SharedModule } from './app.share';
+import { LivecoresComponent } from './livecores/livecores.component';
+import { ListMatchesComponent } from './livecores/list-matches/list-matches.component';
+import { DetailMatchesComponent } from './livecores/detail-matches/detail-matches.component'
 
 
 @NgModule({
@@ -47,7 +50,10 @@ import { SharedModule } from './app.share'
     MatchesComponent,
     GroupsComponent,
     NewsComponent,
-    SafePipe
+    SafePipe,
+    LivecoresComponent,
+    ListMatchesComponent,
+    DetailMatchesComponent
   ],
   //import module parent 
   imports: [
