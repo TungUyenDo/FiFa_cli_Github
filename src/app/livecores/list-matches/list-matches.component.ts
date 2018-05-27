@@ -15,6 +15,10 @@ export class ListMatchesComponent implements OnInit {
 
   ngOnInit() {
     this.GetLiveCores()
+    // setInterval(function(){
+    //     this.GetLiveCores()
+    //     alert("Chào mừng bạn đến với freetuts.net");
+    // }, 3000);
 
   }
 
@@ -30,6 +34,7 @@ export class ListMatchesComponent implements OnInit {
 
   click_toDetailMatch(id){
     console.log(id)
+    // window.location.reload();
     this.router.navigate(['/livecores/detail/' + id] )  
   }
 

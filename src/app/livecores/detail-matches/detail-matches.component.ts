@@ -13,8 +13,12 @@ export class DetailMatchesComponent implements OnInit {
   constructor(private apiservice: ApiServices) { }
 
   ngOnInit() {
-
     this.GetLiveCores()
+    // setInterval(function(){
+    //     alert("Chào mừng bạn đến với freetuts.net");
+    //     this.GetLiveCores()
+    // }, 3000);
+   
 
   }
   GetLiveCores() {

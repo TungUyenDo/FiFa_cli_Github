@@ -33,7 +33,7 @@ import { SharedModule } from './app.share';
 import { LivecoresComponent } from './livecores/livecores.component';
 import { ListMatchesComponent } from './livecores/list-matches/list-matches.component';
 import { DetailMatchesComponent } from './livecores/detail-matches/detail-matches.component'
-
+import { LiveCoresModule } from './livecores/livecores.module'
 
 @NgModule({
   //import component child

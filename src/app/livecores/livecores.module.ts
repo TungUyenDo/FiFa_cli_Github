@@ -32,8 +32,9 @@ import { DetailMatchesComponent } from './detail-matches/detail-matches.componen
         OwlModule,
         MomentModule,
     ],
+    bootstrap: [LivecoresComponent],
     providers: [
         ApiServices
     ],
 })
-export class AppModule { }  
+export class LiveCoresModule { }  
