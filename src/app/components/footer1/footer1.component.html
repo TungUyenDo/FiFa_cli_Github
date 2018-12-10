@@ -1,0 +1,55 @@
+<div class="navbar sitef-wrap ac-footer-2">
+  <div class="container">
+    <div class="row">
+        <!--googleoff: index-->
+        <div class="fi-site-footer__language col-xs-12 col-md-2">
+          <div class="fi-footer__language dropup">
+            <div class="dropdown fi-select-wrapper fi-select__languages" data-lang="en-GB">
+              <select class="select_languages" (change)="switchLanguage($event.target.value)" [attr.item]="current_languages" ([ngModel])="current_languages">
+                <option [value]="item.short_code" [selected]="item.short_code === current_languages" *ngFor="let item of datalanguages">{{item.name}}</option>
+              </select>
+              <i class="fi-icon fi-icon-down"></i>
+            </div>
+          </div>
+        </div>
+        <!--googleon: index-->
+        <div class="col-md-10">
+          <ul class="nav navbar-nav">
+            <li class="sitef-widgets sep-item hidden">
+              <a href="../../widgets/index.html"> {{'footer_blue.widgets' | translate}}</a>
+            </li>
+            <li class="sitef-mobileapps sep-item">
+              <a href="../../mobile/index.html"> {{'footer_blue.widgets' | translate}}</a>
+            </li>
+            <li class="sitef-mobileapps sep-item">
+              <a href="../../mobile/index.html"> {{'footer_blue.mobile_apps' | translate}}</a>
+            </li>
+            <li class="sitef-platform sep-item hidden">
+              <a href="#" data-target="#sitef-platform-gotomobile">{{'footer_blue.mobile_apps' | translate}}</a>
+            </li>
+            <li class="sitef-contact sep-item">
+              <a href="../../faq.html">{{'footer_blue.contact_fifa' | translate}}</a>
+            </li>
+            <li class="sitef-downloads sep-item">
+              <a href="../../legal/downloads.html">{{'footer_blue.downloads' | translate}}</a>
+            </li>
+            <li class="sitef-privacy sep-item">
+              <a href="../../legal/privacy-policy.html">{{'footer_blue.privacy_policy' | translate}}</a>
+            </li>
+            <li class="sitef-tos">
+              <a href="../../legal/terms-of-service.html">{{'footer_blue.terms_of_services' | translate}}</a>
+            </li>
+          </ul>
+        </div>
+    </div>
+    
+    <div class="row mg-t-30">
+      <div class="col-md-12 col-xs-12">
+          <p class="sitef-copyright">{{'footer_blue.copyright' | translate}}</p>
+      </div>
+    
+    </div>
+    
+    
+  </div>
+</div>

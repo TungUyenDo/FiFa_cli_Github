@@ -1,0 +1,68 @@
+<section class="live_cores">
+    <div class="container">
+
+        <div class="fi-boxed-page">
+            <h1 class="fi-page-title" [hidden]="index > 1">
+                <!-- {{'general.title_photos' | translate}} -->
+                Live cores detail
+            </h1>
+        </div>
+
+        <div class="row" *ngIf="data_livecores">
+            <div class="col-md-12">
+                <div class="table_cores table_cores_inplay">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="4"> inplay</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col_time">{{data_livecores.time.starting_at.time}}</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>{{data_livecores.localTeam.data.name}}</span>
+                                        <a class="flag">
+                                            <img [src]="data_livecores.localTeam.data.logo_path" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <p>{{data_livecores.scores.localteam_score}} : {{data_livecores.scores.visitorteam_score}}</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img [src]="data_livecores.visitorTeam.data.logo_path" alt="">
+                                        </a>
+                                        <span>{{data_livecores.visitorTeam.data.name}}</span>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr *ngFor="let item of data_livecores.events.data">
+                                <td class="col_time">Minute : {{item.minute}}</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <!-- <span>{{data_livecores.localTeam.data.name}}</span> -->
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <p *ngIf="!item.result">- : -</p>
+                                    <p>{{item.result}}</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <p>Player: <b> {{item.player_name}}</b></p>
+                                    </div>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>

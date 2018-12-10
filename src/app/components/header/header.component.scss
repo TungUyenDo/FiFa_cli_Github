@@ -1,0 +1,18 @@
+@media(max-width:768px){
+    .fi-section-header__competition__title{
+        float: none;
+    }
+}
+
+.nav-langs{
+    li{
+        cursor: pointer;
+    }
+}
+
+.fi-icons-bar__lang{
+    a{
+        text-transform: uppercase;
+        cursor: pointer;
+    }
+}

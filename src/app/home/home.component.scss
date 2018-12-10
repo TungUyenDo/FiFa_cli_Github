@@ -1,0 +1,22 @@
+.fi-o-media-object__top-content {
+    .fi-o-media-object__body {
+        position: absolute;
+        top: 65%;
+        float: right;
+        display: block;
+        right: 0;
+        z-index: 2;
+    }
+    img {
+        transition: transform .3s ease; // transform: scale(1.01) translate3d(0, 0, 0);
+        width: 100%;
+    }
+    &:after {
+        position: absolute;
+        background: linear-gradient(#a4a2a20d, #1413130d, #000000);
+        content: '';
+        bottom: 0;
+        height: 100%;
+        width: 100%;
+    }
+}

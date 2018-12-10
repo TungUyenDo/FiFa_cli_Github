@@ -1,0 +1,224 @@
+<section class="live_cores">
+    <div class="container">
+
+        <div class="fi-boxed-page">
+            <h1 class="fi-page-title" [hidden]="index > 1">
+                <!-- {{'general.title_photos' | translate}} -->
+                Live cores
+            </h1>
+        </div>
+
+        <!-- inplay -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table_cores table_cores_inplay">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="5"> inplay</td>
+                            </tr>
+                        </thead>
+                        <tbody *ngIf="data_livecores">
+                            <tr>
+                                <td class="col_time" [innerText]="data_livecores.time.starting_at.time" ></td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>{{data_livecores.localTeam.data.name}}</span>
+                                        <a class="flag">
+                                            <img [src]="data_livecores.localTeam.data.logo_path" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <p>{{data_livecores.scores.localteam_score}} : {{data_livecores.scores.visitorteam_score}}</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img [src]="data_livecores.visitorTeam.data.logo_path" alt="">
+                                        </a>
+                                        <span>{{data_livecores.visitorTeam.data.name}}</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <!-- <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button> -->
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(234)">View detail</button>
+                                </td>
+
+
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- today -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table_cores table_cores_inplay">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="5"> today</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col_time">Time</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>name</span>
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <!-- <p>00 : 00</p> -->
+                                    <p>- : -</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                        <span>name</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col_time">Time</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>name</span>
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <!-- <p>00 : 00</p> -->
+                                    <p>- : -</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                        <span>name</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- yesterday -->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="table_cores table_cores_inplay">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td colspan="5"> yesterday</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="col_time">Time</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>name</span>
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <!-- <p>00 : 00</p> -->
+                                    <p>- : -</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                        <span>name</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col_time">Time</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>name</span>
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <!-- <p>00 : 00</p> -->
+                                    <p>- : -</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                        <span>name</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col_time">Time</td>
+                                <td class="col_localTeam">
+                                    <div class="team_local">
+                                        <span>name</span>
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                    </div>
+                                </td>
+                                <td class="col_core">
+                                    <!-- <p>00 : 00</p> -->
+                                    <p>- : -</p>
+                                </td>
+                                <td class="col_visitorTeam">
+                                    <div class="team_visitor">
+                                        <a class="flag">
+                                            <img src="https://fsprdcdnpublic.azureedge.net/global-pictures/flags-fwc2018-4/egy" alt="">
+                                        </a>
+                                        <span>name</span>
+                                    </div>
+                                </td>
+                                <td class="col_viewDetail">
+                                    <button class="btn btn-success" (click)="click_toDetailMatch(data_livecores.id)">View detail</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>

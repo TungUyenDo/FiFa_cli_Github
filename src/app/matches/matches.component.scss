@@ -1,0 +1,19 @@
+.fi-mu.fixture {
+    .fi-t__i {
+        margin: 0 5px;
+    }
+}
+
+.table-bracket-view {
+    width: 100%;
+    @media(max-width: 850px) {
+        overflow-x: scroll;
+        width: 850px;
+    }
+    .fi-mu.fixture {
+        .fi-t__i {
+            margin-left: auto;
+            margin-right: auto
+        }
+    }
+}

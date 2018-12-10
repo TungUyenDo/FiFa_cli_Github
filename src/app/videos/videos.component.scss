@@ -1,0 +1,11 @@
+.dcm-thumblist {
+    .dcm-thumblist-item {
+        cursor: pointer;
+        .dcm-title {
+            font-family: "dusha_plusregular";
+            a {
+                color: #000
+            }
+        }
+    }
+}

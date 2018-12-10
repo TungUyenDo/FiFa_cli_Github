@@ -1,0 +1,32 @@
+.teams {
+    .item_teams {
+        position: relative;
+        height: 150px;
+        overflow: hidden;
+        .name {
+            position: absolute;
+            width: 50%;
+            right: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            padding-left: 10px;
+            font-family: "dusha_plusregular";
+            color: #000
+        }
+        .images {
+            position: absolute;
+            top: 50%;
+            width: 50%;
+            transform: translateY(-50%);
+            -moz-transform: translateY(-50%);
+            -o-transform: translateY(-50%);
+            -webkit-transform: translateY(-50%);
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

@@ -1,0 +1,124 @@
+{
+    "header": {
+      "competition_title": "2018 FIFA World Cup Russia™",
+      "competition_date": "14 June - 15 July",
+      "navigation":{
+        "matches":"Matches",
+        "teams":"Teams",
+        "groups":"Groups",
+        "stadiums":"Stadiums",
+        "news":"News",
+        "photos":"Photos",
+        "videos":"Videos",
+        "livecores": "Live Scores",
+        "searchonfifa":"Search on FIFA.com"
+      }
+    },
+    "home":{
+      "tournamentstartin":{
+          "text":"TOURNAMENT STARTS IN",
+          "days":"DAYS",
+          "hours":"HOURS",
+          "minutes":"MINUTES"
+      },
+      "groups":{
+          "title":"groups",
+          "allmatches":"all matches",
+          "matchschedule":"match schedule"
+      },
+      "latestnews": {
+        "title": "latest news",
+        "allnews": "All news"
+      },
+      "latestvideos": {
+        "title": "latest videos"
+      },
+      "timeline": {
+        "title": "world cup timeline"
+      },
+      "fifaPartners": "FIFA Partners"
+    },
+    "login":{
+      "text":"Please sign in to your FIFA.com user account below. This will allow you to make the most of your account with personalization, plus get access to commenting tools, exclusive games, the chance to win cool football prizes and much, much more.",
+      "title_login":"Login",
+      "text_dont_have_acc":"Don't have an account yet?",
+      "sign_up_now":"sign up now"
+    },
+    
+    "general":{
+      "title_news":"news",
+
+      "title_photos":"Photos",
+      "all_photos":"All photos",
+
+      "title_videos":"Video",
+      "all_videos":"All Videos",
+      "latest_videos":"Latest Videos",
+      "more_videos":"More Videos",
+
+      
+
+      "title_matches":"MATCHES",
+      "groups_phase":"Group Phase",
+      "knockout_phase":"Knockout Phase",
+      "filter_by_team":"Filter by team",
+      "your_timezone":"Kick-offs are shown in your time zone",
+      "list_view":"List view",
+      "bracket_view":"Bracket view",
+      "round16":"Round of 16",
+      "quarter_finals":"Quarter-finals",
+      "semi_finals":"Semi-finals",
+      "play_off_for_third_place":"Play-off for third place",
+      "finals":"Final",
+
+
+      "title_teams":"Teams",
+
+      "title_groups":"groups",
+      "group_analysis":"Group Analysis",
+      "text_group": "group",
+                
+
+      "title_stadiums":"Stadiums",
+
+      "btn_nextpost":"Next post"
+
+    },
+
+
+    "footer":{
+      "navigationTop": {
+        "matches": "Matches",
+        "teams": "Teams",
+        "groups": "Groups",
+        "destination": "Destinations",
+        "news": "News",
+        "photos": "Photos",
+        "videos": "Videos",
+        "searchonfifa": "Search on FIFA.com"
+      },
+      "navigationBottom":{
+        "termOfService":"Terms of Service",
+        "privacyPolicy":"Privacy Policy",
+        "downloads":"Downloads",
+        "contactFifa":"Contact FIFA",
+        "mobileApps":"Mobile Apps",
+        "widgets":"Widgets",
+        "copyright":"Copyright ©1994 - 2018 FIFA. All rights reserved"
+      }
+    },
+    "footer_blue":{
+        "terms_of_services":"Terms of Services",
+        "privacy_policy":"Privacy Policy",
+        "downloads":"Downloads",
+        "contact_fifa":"Contact FIFA",
+        "mobile_apps":"Mobile Apps",
+        "widgets":"Widgets",
+        "copyright":"Copyright ©1994 - 2018 FIFA. All rights reserved"
+    },
+    
+    "HOME": {
+      "SELECT": "Change language",
+      "HELLO": "Hello from Home!!!! En"
+    }
+}

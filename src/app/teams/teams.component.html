@@ -1,0 +1,21 @@
+
+<div id="content-wrap" class="teams">
+  <div class="container">
+      <div class="fi-boxed-page">
+        <h1 class="fi-page-title">
+           {{'general.title_teams' | translate}}
+        </h1>
+      </div>
+      <hr>
+      <div class="row">
+          <div class="col-md-4 col-sm-4 col-xs-6" *ngFor="let item of list_team">
+              <div class="item_teams">
+                  <p class="name">{{item.name}}</p>
+                  <div class="images">
+                    <img [src]="item.logo_path" alt="">
+                  </div>
+              </div>
+          </div>
+      </div>
+</div>
+<app-footer1></app-footer1>

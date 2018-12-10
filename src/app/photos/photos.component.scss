@@ -1,0 +1,25 @@
+#sliderTop {
+    .item {
+        .photos {}
+        .description {
+            padding-top: 10px;
+            margin-bottom: 15px;
+            .title {
+                font-size: 19px;
+                line-height: 24px;
+                color: #000;
+            }
+            .date {
+                font-size: 12px;
+                line-height: 19px;
+                color: #999;
+            }
+            .comment {
+                margin-top: 5px;
+                font-size: 13px;
+                line-height: 18px;
+                color: #666;
+            }
+        }
+    }
+}

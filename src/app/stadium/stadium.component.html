@@ -1,0 +1,47 @@
+
+<div id="content-wrap">
+  <div class="container">
+    <div class="fi-boxed-page">
+      <h1 class="fi-page-title">
+         {{'general.title_stadiums' | translate}}
+      </h1>
+    </div>
+    <hr>
+    <div class="row row-first">
+      <div class="col-xs-12">
+        <div class="slider_venues-wrapper">          
+            <div class="owl-carousel owl_destination">
+              <div class="item" *ngFor="let item of data_stadium">
+                <div class="images">
+                    <img [src]="item.image_path" alt="">
+                </div>
+                <div class="content">
+                    <ul>
+                      <li> <b> Stadium name</b>: {{item.name}}</li>
+                      <li> <b> Address</b>: {{item.address}}</li>
+                      <li> <b> Surface</b>: {{item.surface}}</li>
+                    </ul>
+                </div>
+              </div>
+              <div class="arrow destination_navigate_left">
+                <span class="icon-arrow">
+                  <i class="icon-angle-left"></i>
+                </span>
+              </div>
+              <div class="arrow destination_navigate_right">
+                <span class="icon-arrow">
+                  <i class="icon-angle-right"></i>
+                </span>
+              </div>
+              
+              
+            </div>
+      
+        </div>
+      </div>
+      
+    </div>
+    
+  </div>
+</div>
+<app-footer1></app-footer1>

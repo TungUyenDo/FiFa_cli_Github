@@ -112,7 +112,7 @@ span.loc.mobile-margin {
 }
 
 #content-wrap .container .page-share .header-share {
-    background-image: url("../images/bg.jpg");
+    /* background-image: url("../images/bg.jpg"); */
     background-color: transparent;
     background-repeat: repeat-x;
     background-position: -767px -11px

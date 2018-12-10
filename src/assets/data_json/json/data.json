@@ -1,0 +1,23 @@
+
+{
+    "topCarousel": [
+        {
+            "id": 0,
+            "image_link" : "https://img.fifa.com/image/upload/t_tc1/co19gwk7fcndxtplgnao.jpg",
+            "title": " Van Marwijk: France have a big chance of winning the World Cup",
+            "roofline":"RUSSIA 2018"
+        },
+        {
+            "id": 1,
+            "image_link" : "https://img.fifa.com/image/upload/t_tc1/bh2h7auw4sejh94uojmc.jpg",
+            "title": " Video Vault: Goal of the Century",
+            "roofline": "RUSSIA 2018"
+        },
+        {
+            "id": 2,
+            "image_link" : "https://img.fifa.com/image/upload/t_tc1/ghxwmyiq82mctaieucw0.jpg",
+            "title": "Hector Moreno and the four keys to success",
+            "roofline": "RUSSIA 2018"
+        }
+    ]
+}

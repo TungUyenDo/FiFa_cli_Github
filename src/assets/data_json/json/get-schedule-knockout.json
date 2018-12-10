@@ -1,0 +1,137 @@
+{
+    "status": true,
+    "status_code": 200,
+    "message": "Get schedule!!",
+    "data": {
+        "items": [
+            {
+                "type": 1,
+                "localTeam_name": 15251,
+                "visitorTeam_name": 18546,
+                "starting_at": 1530367200,
+                "venues": "Kazan Arena",
+                "city": "Kazan"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18551,
+                "visitorTeam_name": 18554,
+                "starting_at": 1530381600,
+                "venues": "Fisht Stadium",
+                "city": "Sochi"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18558,
+                "visitorTeam_name": 18562,
+                "starting_at": 1530453600,
+                "venues": "Luzhniki Stadium",
+                "city": "Moscow"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18564,
+                "visitorTeam_name": 18567,
+                "starting_at": 1530468000,
+                "venues": "Nizhny Novgorod Stadium",
+                "city": "Nizhny Novgorod"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18576,
+                "visitorTeam_name": 18583,
+                "starting_at": 1530540000,
+                "venues": "Samara Arena",
+                "city": "Samara"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18588,
+                "visitorTeam_name": 18597,
+                "starting_at": 1530554400,
+                "venues": "Rostov Arena",
+                "city": "Rostov-On-Don"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18598,
+                "visitorTeam_name": 18635,
+                "starting_at": 1530626400,
+                "venues": "Saint Petersburg Stadium",
+                "city": "St. Petersburg"
+            },
+            {
+                "type": 1,
+                "localTeam_name": 18644,
+                "visitorTeam_name": 18645,
+                "starting_at": 1530640800,
+                "venues": "Spartak Stadium",
+                "city": "Moscow"
+            },
+            {
+                "type": 2,
+                "localTeam_name": 18647,
+                "visitorTeam_name": 18652,
+                "starting_at": 1530885600,
+                "venues": "Nizhny Novgorod Stadium",
+                "city": "Nizhny Novgorod"
+            },
+            {
+                "type": 2,
+                "localTeam_name": 18660,
+                "visitorTeam_name": 18699,
+                "starting_at": 1530900000,
+                "venues": "Kazan Arena",
+                "city": "Kazan"
+            },
+            {
+                "type": 2,
+                "localTeam_name": 18701,
+                "visitorTeam_name": 18702,
+                "starting_at": 1530972000,
+                "venues": "Samara Arena",
+                "city": "Samara"
+            },
+            {
+                "type": 2,
+                "localTeam_name": 18704,
+                "visitorTeam_name": 18708,
+                "starting_at": 1530986400,
+                "venues": "Fisht Stadium",
+                "city": "Sochi"
+            },
+            {
+                "type": 3,
+                "localTeam_name": 18710,
+                "visitorTeam_name": 18717,
+                "starting_at": 1531245600,
+                "venues": "Saint Petersburg Stadium",
+                "city": "St. Petersburg"
+            },
+            {
+                "type": 3,
+                "localTeam_name": 18720,
+                "visitorTeam_name": 18730,
+                "starting_at": 1531332000,
+                "venues": "Luzhniki Stadium",
+                "city": "Moscow"
+            },
+            {
+                "type": 4,
+                "localTeam_name": 18737,
+                "visitorTeam_name": 18743,
+                "starting_at": 1531576800,
+                "venues": "Saint Petersburg Stadium",
+                "city": "St. Petersburg"
+            },
+            {
+                "type": 5,
+                "localTeam_name": 18775,
+                "visitorTeam_name": 18873,
+                "starting_at": 1531666800,
+                "venues": "Luzhniki Stadium",
+                "city": "Moscow"
+            }
+        ]
+    }
+}

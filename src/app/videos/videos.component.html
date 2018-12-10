@@ -1,0 +1,105 @@
+
+<div id="content-wrap">
+  <div class="container">
+
+    <div class="fi-boxed-page">
+      <h1 class="fi-page-title"  [hidden]="index > 1">{{'general.title_videos' | translate}}</h1>
+      <h1 class="fi-page-title" [hidden]="index < 2 ">{{'general.all_videos' | translate}}</h1>
+    </div>
+  
+    <div class="row row-first">
+      <div class="header-wrap"[hidden]="index > 1">
+        <div class="title-wrap">
+          <h2 class="title">
+            <span>{{'general.latest_videos' | translate}}</span>
+          </h2>
+        </div>
+      </div>
+      <div class="col-xs-12 clear-grid">
+        <div class="dcm-list thumblist-lnd-3 grid-view list-videos ">
+          <ul class="dcm-thumblist vertical">
+
+            <li class="dcm-thumblist-item" *ngFor="let item of video_4Item"  (click)="click_open_link_video(item.link, item.image_full, item.description, $event)">
+              <div class="ph-lnd-3 figure i-wrap ">
+                <a class="dcm-internal" target="_self">
+                  <img [src]="item.image" class="i-lnd-3" />
+                </a>
+              </div>
+              <h4 class="dcm-title">
+                <a>{{item.title}}</a>
+              </h4>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-12 clear-grid"[hidden]="index > 1">
+        <div class="dcm-list thumblist-sqr-1 grid-view list-videos ">
+          <ul class="dcm-thumblist inline-col4">
+            <li class="dcm-thumblist-item" *ngFor="let item of video_6Item" (click)="click_open_link_video(item.link, item.image_full, item.description, $event)">
+              <!--2940185-->
+              <div class="ph-sqr-1 figure i-wrap ">
+                <a class="dcm-internal" target="_self" >
+                  <img alt="53 DAYS TO GO! Super Sanchez" title="53 DAYS TO GO! Super Sanchez" [src]="item.image" class="i-sqr-1" />
+                
+                </a>
+              </div>
+              <div class="dcm-thumblist-title">
+                <h4 class="dcm-title">
+                  <a>{{item.title}}</a>
+                </h4>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 clear-grid" [hidden]="index > 1">
+        <div class="qlink-wrap ">
+          <ul class="qlink-list">
+            <li class="qlink-link last" (click)="click_moreVideos()" [attr.data-page]="index">
+              <div class="qlink-link-wrap">
+                <a>
+                  <span class="item">{{'general.more_videos' | translate}}</span>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-xs-12 fi-list__btn fi-navigation" [hidden]="index < 2">
+          <a role="navigation" class="fi-btn" [attr.data-page]="index" (click)="clickNextVideosPage()" [hidden]="end_page == index">
+            <span class="fi-btn__label">{{'general.btn_nextpost' | translate}}</span>
+          </a>
+      </div>
+    </div>
+   
+  </div>
+</div>
+
+<app-footer1></app-footer1>
+
+<!-- modal detail item -->
+<div class="popup_modal video">
+  <div class="popup_modal-item">
+    <div class="head">
+      <div class="logo">
+        <img src="../../../assets/images/fifacom-blue.svg" alt="">
+      </div>
+      <div class="close" (click)="close_popup()">
+        <img src="../../../assets/images/cancel-icon.png" alt="">
+      </div>
+      <div class="clearfix"></div>
+    </div>
+
+    <div class="body">
+
+      <div class="link">
+        <a [href]="video_link">
+          <img [src]="video_images_full" alt="video images" style="width: 100%;">
+        </a>
+        <p style="margin-top: 10px">{{video_description}}</p>
+      </div>
+    </div>
+  </div>
+</div>

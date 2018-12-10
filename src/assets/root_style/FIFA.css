@@ -1,0 +1,542 @@
+
+
+.icon {
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 {
+    height: 38px;
+    padding-bottom: 2px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f2f2f2
+}
+
+.rsbtn_fifa2014 a,
+.rsbtn_fifa2014 span {
+    display: block;
+    text-decoration: none
+}
+
+.rsbtn_fifa2014 .rspart,
+.rsbtn_fifa2014 .rsplaypart {
+    float: left
+}
+
+.rsbtn_fifa2014 .rsbtn_btnlabel {
+    display: none
+}
+
+.rsbtn_fifa2014 .rsbtn_play {
+    float: left;
+    width: 80px;
+    height: 100%
+}
+
+.rsbtn_fifa2014 .rsbtn_play:hover {
+    text-decoration: none
+}
+
+.rsbtn_fifa2014 .rsbtn_play .rsbtn_left {
+    padding-top: 8px
+}
+
+.rsbtn_fifa2014 .rsbtn_play .rsbtn_left .rsbtn_text {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    color: #474747;
+    line-height: 1.6
+}
+
+.rsbtn_fifa2014 .rsbtn_play .rsbtn_left .rsbtn_text span {
+    display: inline
+}
+
+.rsbtn_fifa2014.rsexpanded .rsbtn_exp {
+    display: block
+}
+
+.rsbtn_fifa2014 .rsbtn_exp {
+    position: relative;
+    float: left;
+    height: 100%;
+    display: none
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_pause {
+    width: 60px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_pause i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_pause:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_pause i.icon {
+    margin-top: 11px;
+    margin-left: 22px;
+    margin-right: 22px;
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_stop {
+    width: 60px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_stop i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_stop:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_stop i.icon {
+    margin-top: 11px;
+    margin-left: 22px;
+    margin-right: 22px;
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player {
+    height: 100%
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress {
+    width: 139px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress .rsbtn_progress_container {
+    position: absolute;
+    background: #999;
+    width: 100px;
+    height: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 15px;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress .rsbtn_progress_container .rsbtn_progress_played {
+    position: absolute;
+    background: #0087e6;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_progress .rsbtn_progress_container .rsbtn_progress_handle {
+    position: absolute;
+    left: -5px;
+    top: -1px;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container {
+    width: 80px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container .rsbtn_volume_icon {
+    width: 20px;
+    height: 16px;
+    float: left
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container .rsbtn_volume_bar {
+    float: left;
+    width: 4px;
+    height: 16px;
+    margin-left: 2px;
+    background: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container .rsbtn_volume_bar.rsSelected {
+    background: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_volume_custom_container .rsbtn_volume_wrapper {
+    margin-left: 15px;
+    margin-top: 10px
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_settings {
+    float: left;
+    width: 60px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_settings i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_settings:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_settings .icon-settings {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_dl {
+    float: left;
+    width: 50px;
+    position: relative;
+    margin-left: 1px;
+    background: #f2f2f2;
+    height: 38px;
+    transform: skew(-20deg);
+    -o-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    -webkit-transform: skew(-20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_dl i.icon {
+    position: absolute;
+    font-size: 16px;
+    line-height: 1;
+    color: #999;
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg)
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_dl:hover i.icon {
+    color: #0087e6
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_dl .icon-download {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_player .rsbtn_dl:after {
+    transform: skew(20deg);
+    -o-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    position: absolute;
+    top: 0;
+    right: -7px;
+    width: 16px;
+    height: 38px;
+    content: "";
+    background: #f2f2f2
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered {
+    position: absolute;
+    top: -14px;
+    right: 0;
+    text-align: right;
+    height: 10px;
+    z-index: 110;
+    color: #999;
+    font-family: "Lucida Grande", "Lucida Sans", "Lucida", sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 10px;
+    font-size: 9px;
+    background: none;
+    cursor: pointer
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered span,
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered a {
+    display: inline
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered .rsbtn_label_read {
+    color: #e60
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered .rsbtn_label_speaker {
+    color: #33a
+}
+
+.rsbtn_fifa2014 .rsbtn_exp .rsbtn_powered .rsbtn_label_icon:before {
+    content: "\e600";
+    color: #33a;
+    padding-left: 2px
+}
+
+.rsbtn_fifa2014.rsplaying .rsbtn_pause i.icon.icon-play:before {
+    content: "\e602"
+}
+
+.rsbtn_fifa2014.rsstopped .rsbtn_exp .rsbtn_stop i.icon {
+    color: #ccc
+}
+
+#rslightbox_contentcontainer #rslightbox_toolbar #rslightbox_closer {
+    background: none;
+    top: 0;
+    right: 10px;
+    height: 10px;
+    width: auto;
+    height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    color: #0087e6;
+    text-decoration: none
+}
+
+#rslightbox_contentcontainer #rslightbox_toolbar #rslightbox_closer:hover {
+    color: #999
+}
+
+#rslightbox_contentcontainer #rslightbox_content {
+    border: 0
+}
+
+#rslightbox_contentcontainer #rslightbox_content h1 {
+    font-size: 24px;
+    color: #333;
+    border-bottom: 1px solid #999;
+    margin-bottom: 30px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-section {
+    border-bottom: 1px solid #f2f2f2;
+    margin-bottom: 30px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-section legend {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #999;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 5px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row {
+    background: none;
+    border-bottom: 1px solid #f2f2f2
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row button.rsform-info-toggle {
+    min-width: 10px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row button.rsform-info-toggle:before {
+    content: "\e607";
+    font-family: 'rs-fifa2014';
+    font-size: 14px;
+    color: #0087e6
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row button.rsform-info-toggle img {
+    display: none
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row legend {
+    font-size: 14px;
+    color: inherit;
+    text-transform: none;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-weight: normal
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row#rscontrol_hl label {
+    display: block;
+    margin-bottom: 10px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row label {
+    font-size: 14px;
+    color: inherit;
+    text-transform: none;
+    border-bottom: none;
+    padding-bottom: 0;
+    font-weight: normal;
+    display: inline-block
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row input {
+    height: auto
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row input[type=radio] {
+    margin: auto;
+    width: 24px
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row ul.rsform-colorlist li.rsform-colorlist-active {
+    border: 1px solid #999;
+    background: #f2f2f2
+}
+
+#rslightbox_contentcontainer #rslightbox_content .rsform-row:last-child {
+    border-bottom: none
+}
+
+#rslightbox_contentcontainer #rslightbox_logo {
+    left: auto;
+    top: auto;
+    right: 20px;
+    bottom: 20px
+}
+
+#rsdl_container .rsdl_textwrapper {
+    margin: 0 20px
+}
+
+[class^="icon-"],
+[class*=" icon-"],
+.rsbtn_label_icon {
+    font-family: 'rs-fifa2014';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.icon-listen-icon:before {
+    content: "\e600"
+}
+
+.icon-play:before {
+    content: "\e601"
+}
+
+.icon-pause:before {
+    content: "\e602"
+}
+
+.icon-stop:before {
+    content: "\e603"
+}
+
+.icon-volume:before {
+    content: "\e604"
+}
+
+.icon-settings:before {
+    content: "\e605"
+}
+
+.icon-download:before {
+    content: "\e606"
+}
+
+.icon-Info:before {
+    content: "\e607"
+}
